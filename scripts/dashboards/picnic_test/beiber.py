@@ -257,13 +257,11 @@ def twitter_loader_tab(panel_title):
                     logger.warning('tweet_ts:stop_loading=%s:%s', ts_epoch, self.timestamp['stop_loading'])
 
                     # the 100000  represents unlimited messages in case we want to load more than 30 seconds worth
-                    if ts_epoch <= self.timestamp['stop_loading'] or messages_count >= len(results):
-                        print('&&&&&&&&&&&&&&&&&&&&&&&&&')
+                    if messages_count >= len(results):
                         stop = True
                         if self.limits['messages'] != 5000:
                             if messages_count >= self.limits['messages']:
                                 stop = True
-
                         # make a dataframe
                 self.df = pd.DataFrame.from_dict(self.messages_dict)
                 if self.df is not None:
@@ -294,9 +292,24 @@ def twitter_loader_tab(panel_title):
         def visual(self,launch=1):
             try:
 
-                p = self.df.hvplot.table(columns=['message_ID','creation_date','human_readable_creation_date','text',
+                df = self.df[self.df.creation_date >= self.timestamp['stop_loading']]
+                p = df.hvplot.table(columns=['message_ID','creation_date','human_readable_creation_date','text',
                                                   'user_ID','user_creation_date','user_name','user_screen_name'],
                                          width=1200,height=2000)
+                return p
+            except:
+                logger.error('output data', exc_info=True)
+
+        def jitter(self, launch=1):
+            try:
+                df = self.df.set_index('human_readable_creation_date')
+                df = df[['creation_date']]
+                df['jitter'] = df['creation_date'].diff(periods=-1)
+                df['jitter'] = df['jitter'] * -1
+                df = df.dropna()
+
+                df = df.reset_index()
+                p = df.hvplot.line(x='creation_date',y='jitter',width=1200,height=600)
                 return p
             except:
                 logger.error('output data', exc_info=True)
@@ -323,6 +336,9 @@ def twitter_loader_tab(panel_title):
         # DYNAMIC GRAPHS/OUTPUT
         hv_visual = hv.DynamicMap(thistab.visual,streams=[stream_launch])
         visual = renderer.get_plot(hv_visual)
+
+        hv_jitter = hv.DynamicMap(thistab.jitter, streams=[stream_launch])
+        jitter = renderer.get_plot(hv_jitter)
 
         # CREATE WIDGETS
         inputs = {
@@ -354,9 +370,13 @@ def twitter_loader_tab(panel_title):
         grid = gridplot([
             [thistab.notification_div['top']],
             [Spacer(width=20, height=70)],
+            [thistab.title_div('Jitter between tweets:', 1000)],
+            [Spacer(width=20, height=30)],
+            [jitter.state],
             [thistab.title_div('Twitter search results (use filters on right, then click button):', 1000)],
             [Spacer(width=20, height=30)],
             [visual.state, controls],
+
             [thistab.notification_div['bottom']],
         ])
 

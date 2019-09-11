@@ -2783,3 +2783,986 @@ OSError: [Errno 36] File name too long: '            message_ID human_readable_c
 2019-09-11 17:23:18,015 - [logs/beiber.log:248]=> tweet_ts:stop_loading=1568236525.0:1568236968.012641
 2019-09-11 17:23:18,018 - [logs/beiber.log:261]=> df:, length=1,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date user_name user_screen_name
 0  1171895041792585732          2019-09-11 21:15:25   1.568237e+09  @lesticiaguiar Tá simples de mais isso aí Beib...  1123293141984075776        1.556649e+09   Geovane      geovane_g12
+2019-09-11 18:08:22,679 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 18:08:32,504 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 18:08:33,166 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 18:08:33,166 - [logs/beiber.log:242]=> start:end= 1568239713.166359:  1568239683.166359
+2019-09-11 18:08:33,172 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568239683.166359
+2019-09-11 18:08:33,175 - [logs/beiber.log:270]=> df:, length=1,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                               user_name  user_screen_name
+0  1171907835438882816          2019-09-11 22:06:15   1.568240e+09  ...       1.556783e+09  Gimmick account based off of character         ribbonbot
+
+[1 rows x 8 columns]
+2019-09-11 18:10:33,341 - [logs/beiber.log:218]=> error constructing query
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 204, in construct_query
+    if count > 0:
+TypeError: '>' not supported between instances of 'str' and 'int'
+2019-09-11 18:10:33,953 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 18:10:33,953 - [logs/beiber.log:242]=> start:end= 1568239833.953523:  1568239803.953523
+2019-09-11 18:10:33,954 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568239803.953523
+2019-09-11 18:10:33,956 - [logs/beiber.log:270]=> df:, length=1,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                               user_name  user_screen_name
+0  1171907835438882816          2019-09-11 22:06:15   1.568240e+09  ...       1.556783e+09  Gimmick account based off of character         ribbonbot
+
+[1 rows x 8 columns]
+2019-09-11 18:10:44,416 - [logs/beiber.log:218]=> error constructing query
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 204, in construct_query
+    if count > 0:
+TypeError: '>' not supported between instances of 'str' and 'int'
+2019-09-11 18:10:45,112 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 18:10:45,112 - [logs/beiber.log:242]=> start:end= 1568239845.112162:  1568235495.112162
+2019-09-11 18:10:45,112 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568235495.112162
+2019-09-11 18:10:45,113 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568235495.112162
+2019-09-11 18:10:45,113 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568235495.112162
+2019-09-11 18:10:45,113 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568235495.112162
+2019-09-11 18:10:45,113 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568235495.112162
+2019-09-11 18:10:45,114 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568235495.112162
+2019-09-11 18:10:45,114 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568235495.112162
+2019-09-11 18:10:45,114 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568235495.112162
+2019-09-11 18:10:45,116 - [logs/beiber.log:270]=> df:, length=8,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                               user_name  user_screen_name
+0  1171907835438882816          2019-09-11 22:06:15   1.568240e+09  ...       1.556783e+09  Gimmick account based off of character         ribbonbot
+1  1171902822406922240          2019-09-11 21:46:20   1.568238e+09  ...       1.421430e+09                            charlie!!!!!    eastside_tilly
+2  1171895041792585732          2019-09-11 21:15:25   1.568237e+09  ...       1.556649e+09                                 Geovane       geovane_g12
+3  1171894446629294083          2019-09-11 21:13:03   1.568236e+09  ...       1.380359e+09                                  Father        Akintayo__
+4  1171893660381777920          2019-09-11 21:09:56   1.568236e+09  ...       1.504499e+09                         old man jenkins         cutehobis
+
+[5 rows x 8 columns]
+2019-09-11 18:11:11,991 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=legend&count=100&result_type=recent
+2019-09-11 18:11:12,673 - [logs/beiber.log:230]=> # of results retreived:100
+2019-09-11 18:11:12,673 - [logs/beiber.log:242]=> start:end= 1568239872.673054:  1568235522.673054
+2019-09-11 18:11:12,673 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239856.0:1568235522.673054
+2019-09-11 18:11:12,673 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239856.0:1568235522.673054
+2019-09-11 18:11:12,673 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239856.0:1568235522.673054
+2019-09-11 18:11:12,673 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239855.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239854.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239854.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239853.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239852.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239852.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239852.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239851.0:1568235522.673054
+2019-09-11 18:11:12,674 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239851.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239851.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239851.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239850.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239849.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239849.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239849.0:1568235522.673054
+2019-09-11 18:11:12,675 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239848.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239848.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239847.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239846.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239844.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239844.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239844.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239843.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239842.0:1568235522.673054
+2019-09-11 18:11:12,676 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239842.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239841.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239841.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239840.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239838.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239838.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239837.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239835.0:1568235522.673054
+2019-09-11 18:11:12,677 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239835.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239834.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239833.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239832.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239832.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239832.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239831.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239831.0:1568235522.673054
+2019-09-11 18:11:12,678 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239831.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239829.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239829.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239828.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239828.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239827.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239826.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239826.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239826.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239824.0:1568235522.673054
+2019-09-11 18:11:12,679 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239824.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239823.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239823.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239820.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239820.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239819.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239819.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239818.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239817.0:1568235522.673054
+2019-09-11 18:11:12,680 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239817.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239817.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239817.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239815.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239815.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239815.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239814.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239813.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239812.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239812.0:1568235522.673054
+2019-09-11 18:11:12,681 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239811.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239811.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239811.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239811.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239810.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239810.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239809.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239808.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239806.0:1568235522.673054
+2019-09-11 18:11:12,682 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239806.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239806.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239806.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239804.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239803.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239803.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239803.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239802.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239801.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239801.0:1568235522.673054
+2019-09-11 18:11:12,683 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239801.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239800.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239800.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239800.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239799.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239799.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239799.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239798.0:1568235522.673054
+2019-09-11 18:11:12,684 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239797.0:1568235522.673054
+2019-09-11 18:11:12,686 - [logs/beiber.log:270]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date               user_name  user_screen_name
+0  1171909012318773254          2019-09-11 22:10:56   1.568240e+09  ...       1.398269e+09                Magnolia       MiHcionLila
+1  1171909012226564096          2019-09-11 22:10:56   1.568240e+09  ...       1.310272e+09                    Noy.          Noyannna
+2  1171909012088074240          2019-09-11 22:10:56   1.568240e+09  ...       1.268503e+09            Rohan Shetty        roanshetty
+3  1171909011291234305          2019-09-11 22:10:55   1.568240e+09  ...       1.325040e+09                lil fish        J_Emanuel3
+4  1171909004022484992          2019-09-11 22:10:54   1.568240e+09  ...       1.538218e+09  💟 Domain 4 Dominance 🔱       LovelessD4D
+
+[5 rows x 8 columns]
+2019-09-11 19:12:47,570 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:12:50,405 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:12:51,017 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:12:51,018 - [logs/beiber.log:242]=> start:end= 1568243571.017847:  1568243541.017847
+2019-09-11 19:12:51,021 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568243541.017847
+2019-09-11 19:12:51,024 - [logs/beiber.log:270]=> df:, length=1,            message_ID human_readable_creation_date  creation_date                                             text    user_ID  user_creation_date      user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09  Justin Beiber Ft Ed Sheeran - I dont t 39 care.  147409910        1.274668e+09  Manuel Azocar     ManuelAzocar
+2019-09-11 19:13:39,947 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:13:42,098 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:13:42,798 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:13:42,799 - [logs/beiber.log:242]=> start:end= 1568243622.798738:  1568243592.798738
+2019-09-11 19:13:42,802 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568243592.798738
+2019-09-11 19:13:42,805 - [logs/beiber.log:270]=> df:, length=1,            message_ID human_readable_creation_date  creation_date                                             text    user_ID  user_creation_date      user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09  Justin Beiber Ft Ed Sheeran - I dont t 39 care.  147409910        1.274668e+09  Manuel Azocar     ManuelAzocar
+2019-09-11 19:17:38,711 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:17:40,704 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:17:41,305 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:17:41,305 - [logs/beiber.log:242]=> start:end= 1568243861.305083:  1568243831.305083
+2019-09-11 19:17:41,308 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568243831.305083
+2019-09-11 19:17:41,309 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568243831.305083
+2019-09-11 19:17:41,309 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568243831.305083
+2019-09-11 19:17:41,309 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568243831.305083
+2019-09-11 19:17:41,309 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568243831.305083
+2019-09-11 19:17:41,309 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568243831.305083
+2019-09-11 19:17:41,310 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568243831.305083
+2019-09-11 19:17:41,311 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568243831.305083
+2019-09-11 19:17:41,312 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568243831.305083
+2019-09-11 19:17:41,312 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568243831.305083
+2019-09-11 19:17:41,312 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568243831.305083
+2019-09-11 19:17:41,312 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568243831.305083
+2019-09-11 19:17:41,312 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568243831.305083
+2019-09-11 19:17:41,313 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568243831.305083
+2019-09-11 19:17:41,314 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568243831.305083
+2019-09-11 19:17:41,315 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568243831.305083
+2019-09-11 19:17:41,316 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568243831.305083
+2019-09-11 19:17:41,316 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568243831.305083
+2019-09-11 19:17:41,316 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568243831.305083
+2019-09-11 19:17:41,317 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568243831.305083
+2019-09-11 19:17:41,318 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568243831.305083
+2019-09-11 19:17:41,318 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568243831.305083
+2019-09-11 19:17:41,318 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568243831.305083
+2019-09-11 19:17:41,318 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568243831.305083
+2019-09-11 19:17:41,318 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568243831.305083
+2019-09-11 19:17:41,319 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568243831.305083
+2019-09-11 19:17:41,320 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568243831.305083
+2019-09-11 19:17:41,321 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568243831.305083
+2019-09-11 19:17:41,322 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568243831.305083
+2019-09-11 19:17:41,322 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568243831.305083
+2019-09-11 19:17:41,322 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568243831.305083
+2019-09-11 19:17:41,322 - [logs/beiber.log:273]=> error in parsing results
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 244, in parse_results
+    res = results[messages_count]
+IndexError: list index out of range
+2019-09-11 19:18:27,870 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:18:33,430 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:18:34,116 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:18:34,116 - [logs/beiber.log:242]=> start:end= 1568243914.116497:  1568243884.116497
+2019-09-11 19:18:34,119 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568243884.116497
+2019-09-11 19:18:34,119 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568243884.116497
+2019-09-11 19:18:34,119 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568243884.116497
+2019-09-11 19:18:34,120 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568243884.116497
+2019-09-11 19:18:34,120 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568243884.116497
+2019-09-11 19:18:34,120 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568243884.116497
+2019-09-11 19:18:34,120 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568243884.116497
+2019-09-11 19:18:34,120 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568243884.116497
+2019-09-11 19:18:34,121 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568243884.116497
+2019-09-11 19:18:34,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568243884.116497
+2019-09-11 19:18:34,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568243884.116497
+2019-09-11 19:18:34,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568243884.116497
+2019-09-11 19:18:34,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568243884.116497
+2019-09-11 19:18:34,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568243884.116497
+2019-09-11 19:18:34,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568243884.116497
+2019-09-11 19:18:34,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568243884.116497
+2019-09-11 19:18:34,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568243884.116497
+2019-09-11 19:18:34,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568243884.116497
+2019-09-11 19:18:34,132 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:18:40,833 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:18:41,121 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:18:41,121 - [logs/beiber.log:242]=> start:end= 1568243921.121731:  1568239571.121731
+2019-09-11 19:18:41,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568239571.121731
+2019-09-11 19:18:41,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568239571.121731
+2019-09-11 19:18:41,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568239571.121731
+2019-09-11 19:18:41,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568239571.121731
+2019-09-11 19:18:41,122 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568239571.121731
+2019-09-11 19:18:41,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568239571.121731
+2019-09-11 19:18:41,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568239571.121731
+2019-09-11 19:18:41,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568239571.121731
+2019-09-11 19:18:41,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568239571.121731
+2019-09-11 19:18:41,123 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568239571.121731
+2019-09-11 19:18:41,124 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568239571.121731
+2019-09-11 19:18:41,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568239571.121731
+2019-09-11 19:18:41,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568239571.121731
+2019-09-11 19:18:41,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568239571.121731
+2019-09-11 19:18:41,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568239571.121731
+2019-09-11 19:18:41,125 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568239571.121731
+2019-09-11 19:18:41,126 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568239571.121731
+2019-09-11 19:18:41,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568239571.121731
+2019-09-11 19:18:41,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568239571.121731
+2019-09-11 19:18:41,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568239571.121731
+2019-09-11 19:18:41,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568239571.121731
+2019-09-11 19:18:41,127 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568239571.121731
+2019-09-11 19:18:41,128 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568239571.121731
+2019-09-11 19:18:41,129 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568239571.121731
+2019-09-11 19:18:41,130 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568239571.121731
+2019-09-11 19:18:41,131 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568239571.121731
+2019-09-11 19:18:41,132 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568239571.121731
+2019-09-11 19:18:41,133 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568239571.121731
+2019-09-11 19:18:41,134 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568239571.121731
+2019-09-11 19:18:41,134 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568239571.121731
+2019-09-11 19:18:41,134 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568239571.121731
+2019-09-11 19:18:41,134 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568239571.121731
+2019-09-11 19:18:41,134 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568239571.121731
+2019-09-11 19:18:41,136 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:18:47,090 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:18:47,543 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:18:47,543 - [logs/beiber.log:242]=> start:end= 1568243927.543672:  1568229017.543672
+2019-09-11 19:18:47,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568229017.543672
+2019-09-11 19:18:47,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568229017.543672
+2019-09-11 19:18:47,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568229017.543672
+2019-09-11 19:18:47,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568229017.543672
+2019-09-11 19:18:47,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568229017.543672
+2019-09-11 19:18:47,545 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568229017.543672
+2019-09-11 19:18:47,545 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568229017.543672
+2019-09-11 19:18:47,545 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568229017.543672
+2019-09-11 19:18:47,545 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568229017.543672
+2019-09-11 19:18:47,545 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568229017.543672
+2019-09-11 19:18:47,546 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568229017.543672
+2019-09-11 19:18:47,547 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568229017.543672
+2019-09-11 19:18:47,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568229017.543672
+2019-09-11 19:18:47,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568229017.543672
+2019-09-11 19:18:47,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568229017.543672
+2019-09-11 19:18:47,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568229017.543672
+2019-09-11 19:18:47,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568229017.543672
+2019-09-11 19:18:47,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568229017.543672
+2019-09-11 19:18:47,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568229017.543672
+2019-09-11 19:18:47,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568229017.543672
+2019-09-11 19:18:47,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568229017.543672
+2019-09-11 19:18:47,557 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:19:58,164 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:20:02,676 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:20:03,527 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:20:03,527 - [logs/beiber.log:242]=> start:end= 1568244003.527637:  1568243973.527637
+2019-09-11 19:20:03,531 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568243973.527637
+2019-09-11 19:20:03,531 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568243973.527637
+2019-09-11 19:20:03,531 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568243973.527637
+2019-09-11 19:20:03,531 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568243973.527637
+2019-09-11 19:20:03,532 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568243973.527637
+2019-09-11 19:20:03,532 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568243973.527637
+2019-09-11 19:20:03,532 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568243973.527637
+2019-09-11 19:20:03,532 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568243973.527637
+2019-09-11 19:20:03,532 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568243973.527637
+2019-09-11 19:20:03,533 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568243973.527637
+2019-09-11 19:20:03,534 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568243973.527637
+2019-09-11 19:20:03,535 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568243973.527637
+2019-09-11 19:20:03,535 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568243973.527637
+2019-09-11 19:20:03,535 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568243973.527637
+2019-09-11 19:20:03,535 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568243973.527637
+2019-09-11 19:20:03,536 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568243973.527637
+2019-09-11 19:20:03,536 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568243973.527637
+2019-09-11 19:20:03,536 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568243973.527637
+2019-09-11 19:20:03,536 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568243973.527637
+2019-09-11 19:20:03,536 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568243973.527637
+2019-09-11 19:20:03,537 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568243973.527637
+2019-09-11 19:20:03,537 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568243973.527637
+2019-09-11 19:20:03,537 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568243973.527637
+2019-09-11 19:20:03,537 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568243973.527637
+2019-09-11 19:20:03,537 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568243973.527637
+2019-09-11 19:20:03,538 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568243973.527637
+2019-09-11 19:20:03,538 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568243973.527637
+2019-09-11 19:20:03,538 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568243973.527637
+2019-09-11 19:20:03,538 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568243973.527637
+2019-09-11 19:20:03,538 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568243973.527637
+2019-09-11 19:20:03,539 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568243973.527637
+2019-09-11 19:20:03,539 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568243973.527637
+2019-09-11 19:20:03,539 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568243973.527637
+2019-09-11 19:20:03,539 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568243973.527637
+2019-09-11 19:20:03,539 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568243973.527637
+2019-09-11 19:20:03,540 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568243973.527637
+2019-09-11 19:20:03,541 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568243973.527637
+2019-09-11 19:20:03,542 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568243973.527637
+2019-09-11 19:20:03,543 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568243973.527637
+2019-09-11 19:20:03,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568243973.527637
+2019-09-11 19:20:03,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568243973.527637
+2019-09-11 19:20:03,544 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568243973.527637
+2019-09-11 19:20:03,546 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:21:03,945 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:21:06,945 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:21:07,608 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:21:07,609 - [logs/beiber.log:242]=> start:end= 1568244067.608893:  1568244037.608893
+2019-09-11 19:21:07,612 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568244037.608893
+2019-09-11 19:21:07,613 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568244037.608893
+2019-09-11 19:21:07,613 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568244037.608893
+2019-09-11 19:21:07,613 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568244037.608893
+2019-09-11 19:21:07,613 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568244037.608893
+2019-09-11 19:21:07,614 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568244037.608893
+2019-09-11 19:21:07,614 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568244037.608893
+2019-09-11 19:21:07,614 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568244037.608893
+2019-09-11 19:21:07,614 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568244037.608893
+2019-09-11 19:21:07,614 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568244037.608893
+2019-09-11 19:21:07,615 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568244037.608893
+2019-09-11 19:21:07,615 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568244037.608893
+2019-09-11 19:21:07,615 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568244037.608893
+2019-09-11 19:21:07,615 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568244037.608893
+2019-09-11 19:21:07,615 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568244037.608893
+2019-09-11 19:21:07,616 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568244037.608893
+2019-09-11 19:21:07,617 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568244037.608893
+2019-09-11 19:21:07,617 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568244037.608893
+2019-09-11 19:21:07,617 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568244037.608893
+2019-09-11 19:21:07,617 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568244037.608893
+2019-09-11 19:21:07,617 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568244037.608893
+2019-09-11 19:21:07,618 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568244037.608893
+2019-09-11 19:21:07,619 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568244037.608893
+2019-09-11 19:21:07,619 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568244037.608893
+2019-09-11 19:21:07,619 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568244037.608893
+2019-09-11 19:21:07,619 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568244037.608893
+2019-09-11 19:21:07,620 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568244037.608893
+2019-09-11 19:21:07,620 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568244037.608893
+2019-09-11 19:21:07,620 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568244037.608893
+2019-09-11 19:21:07,621 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568244037.608893
+2019-09-11 19:21:07,621 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568244037.608893
+2019-09-11 19:21:07,621 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568244037.608893
+2019-09-11 19:21:07,621 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568244037.608893
+2019-09-11 19:21:07,622 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568244037.608893
+2019-09-11 19:21:07,622 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568244037.608893
+2019-09-11 19:21:07,622 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568244037.608893
+2019-09-11 19:21:07,622 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568244037.608893
+2019-09-11 19:21:07,623 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568244037.608893
+2019-09-11 19:21:07,623 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568244037.608893
+2019-09-11 19:21:07,623 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568244037.608893
+2019-09-11 19:21:07,623 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568244037.608893
+2019-09-11 19:21:07,623 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568244037.608893
+2019-09-11 19:21:07,624 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568244037.608893
+2019-09-11 19:21:07,624 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568244037.608893
+2019-09-11 19:21:07,624 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568244037.608893
+2019-09-11 19:21:07,624 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568244037.608893
+2019-09-11 19:21:07,625 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568244037.608893
+2019-09-11 19:21:07,625 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568244037.608893
+2019-09-11 19:21:07,625 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568244037.608893
+2019-09-11 19:21:07,625 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568244037.608893
+2019-09-11 19:21:07,626 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568244037.608893
+2019-09-11 19:21:07,626 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568244037.608893
+2019-09-11 19:21:07,626 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568244037.608893
+2019-09-11 19:21:07,626 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568244037.608893
+2019-09-11 19:21:07,626 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568244037.608893
+2019-09-11 19:21:07,627 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568244037.608893
+2019-09-11 19:21:07,627 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568244037.608893
+2019-09-11 19:21:07,627 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568244037.608893
+2019-09-11 19:21:07,627 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568244037.608893
+2019-09-11 19:21:07,627 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568244037.608893
+2019-09-11 19:21:07,628 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568244037.608893
+2019-09-11 19:21:07,628 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568244037.608893
+2019-09-11 19:21:07,628 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568244037.608893
+2019-09-11 19:21:07,628 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568244037.608893
+2019-09-11 19:21:07,628 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568244037.608893
+2019-09-11 19:21:07,629 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568244037.608893
+2019-09-11 19:21:07,629 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568244037.608893
+2019-09-11 19:21:07,629 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568244037.608893
+2019-09-11 19:21:07,629 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568244037.608893
+2019-09-11 19:21:07,629 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568244037.608893
+2019-09-11 19:21:07,632 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:21:19,773 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:21:20,251 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:21:20,251 - [logs/beiber.log:242]=> start:end= 1568244080.25111:  1568229410.25111
+2019-09-11 19:21:20,251 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568229410.25111
+2019-09-11 19:21:20,251 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568229410.25111
+2019-09-11 19:21:20,252 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568229410.25111
+2019-09-11 19:21:20,252 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568229410.25111
+2019-09-11 19:21:20,252 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568229410.25111
+2019-09-11 19:21:20,252 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568229410.25111
+2019-09-11 19:21:20,253 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568229410.25111
+2019-09-11 19:21:20,253 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568229410.25111
+2019-09-11 19:21:20,253 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568229410.25111
+2019-09-11 19:21:20,253 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568229410.25111
+2019-09-11 19:21:20,254 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568229410.25111
+2019-09-11 19:21:20,254 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568229410.25111
+2019-09-11 19:21:20,254 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568229410.25111
+2019-09-11 19:21:20,254 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568229410.25111
+2019-09-11 19:21:20,255 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568229410.25111
+2019-09-11 19:21:20,255 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568229410.25111
+2019-09-11 19:21:20,255 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568229410.25111
+2019-09-11 19:21:20,255 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568229410.25111
+2019-09-11 19:21:20,255 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568229410.25111
+2019-09-11 19:21:20,256 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568229410.25111
+2019-09-11 19:21:20,257 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568229410.25111
+2019-09-11 19:21:20,257 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568229410.25111
+2019-09-11 19:21:20,257 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568229410.25111
+2019-09-11 19:21:20,257 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568229410.25111
+2019-09-11 19:21:20,257 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568229410.25111
+2019-09-11 19:21:20,258 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568229410.25111
+2019-09-11 19:21:20,258 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568229410.25111
+2019-09-11 19:21:20,258 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568229410.25111
+2019-09-11 19:21:20,258 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568229410.25111
+2019-09-11 19:21:20,258 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568229410.25111
+2019-09-11 19:21:20,259 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568229410.25111
+2019-09-11 19:21:20,259 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568229410.25111
+2019-09-11 19:21:20,259 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568229410.25111
+2019-09-11 19:21:20,259 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568229410.25111
+2019-09-11 19:21:20,259 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568229410.25111
+2019-09-11 19:21:20,260 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568229410.25111
+2019-09-11 19:21:20,261 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568229410.25111
+2019-09-11 19:21:20,261 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568229410.25111
+2019-09-11 19:21:20,261 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568229410.25111
+2019-09-11 19:21:20,261 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568229410.25111
+2019-09-11 19:21:20,261 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568229410.25111
+2019-09-11 19:21:20,262 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568229410.25111
+2019-09-11 19:21:20,263 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568229410.25111
+2019-09-11 19:21:20,264 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568229410.25111
+2019-09-11 19:21:20,264 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568229410.25111
+2019-09-11 19:21:20,264 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568229410.25111
+2019-09-11 19:21:20,264 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568229410.25111
+2019-09-11 19:21:20,264 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568229410.25111
+2019-09-11 19:21:20,265 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568229410.25111
+2019-09-11 19:21:20,265 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568229410.25111
+2019-09-11 19:21:20,265 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568229410.25111
+2019-09-11 19:21:20,265 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568229410.25111
+2019-09-11 19:21:20,265 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568229410.25111
+2019-09-11 19:21:20,266 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568229410.25111
+2019-09-11 19:21:20,267 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568229410.25111
+2019-09-11 19:21:20,268 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:22:15,152 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:22:18,130 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:22:18,773 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:22:18,774 - [logs/beiber.log:242]=> start:end= 1568244138.773813:  1568244108.773813
+2019-09-11 19:22:18,777 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568244108.773813
+2019-09-11 19:22:18,777 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568244108.773813
+2019-09-11 19:22:18,778 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568244108.773813
+2019-09-11 19:22:18,779 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568244108.773813
+2019-09-11 19:22:18,780 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568244108.773813
+2019-09-11 19:22:18,781 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568244108.773813
+2019-09-11 19:22:18,782 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568244108.773813
+2019-09-11 19:22:18,783 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568244108.773813
+2019-09-11 19:22:18,784 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568244108.773813
+2019-09-11 19:22:18,785 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568244108.773813
+2019-09-11 19:22:18,786 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568244108.773813
+2019-09-11 19:22:18,787 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568244108.773813
+2019-09-11 19:22:18,788 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568244108.773813
+2019-09-11 19:22:18,790 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:22:28,115 - [logs/beiber.log:213]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:22:28,548 - [logs/beiber.log:230]=> # of results retreived:81
+2019-09-11 19:22:28,548 - [logs/beiber.log:242]=> start:end= 1568244148.548332:  1568240518.548332
+2019-09-11 19:22:28,548 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568243315.0:1568240518.548332
+2019-09-11 19:22:28,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568242455.0:1568240518.548332
+2019-09-11 19:22:28,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568241675.0:1568240518.548332
+2019-09-11 19:22:28,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240554.0:1568240518.548332
+2019-09-11 19:22:28,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240453.0:1568240518.548332
+2019-09-11 19:22:28,549 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568240134.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568239575.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568238380.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236525.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236383.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568236196.0:1568240518.548332
+2019-09-11 19:22:28,550 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235986.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235725.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235103.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568235041.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568234444.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233570.0:1568240518.548332
+2019-09-11 19:22:28,551 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233464.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233417.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233362.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233297.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233133.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568233090.0:1568240518.548332
+2019-09-11 19:22:28,552 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232967.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232459.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232351.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568232283.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231614.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568231309.0:1568240518.548332
+2019-09-11 19:22:28,553 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568228278.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227518.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568227169.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226962.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226806.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226786.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226631.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226547.0:1568240518.548332
+2019-09-11 19:22:28,554 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568226259.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225768.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225433.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568225311.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224754.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568224114.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568223162.0:1568240518.548332
+2019-09-11 19:22:28,555 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222863.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568222656.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221975.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568221309.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220598.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220592.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220590.0:1568240518.548332
+2019-09-11 19:22:28,556 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220526.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568220249.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219840.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219515.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568219275.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568218611.0:1568240518.548332
+2019-09-11 19:22:28,557 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217901.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217880.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217805.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568217437.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214884.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214406.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568214225.0:1568240518.548332
+2019-09-11 19:22:28,558 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568213106.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212911.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212602.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568212358.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568210811.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568209371.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208529.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568208122.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568207966.0:1568240518.548332
+2019-09-11 19:22:28,559 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205654.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568205237.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204944.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204411.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204315.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204274.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568204208.0:1568240518.548332
+2019-09-11 19:22:28,560 - [logs/beiber.log:257]=> tweet_ts:stop_loading=1568202485.0:1568240518.548332
+2019-09-11 19:22:28,562 - [logs/beiber.log:268]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+1  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
+3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
