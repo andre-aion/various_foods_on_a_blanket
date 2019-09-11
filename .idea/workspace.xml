@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e37c777-5f79-4b53-b24f-d13d04d36a0c" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_churn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_network_activity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_poolminer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/network_predictive.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/network_predictive.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/tier2_miner_predictive.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/tier2_miner_predictive.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/blockminer.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/blockminer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/churn/churn.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/churn/churn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/churn/network_predictive.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/churn/network_predictive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/churn/tier1_miner_predictive.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/churn/tier1_miner_predictive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/churn/tier2_miner_predictive.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/churn/tier2_miner_predictive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/hashrate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/poolminer.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/poolminer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboards/selection_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboards/selection_tab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/dashboards/mytab.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils/dashboards/mytab_blockminer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/modeling/churn/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils/modeling/churn/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small_tree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/small_tree.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/small_tree.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/small_tree.gif" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/aion_analytics$aion_analytics.coverage" NAME="aion_analytics Coverage Results" MODIFIED="1548179975743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/aion_analytics$streamingDataframe.coverage" NAME="streamingDataframe Coverage Results" MODIFIED="1544094249636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/dashboards/streaming" />
+    <SUITE FILE_PATH="coverage/aion_analytics$pythonCassandra.coverage" NAME="pythonCassandra Coverage Results" MODIFIED="1544891455064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/utils" />
+    <SUITE FILE_PATH="coverage/aion_analytics$.coverage" NAME=" Coverage Results" MODIFIED="1543507502149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="clickhouse@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="clickhouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="clickhouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aion: schema" type="7da24568:ClickHouseImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="333526518">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="logs" value="13" />
+          <entry key="py" value="165" />
+          <entry key="sql" value="176" />
+          <entry key="txt" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Python" value="165" />
+          <entry key="Scratch" value="176" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="logs" value="2" />
+          <entry key="py" value="5" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="5" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1441183915">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.opened" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="block" value="1" />
+          <entry key="block_old" value="1" />
+          <entry key="block_tx_warehouse" value="55" />
+          <entry key="gif" value="2" />
+          <entry key="ipynb" value="1" />
+          <entry key="js" value="1" />
+          <entry key="logs" value="17" />
+          <entry key="miner_activity" value="5" />
+          <entry key="png" value="2" />
+          <entry key="py" value="453" />
+          <entry key="sql" value="27" />
+          <entry key="transaction" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="63" />
+          <entry key="IPNB" value="1" />
+          <entry key="Image" value="4" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="453" />
+          <entry key="Scratch" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="56" />
+          <entry key="dummy" value="213" />
+          <entry key="logs" value="8" />
+          <entry key="py" value="73459" />
+          <entry key="sql" value="407" />
+          <entry key="txt" value="455" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="676" />
+          <entry key="Python" value="73512" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="407" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-799179270">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="aion_analytics" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="246">
+              <caret line="157" column="65" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/bokeh/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1471">
+              <caret line="558" selection-start-line="558" selection-end-line="558" />
+=======
+            <state relative-caret-position="390">
+              <caret line="166" column="19" lean-forward="true" selection-start-line="166" selection-start-column="19" selection-end-line="166" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>concat_df</find>
+      <find>self.df2</find>
+      <find>map</find>
+      <find>mean</find>
+      <find>df1</find>
+      <find>churned_ver</find>
+      <find>extract</find>
+      <find>to_addr</find>
+      <find>from_addr</find>
+      <find>get_miner_list</find>
+      <find>tier1</find>
+      <find>find_in_redis</find>
+      <find>compute</find>
+      <find>active</find>
+      <find>end_date</find>
+      <find>table</find>
+      <find>get_checkpoint</find>
+      <find>timedelta</find>
+      <find>key_params</find>
+      <find>',</find>
+      <find>save_checkpoint</find>
+      <find>get_checkpoint_dict</find>
+      <find>checkpoint_dict</find>
+      <find>logger.warning</find>
+      <find>tab</find>
+      <find>)</find>
+      <find>self.</find>
+      <find>.mean</find>
+      <find>value.</find>
+      <find>MytabPoolminer</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lst[1]</replace>
+      <replace>redis_key</replace>
+      <replace>Table('block',block_columns, block_dedup_cols)</replace>
+      <replace>StreamingDataframe</replace>
+      <replace>StreamingDataFrame('block',block_columns,block_dedup_cols)</replace>
+      <replace>message_temp[</replace>
+      <replace>r.</replace>
+      <replace>threshold_tier2_paid_in</replace>
+      <replace>received</replace>
+      <replace>disk_storage_</replace>
+      <replace>disk_timestamp</replace>
+      <replace>this_tab</replace>
+      <replace>parquet</replace>
+      <replace>transaction</replace>
+      <replace>tab</replace>
+      <replace>self.tab[when].tier1_miners_list</replace>
+      <replace>block_timestamp</replace>
+      <replace>cols['block_tx_warehouse']['churn']</replace>
+      <replace>cols['transaction']['churn']</replace>
+      <replace>hyp_variables</replace>
+      <replace>self.df_grouped</replace>
+      <replace>float</replace>
+      <replace>end_datetime</replace>
+      <replace>self.table</replace>
+      <replace>'],</replace>
+      <replace>self.dct</replace>
+      <replace>'</replace>
+      <replace>].mean()</replace>
+      <replace>.values.mean</replace>
+      <replace>MytabChurn</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/ETL/etl.py" />
+        <option value="$PROJECT_DIR$/scripts/management.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboard/mytab.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/hashrate.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modelling/churn_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/churn_predictive_tab.py" />
+        <option value="$PROJECT_DIR$/scripts/ETL/miner_activity.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modelling/churn/network_predictive.py" />
+        <option value="$PROJECT_DIR$/config/df_construct_config.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modelling/churn/miner_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modelling/churn/test.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modelling/churn/churn_predictive_tab.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn/miner_predictive.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_4.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_5.sql" />
+        <option value="$PROJECT_DIR$/scripts/__init__.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_6.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_7.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_8.sql" />
+        <option value="$PROJECT_DIR$/notebooks/dask_tests.ipynb" />
+        <option value="$PROJECT_DIR$/scripts/storage/pythonRedis.py" />
+        <option value="$PROJECT_DIR$/scripts/storage/pythonRedis.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/mylogger.py" />
+        <option value="$PROJECT_DIR$/scripts/storage/pythonClickhouse.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/poolminer.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/management.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/management.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/myutils.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn/tier1_miner_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/selection_tab.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab_poolminer.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/blockminer.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab_churn.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn/churn.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab_network_activity.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn/network_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/churn/tier2_miner_predictive.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive1.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive2.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab1.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab2.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/poolminer.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/poolminer.py" />
+        <option value="$PROJECT_DIR$/scripts/dashboards/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="aion-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aion-analytics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aion-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aion-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aion-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aion-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aion-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aion-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="redshift&#10;mysql&#10;clickhouse" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/utils/dashboards" />
+      <recent name="$PROJECT_DIR$/scripts/utils/modeling/churn" />
+      <recent name="$PROJECT_DIR$/notebooks" />
+      <recent name="$PROJECT_DIR$/scripts/dashboards/streaming" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/dashboards" />
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/scripts/utils/modelling/churn" />
+      <recent name="$PROJECT_DIR$/scripts/utils/dashboards" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.warehouse">
+    <configuration name="aion_analytics" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hashrate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/dashboards" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/dashboards/hashrate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pythonCassandra" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/storage/pythonCassandra.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="streamingDataframe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/dashboards/streaming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/streaming/streamingDataframe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="warehouse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aion-analytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/ETL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/ETL/warehouse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.aion_analytics" />
+      <item itemvalue="Python.hashrate" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.pythonCassandra" />
+      <item itemvalue="Python.streamingDataframe" />
+      <item itemvalue="Python.warehouse" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.warehouse" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.pythonCassandra" />
+        <item itemvalue="Python.streamingDataframe" />
+        <item itemvalue="Python.hashrate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e37c777-5f79-4b53-b24f-d13d04d36a0c" name="Default Changelist" comment="" />
+      <created>1539283226264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539283226264</updated>
+      <workItem from="1542803953991" duration="6161000" />
+      <workItem from="1542974242845" duration="83827000" />
+      <workItem from="1543317660150" duration="14205000" />
+      <workItem from="1543333327716" duration="60833000" />
+      <workItem from="1543449598646" duration="118835000" />
+      <workItem from="1543770836679" duration="61867000" />
+      <workItem from="1543910456174" duration="3314000" />
+      <workItem from="1543922031877" duration="9401000" />
+      <workItem from="1543932817475" duration="21930000" />
+      <workItem from="1544030186575" duration="34116000" />
+      <workItem from="1544141135791" duration="78496000" />
+      <workItem from="1544440197731" duration="47145000" />
+      <workItem from="1544531678848" duration="100913000" />
+      <workItem from="1544789368972" duration="21777000" />
+      <workItem from="1544890136898" duration="39579000" />
+      <workItem from="1545158795385" duration="13314000" />
+      <workItem from="1545178045947" duration="40238000" />
+      <workItem from="1545264605908" duration="4450000" />
+      <workItem from="1545272958955" duration="18718000" />
+      <workItem from="1545319744092" duration="240000" />
+      <workItem from="1545320021167" duration="8504000" />
+      <workItem from="1545393879413" duration="16951000" />
+      <workItem from="1545423961134" duration="6205000" />
+      <workItem from="1545431126096" duration="9863000" />
+      <workItem from="1545477089773" duration="6539000" />
+      <workItem from="1545484949628" duration="12278000" />
+      <workItem from="1545516535469" duration="34084000" />
+      <workItem from="1545582543392" duration="7458000" />
+      <workItem from="1545590032765" duration="7702000" />
+      <workItem from="1545597759449" duration="4982000" />
+      <workItem from="1545655895605" duration="58472000" />
+      <workItem from="1545757942247" duration="76179000" />
+      <workItem from="1545915950885" duration="18384000" />
+      <workItem from="1545936521592" duration="45309000" />
+      <workItem from="1546008250407" duration="15776000" />
+      <workItem from="1546025395940" duration="19366000" />
+      <workItem from="1546184890663" duration="17000" />
+      <workItem from="1546186098874" duration="12000" />
+      <workItem from="1546342894075" duration="7340000" />
+      <workItem from="1546364257770" duration="3937000" />
+      <workItem from="1546369557496" duration="38000" />
+      <workItem from="1546371945092" duration="291000" />
+      <workItem from="1546373017279" duration="37245000" />
+      <workItem from="1546444831689" duration="22175000" />
+      <workItem from="1546468395880" duration="83981000" />
+      <workItem from="1546604870150" duration="15747000" />
+      <workItem from="1546620659583" duration="28962000" />
+      <workItem from="1546661416661" duration="1716000" />
+      <workItem from="1546663334605" duration="3340000" />
+      <workItem from="1546691468562" duration="13218000" />
+      <workItem from="1546709173987" duration="2236000" />
+      <workItem from="1546778043130" duration="860000" />
+      <workItem from="1546782584643" duration="36000" />
+      <workItem from="1546783989430" duration="1637000" />
+      <workItem from="1546801177094" duration="6494000" />
+      <workItem from="1546872182897" duration="2358000" />
+      <workItem from="1546885200116" duration="19000" />
+      <workItem from="1546885276249" duration="3000" />
+      <workItem from="1546948115074" duration="712000" />
+      <workItem from="1546950530417" duration="8000" />
+      <workItem from="1546950694643" duration="4000" />
+      <workItem from="1546951047586" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1359807000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.703456" visible="true" weight="0.23444206" />
+      <window_info id="Structure" order="1" sideWeight="0.5056391" side_tool="true" weight="0.1668455" />
+      <window_info id="Favorites" order="2" sideWeight="0.29654405" side_tool="true" weight="0.18419588" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.3376206" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31364125" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32867885" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4169346" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3298122" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.31578946" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.41568205" />
+      <window_info active="true" anchor="bottom" x="1950" y="60" width="1034" height="992" id="Terminal" order="13" sideWeight="0.4924875" visible="true" weight="0.4027927" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5075125" side_tool="true" weight="0.5284281" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32832497" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.147468" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.327212" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.80895525" weight="0.21888413" />
+      <window_info anchor="right" x="0" y="0" width="430" height="882" id="Documentation" order="7" sideWeight="0.19104478" side_tool="true" weight="0.5967742" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943609" visible="true" weight="0.19474249" />
+      <window_info id="Structure" order="1" sideWeight="0.5056391" side_tool="true" weight="0.1668455" />
+      <window_info id="Favorites" order="2" sideWeight="0.50447226" side_tool="true" weight="0.16148068" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.3376206" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31471536" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32925472" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4169346" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3298122" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3168636" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.44253492" />
+      <window_info active="true" anchor="bottom" x="1950" y="60" width="1034" height="992" id="Terminal" order="13" sideWeight="0.4924875" visible="true" weight="0.3641246" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5075125" side_tool="true" weight="0.5284281" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32832497" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.147468" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.327212" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.80895525" weight="0.2532189" />
+      <window_info anchor="right" x="0" y="0" width="430" height="882" id="Documentation" order="7" sideWeight="0.19104478" side_tool="true" weight="0.5967742" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/notebooks/mining_activity" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/utils/__init__.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/utils/myutils.py</url>
+          <line>356</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="    doc.add_next_tick_callback(block_update)&#10;" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scripts/ETL/miner_activity.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/storage/pythonCassandra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2023" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/modeling/churn/network_predictive.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/df_construct_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="150" column="35" selection-start-line="148" selection-start-column="33" selection-end-line="154" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/schema/aion/table/miner_activity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/modeling/churn/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="517" column="87" lean-forward="true" selection-end-line="524" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/scripts/ETL/checkpoint.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/ETL/warehouse.py" />
+=======
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/churn.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ETL/checkpoint.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/ETL/warehouse.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/hashrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1114">
+          <caret line="151" column="60" lean-forward="true" selection-start-line="151" selection-start-column="60" selection-end-line="151" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_7.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_6.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/sklearn/tree/export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="426" selection-start-line="426" selection-end-line="426" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/small_tree.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/bokeh/layouts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="342" selection-start-line="342" selection-end-line="342" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/small_tree.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/table_download.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebooks/dask_tests.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/schema/aion/table/block_tx_warehouse">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4bc6f2bd-2c05-4aac-b90d-35b2bd538f06/console_8.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+    <entry file="file://$PROJECT_DIR$/scripts/storage/pythonRedis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1244">
+          <caret line="117" column="52" lean-forward="true" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/mylogger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/storage/pythonClickhouse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="119" column="12" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/myutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="103" column="14" lean-forward="true" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/tornado/gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="325" selection-start-line="325" selection-end-line="325" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/bokeh/document/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/bokeh_aion_analytics/lib/python3.5/site-packages/bokeh/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1471">
+          <caret line="558" selection-start-line="558" selection-end-line="558" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/poolminer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3546">
+          <caret line="197" column="30" lean-forward="true" selection-start-line="197" selection-start-column="30" selection-end-line="197" selection-end-column="30" />
+<<<<<<< HEAD
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/blockminer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/blockminer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+=======
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/hashrate.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/churn.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/churn/network_predictive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2768">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/churn/tier1_miner_predictive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/churn/churn.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="-809">
+          <caret line="329" column="42" lean-forward="true" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="482" column="50" selection-start-line="482" selection-start-column="50" selection-end-line="482" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/churn/tier2_miner_predictive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1224">
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/selection_tab.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/poolminer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+=======
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive_tab2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="482" column="50" selection-start-line="482" selection-start-column="50" selection-end-line="482" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_blockminer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/blockminer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_churn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_network_activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="234">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+=======
+        <state relative-caret-position="2612">
+          <caret line="191" column="22" lean-forward="true" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_poolminer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/dashboards/mytab_miner_predictive1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dashboards/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+<<<<<<< HEAD
+            <element signature="e#0#35#0" expanded="true" />
+=======
+            <element signature="e#0#33#0" expanded="true" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="246">
+          <caret line="157" column="65" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils/modeling/churn/miner_predictive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="119" column="54" lean-forward="true" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+=======
+        <state relative-caret-position="390">
+          <caret line="166" column="19" lean-forward="true" selection-start-line="166" selection-start-column="19" selection-end-line="166" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+>>>>>>> 33a833d6950c4a454d08eb9945159ff9da9f68a7
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
