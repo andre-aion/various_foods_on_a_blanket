@@ -3766,3 +3766,715 @@ IndexError: list index out of range
 2  1171916643515195392          2019-09-11 22:41:15   1.568242e+09  Gucci really sampled computer love and feature...  2312539849        1.390773e+09             Andres          Its_AV_
 3  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
 4  1171911518453190656          2019-09-11 22:20:53   1.568240e+09  Lotta people in this world act like they’re en...   130898168        1.270747e+09                 CJ  beiber_hole_69_
+2019-09-11 19:42:45,287 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:43:06,279 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 19:43:06,279 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:43:06,968 - [logs/beiber.log:231]=> # of results retreived:81
+2019-09-11 19:43:06,968 - [logs/beiber.log:243]=> start:end= 1568245386.967993:  1568245356.967993
+2019-09-11 19:43:06,970 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568245351.0:1568245356.967993
+2019-09-11 19:43:06,971 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568245091.0:1568245356.967993
+2019-09-11 19:43:06,971 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568243315.0:1568245356.967993
+2019-09-11 19:43:06,971 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568242455.0:1568245356.967993
+2019-09-11 19:43:06,972 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240554.0:1568245356.967993
+2019-09-11 19:43:06,972 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240453.0:1568245356.967993
+2019-09-11 19:43:06,972 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240134.0:1568245356.967993
+2019-09-11 19:43:06,972 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568239575.0:1568245356.967993
+2019-09-11 19:43:06,973 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568238380.0:1568245356.967993
+2019-09-11 19:43:06,973 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236525.0:1568245356.967993
+2019-09-11 19:43:06,973 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236383.0:1568245356.967993
+2019-09-11 19:43:06,973 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236196.0:1568245356.967993
+2019-09-11 19:43:06,974 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235986.0:1568245356.967993
+2019-09-11 19:43:06,974 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235725.0:1568245356.967993
+2019-09-11 19:43:06,974 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235103.0:1568245356.967993
+2019-09-11 19:43:06,974 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235041.0:1568245356.967993
+2019-09-11 19:43:06,974 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568234444.0:1568245356.967993
+2019-09-11 19:43:06,975 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233570.0:1568245356.967993
+2019-09-11 19:43:06,975 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233464.0:1568245356.967993
+2019-09-11 19:43:06,975 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233417.0:1568245356.967993
+2019-09-11 19:43:06,975 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233362.0:1568245356.967993
+2019-09-11 19:43:06,976 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233297.0:1568245356.967993
+2019-09-11 19:43:06,976 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233133.0:1568245356.967993
+2019-09-11 19:43:06,976 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233090.0:1568245356.967993
+2019-09-11 19:43:06,976 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232967.0:1568245356.967993
+2019-09-11 19:43:06,976 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232459.0:1568245356.967993
+2019-09-11 19:43:06,977 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232351.0:1568245356.967993
+2019-09-11 19:43:06,977 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232283.0:1568245356.967993
+2019-09-11 19:43:06,977 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568231614.0:1568245356.967993
+2019-09-11 19:43:06,977 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568231309.0:1568245356.967993
+2019-09-11 19:43:06,977 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568228278.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568227518.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568227169.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226962.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226806.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226786.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226631.0:1568245356.967993
+2019-09-11 19:43:06,978 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226547.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226259.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225768.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225433.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225311.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568224754.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568224114.0:1568245356.967993
+2019-09-11 19:43:06,979 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568223162.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568222863.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568222656.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568221975.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568221309.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220598.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220592.0:1568245356.967993
+2019-09-11 19:43:06,980 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220590.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220526.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220249.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219840.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219515.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219275.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568218611.0:1568245356.967993
+2019-09-11 19:43:06,981 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217901.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217880.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217805.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217437.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214884.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214406.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214225.0:1568245356.967993
+2019-09-11 19:43:06,982 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568213106.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212911.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212602.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212358.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568210811.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568209371.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568208529.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568208122.0:1568245356.967993
+2019-09-11 19:43:06,983 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568207966.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568205654.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568205237.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204944.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204411.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204315.0:1568245356.967993
+2019-09-11 19:43:06,984 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204274.0:1568245356.967993
+2019-09-11 19:43:06,985 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204208.0:1568245356.967993
+2019-09-11 19:43:06,987 - [logs/beiber.log:269]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:43:07,058 - [logs/beiber.log:348]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 325, in tsa
+    df = df.resample('1Min').agg({'message_ID':'count'})
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/generic.py", line 8449, in resample
+    level=level,
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1306, in resample
+    return tg._get_resampler(obj, kind=kind)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1443, in _get_resampler
+    "but got an instance of %r" % type(ax).__name__
+TypeError: Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+2019-09-11 19:43:07,060 - [logs/beiber.log:427]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 377, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 19:45:25,770 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:45:30,753 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 19:45:30,753 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:45:31,343 - [logs/beiber.log:231]=> # of results retreived:81
+2019-09-11 19:45:31,343 - [logs/beiber.log:243]=> start:end= 1568245531.343068:  1568245501.343068
+2019-09-11 19:45:31,345 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568245351.0:1568245501.343068
+2019-09-11 19:45:31,346 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568245091.0:1568245501.343068
+2019-09-11 19:45:31,346 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568243315.0:1568245501.343068
+2019-09-11 19:45:31,346 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568242455.0:1568245501.343068
+2019-09-11 19:45:31,346 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240554.0:1568245501.343068
+2019-09-11 19:45:31,346 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240453.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568240134.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568239575.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568238380.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236525.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236383.0:1568245501.343068
+2019-09-11 19:45:31,347 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568236196.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235986.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235725.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235103.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568235041.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568234444.0:1568245501.343068
+2019-09-11 19:45:31,348 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233570.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233464.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233417.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233362.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233297.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233133.0:1568245501.343068
+2019-09-11 19:45:31,349 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568233090.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232967.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232459.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232351.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568232283.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568231614.0:1568245501.343068
+2019-09-11 19:45:31,350 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568231309.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568228278.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568227518.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568227169.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226962.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226806.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226786.0:1568245501.343068
+2019-09-11 19:45:31,351 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226631.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226547.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568226259.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225768.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225433.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568225311.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568224754.0:1568245501.343068
+2019-09-11 19:45:31,352 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568224114.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568223162.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568222863.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568222656.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568221975.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568221309.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220598.0:1568245501.343068
+2019-09-11 19:45:31,353 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220592.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220590.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220526.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568220249.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219840.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219515.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568219275.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568218611.0:1568245501.343068
+2019-09-11 19:45:31,354 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217901.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217880.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217805.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568217437.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214884.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214406.0:1568245501.343068
+2019-09-11 19:45:31,355 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568214225.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568213106.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212911.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212602.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568212358.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568210811.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568209371.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568208529.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568208122.0:1568245501.343068
+2019-09-11 19:45:31,356 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568207966.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568205654.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568205237.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204944.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204411.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204315.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204274.0:1568245501.343068
+2019-09-11 19:45:31,357 - [logs/beiber.log:258]=> tweet_ts:stop_loading=1568204208.0:1568245501.343068
+2019-09-11 19:45:31,359 - [logs/beiber.log:269]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:45:31,436 - [logs/beiber.log:348]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 323, in tsa
+    df = df.resample('1Min').agg({'message_ID':'count'})
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/generic.py", line 8449, in resample
+    level=level,
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1306, in resample
+    return tg._get_resampler(obj, kind=kind)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1443, in _get_resampler
+    "but got an instance of %r" % type(ax).__name__
+TypeError: Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+2019-09-11 19:45:31,438 - [logs/beiber.log:427]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 377, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 19:47:20,660 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:47:23,759 - [logs/beiber.log:184]=> CREDENTIALS LOADED
+2019-09-11 19:47:23,760 - [logs/beiber.log:205]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:47:24,306 - [logs/beiber.log:222]=> # of results retreived:81
+2019-09-11 19:47:24,306 - [logs/beiber.log:234]=> start:end= 1568245644.306142:  1568245614.306142
+2019-09-11 19:47:24,308 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568245351.0:1568245614.306142
+2019-09-11 19:47:24,309 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568245091.0:1568245614.306142
+2019-09-11 19:47:24,309 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568243315.0:1568245614.306142
+2019-09-11 19:47:24,309 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568242455.0:1568245614.306142
+2019-09-11 19:47:24,309 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568240554.0:1568245614.306142
+2019-09-11 19:47:24,309 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568240453.0:1568245614.306142
+2019-09-11 19:47:24,310 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568240134.0:1568245614.306142
+2019-09-11 19:47:24,310 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568239575.0:1568245614.306142
+2019-09-11 19:47:24,310 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568238380.0:1568245614.306142
+2019-09-11 19:47:24,310 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568236525.0:1568245614.306142
+2019-09-11 19:47:24,310 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568236383.0:1568245614.306142
+2019-09-11 19:47:24,311 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568236196.0:1568245614.306142
+2019-09-11 19:47:24,311 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568235986.0:1568245614.306142
+2019-09-11 19:47:24,311 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568235725.0:1568245614.306142
+2019-09-11 19:47:24,311 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568235103.0:1568245614.306142
+2019-09-11 19:47:24,311 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568235041.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568234444.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233570.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233464.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233417.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233362.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233297.0:1568245614.306142
+2019-09-11 19:47:24,312 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233133.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568233090.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568232967.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568232459.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568232351.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568232283.0:1568245614.306142
+2019-09-11 19:47:24,313 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568231614.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568231309.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568228278.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568227518.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568227169.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226962.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226806.0:1568245614.306142
+2019-09-11 19:47:24,314 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226786.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226631.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226547.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568226259.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568225768.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568225433.0:1568245614.306142
+2019-09-11 19:47:24,315 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568225311.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568224754.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568224114.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568223162.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568222863.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568222656.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568221975.0:1568245614.306142
+2019-09-11 19:47:24,316 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568221309.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568220598.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568220592.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568220590.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568220526.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568220249.0:1568245614.306142
+2019-09-11 19:47:24,317 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568219840.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568219515.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568219275.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568218611.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568217901.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568217880.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568217805.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568217437.0:1568245614.306142
+2019-09-11 19:47:24,318 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568214884.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568214406.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568214225.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568213106.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568212911.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568212602.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568212358.0:1568245614.306142
+2019-09-11 19:47:24,319 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568210811.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568209371.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568208529.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568208122.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568207966.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568205654.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568205237.0:1568245614.306142
+2019-09-11 19:47:24,320 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568204944.0:1568245614.306142
+2019-09-11 19:47:24,321 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568204411.0:1568245614.306142
+2019-09-11 19:47:24,321 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568204315.0:1568245614.306142
+2019-09-11 19:47:24,321 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568204274.0:1568245614.306142
+2019-09-11 19:47:24,321 - [logs/beiber.log:249]=> tweet_ts:stop_loading=1568204208.0:1568245614.306142
+2019-09-11 19:47:24,323 - [logs/beiber.log:260]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:47:24,394 - [logs/beiber.log:339]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 314, in tsa
+    df = df.resample('1Min').agg({'message_ID':'count'})
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/generic.py", line 8449, in resample
+    level=level,
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1306, in resample
+    return tg._get_resampler(obj, kind=kind)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1443, in _get_resampler
+    "but got an instance of %r" % type(ax).__name__
+TypeError: Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+2019-09-11 19:47:24,396 - [logs/beiber.log:418]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 368, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 19:49:32,472 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:49:35,627 - [logs/beiber.log:184]=> CREDENTIALS LOADED
+2019-09-11 19:49:35,627 - [logs/beiber.log:205]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:49:36,377 - [logs/beiber.log:222]=> # of results retreived:81
+2019-09-11 19:49:36,378 - [logs/beiber.log:234]=> start:end= 1568245776.377845:  1568245746.377845
+2019-09-11 19:49:36,389 - [logs/beiber.log:259]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:49:36,468 - [logs/beiber.log:339]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 315, in tsa
+    df = df.resample('5Min').agg({'message_ID':'count'})
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/generic.py", line 8449, in resample
+    level=level,
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1306, in resample
+    return tg._get_resampler(obj, kind=kind)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/pandas/core/resample.py", line 1443, in _get_resampler
+    "but got an instance of %r" % type(ax).__name__
+TypeError: Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+2019-09-11 19:49:36,470 - [logs/beiber.log:418]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 368, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 19:51:12,315 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:51:15,325 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 19:51:15,326 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:51:15,956 - [logs/beiber.log:223]=> # of results retreived:81
+2019-09-11 19:51:15,957 - [logs/beiber.log:235]=> start:end= 1568245875.956577:  1568245845.956577
+2019-09-11 19:51:15,971 - [logs/beiber.log:260]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:51:16,098 - [logs/beiber.log:340]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 326, in tsa
+    future = m.make_future_dataframe(periods='40')
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1492, in make_future_dataframe
+    periods=periods + 1,  # An extra in case we include start
+TypeError: can only concatenate str (not "int") to str
+2019-09-11 19:51:16,099 - [logs/beiber.log:419]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 369, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 19:51:53,321 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:51:56,419 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 19:51:56,420 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:51:57,036 - [logs/beiber.log:223]=> # of results retreived:81
+2019-09-11 19:51:57,036 - [logs/beiber.log:235]=> start:end= 1568245917.036508:  1568245887.036508
+2019-09-11 19:51:57,048 - [logs/beiber.log:260]=> df:, length=81,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date          user_name user_screen_name
+0  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09     Funny Vines EX     rui045msub27
+1  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09           victorya    youur_creaTOR
+2  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09      Manuel Azocar     ManuelAzocar
+3  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09   ☥I AM Knowledge☥       bossman733
+4  1171911942287568896          2019-09-11 22:22:34   1.568241e+09  He looks like Justin beiber https://t.co/2UbD2...   832216807        1.348016e+09  CameInWitACool100     UpperEchel0n
+2019-09-11 19:53:29,482 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:53:33,119 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 19:53:33,120 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:53:33,702 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 19:53:33,702 - [logs/beiber.log:235]=> start:end= 1568246013.702002:  1568245983.702002
+2019-09-11 19:53:33,717 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date         user_name user_screen_name
+0  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...   121279996        1.268096e+09            Maha ♡   becauseihadyou
+1  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09    Funny Vines EX     rui045msub27
+2  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09          victorya    youur_creaTOR
+3  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09     Manuel Azocar     ManuelAzocar
+4  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09  ☥I AM Knowledge☥       bossman733
+2019-09-11 19:58:36,861 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:58:40,173 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 19:58:40,174 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:58:40,683 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 19:58:40,684 - [logs/beiber.log:235]=> start:end= 1568246320.683819:  1568246290.683819
+2019-09-11 19:58:40,696 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date         user_name user_screen_name
+0  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...   121279996        1.268096e+09            Maha ♡   becauseihadyou
+1  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09    Funny Vines EX     rui045msub27
+2  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09          victorya    youur_creaTOR
+3  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09     Manuel Azocar     ManuelAzocar
+4  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09  ☥I AM Knowledge☥       bossman733
+2019-09-11 19:59:04,244 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:59:32,532 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 19:59:35,901 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 19:59:35,901 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 19:59:36,633 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 19:59:36,633 - [logs/beiber.log:235]=> start:end= 1568246376.633204:  1568246346.633204
+2019-09-11 19:59:36,643 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text     user_ID  user_creation_date         user_name user_screen_name
+0  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...   121279996        1.268096e+09            Maha ♡   becauseihadyou
+1  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG  2437324598        1.397152e+09    Funny Vines EX     rui045msub27
+2  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...   378047105        1.316704e+09          victorya    youur_creaTOR
+3  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.   147409910        1.274668e+09     Manuel Azocar     ManuelAzocar
+4  1171919914992635904          2019-09-11 22:54:15   1.568242e+09  RT @Tim0zman: JUSTIN BEIBER DISGUISED AS #THEW...   269254833        1.300622e+09  ☥I AM Knowledge☥       bossman733
+2019-09-11 20:03:15,950 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:03:18,974 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:03:18,975 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:03:19,613 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:03:19,613 - [logs/beiber.log:235]=> start:end= 1568246599.613053:  1568246569.613053
+2019-09-11 20:03:19,626 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date       user_name user_screen_name
+0  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...  863498429355446273        1.494709e+09          Alexis   Alexis91949922
+1  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...           121279996        1.268096e+09          Maha ♡   becauseihadyou
+2  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG          2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+3  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...           378047105        1.316704e+09        victorya    youur_creaTOR
+4  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.           147409910        1.274668e+09   Manuel Azocar     ManuelAzocar
+2019-09-11 20:03:24,481 - [logs/beiber.log:336]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 324, in tsa
+    forecast = m.predict(future)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1176, in predict
+    intervals = self.predict_uncertainty(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1378, in predict_uncertainty
+    sim_values = self.sample_posterior_predictive(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1342, in sample_posterior_predictive
+    s_m=component_cols['multiplicative_terms'],
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1407, in sample_model
+    trend = self.sample_predictive_trend(df, iteration)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1464, in sample_predictive_trend
+    trend = self.piecewise_linear(t, deltas, k, m, changepoint_ts)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1215, in piecewise_linear
+    k_t[indx] += deltas[s]
+KeyboardInterrupt
+2019-09-11 20:03:24,484 - [logs/beiber.log:415]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 365, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 20:03:37,951 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:03:40,336 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:03:40,336 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:03:40,847 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:03:40,847 - [logs/beiber.log:235]=> start:end= 1568246620.847153:  1568246590.847153
+2019-09-11 20:03:40,859 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date       user_name user_screen_name
+0  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...  863498429355446273        1.494709e+09          Alexis   Alexis91949922
+1  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...           121279996        1.268096e+09          Maha ♡   becauseihadyou
+2  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG          2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+3  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...           378047105        1.316704e+09        victorya    youur_creaTOR
+4  1171923520567296000          2019-09-11 23:08:35   1.568243e+09    Justin Beiber Ft Ed Sheeran - I dont t 39 care.           147409910        1.274668e+09   Manuel Azocar     ManuelAzocar
+2019-09-11 20:03:46,540 - [logs/beiber.log:336]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 324, in tsa
+    forecast = m.predict(future)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1176, in predict
+    intervals = self.predict_uncertainty(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1378, in predict_uncertainty
+    sim_values = self.sample_posterior_predictive(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1342, in sample_posterior_predictive
+    s_m=component_cols['multiplicative_terms'],
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1407, in sample_model
+    trend = self.sample_predictive_trend(df, iteration)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1464, in sample_predictive_trend
+    trend = self.piecewise_linear(t, deltas, k, m, changepoint_ts)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1216, in piecewise_linear
+    m_t[indx] += gammas[s]
+KeyboardInterrupt
+2019-09-11 20:03:46,543 - [logs/beiber.log:415]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 365, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 20:05:45,084 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:05:47,954 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:05:47,955 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:05:48,524 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:05:48,525 - [logs/beiber.log:235]=> start:end= 1568246748.524927:  1568246718.524927
+2019-09-11 20:05:48,536 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:07:15,426 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:07:16,519 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:07:16,520 - [logs/beiber.log:235]=> start:end= 1568246836.519859:  1568242486.519859
+2019-09-11 20:07:16,526 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:07:28,494 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:07:28,790 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:07:28,790 - [logs/beiber.log:235]=> start:end= 1568246848.790307:  1568225698.790307
+2019-09-11 20:07:28,800 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:09:29,088 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:11:08,665 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:11:11,472 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:11:11,473 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:11:12,086 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:11:12,086 - [logs/beiber.log:235]=> start:end= 1568247072.086279:  1568247042.086279
+2019-09-11 20:11:12,099 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:12:58,895 - [logs/beiber.log:335]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 323, in tsa
+    forecast = m.predict(future)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1176, in predict
+    intervals = self.predict_uncertainty(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1378, in predict_uncertainty
+    sim_values = self.sample_posterior_predictive(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1342, in sample_posterior_predictive
+    s_m=component_cols['multiplicative_terms'],
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1407, in sample_model
+    trend = self.sample_predictive_trend(df, iteration)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1464, in sample_predictive_trend
+    trend = self.piecewise_linear(t, deltas, k, m, changepoint_ts)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1215, in piecewise_linear
+    k_t[indx] += deltas[s]
+KeyboardInterrupt
+2019-09-11 20:12:58,897 - [logs/beiber.log:414]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 364, in twitter_loader_tab
+    tsa = renderer.get_plot(hv_tsa)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 20:14:12,761 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:14:16,475 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:14:16,476 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:14:17,110 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:14:17,110 - [logs/beiber.log:235]=> start:end= 1568247257.110066:  1568247227.110066
+2019-09-11 20:14:17,130 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:14:31,824 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:14:32,136 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:14:32,136 - [logs/beiber.log:235]=> start:end= 1568247272.136293:  1568243402.136293
+2019-09-11 20:14:32,146 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR

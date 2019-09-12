@@ -59,8 +59,6 @@ def aion_analytics(doc):
             lst = selection_tab.get_selections(selection_checkboxes)
             #logger.warning('selections:%s',lst)
 
-
-
             panel_title = 'twitter search'
             if panel_title in lst:
                 if panel_title not in selection_tab.selected_tracker:
@@ -77,19 +75,22 @@ def aion_analytics(doc):
         def select_tabs():
             notification_div.text = """
                 <div style="text-align:center;background:black;width:{}px;margin-bottom:100px;">
-                        <h1 style="color:#fff;margin-bottom:300px">{}</h1>
+                        <h1 style="color:#fff;margin-bottom:300px;">{}</h1>
                 </div>""".format(selection_tab.page_width,'Tabs are loading')
+
             yield load_callstack(tablist)
+
             notification_div.text = """
                 <div style="text-align:center;background:black;width:{}px;margin-bottom:100px;">
                         <h1 style="color:#fff;margin-bottom:300px">{}</h1>
                 </div>""".format(selection_tab.page_width,'Welcome to the Picnic Data Science Portal')
+
         @gen.coroutine
         def update_selected_tabs():
             notification_div.text = """
                 <div style="text-align:center;background:black;width:{}px;margin-bottom:100px;">
                         <h1 style="color:#fff;margin-bottom:300px">{}</h1>
-                </div>""".format(selection_tab.page_width,'Refresh underway')
+                </div>""".format(selection_tab.page_width)
 
             doc.clear()
             tablist = []

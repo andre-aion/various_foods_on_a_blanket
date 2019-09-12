@@ -10,6 +10,7 @@ from bokeh.layouts import gridplot
 from bokeh.models import Spacer, Panel,WidgetBox
 from bokeh.models.widgets import Div, Select, TextInput, Button
 from dateutil.relativedelta import relativedelta
+from fbprophet import Prophet
 from holoviews import streams
 
 from scripts.utils.mylogger import mylogger
@@ -25,7 +26,7 @@ from tornado.gen import coroutine
 import unittest
 
 from config.dashboard import config as dashboard_config
-
+from scripts.utils.myutils import tab_error_flag
 
 hv.extension('bokeh', logo=False)
 renderer = hv.renderer('bokeh')
@@ -33,16 +34,7 @@ renderer = hv.renderer('bokeh')
 logger = mylogger(__file__)
 
 
-def tab_error_flag(self, tabname):
-    # Make a tab with the layout
-    text = """ERROR CREATING {} TAB, 
-    CHECK THE LOGS""".format(tabname.upper())
-    div = Div(text=text,
-              width=200, height=100)
 
-    tab = Panel(child=div, title=tabname)
-
-    return tab
 
 @coroutine
 def twitter_loader_tab(panel_title):
@@ -150,7 +142,8 @@ def twitter_loader_tab(panel_title):
         def twitter_datetime_to_epoch(self, ts):
             ts = datetime.strptime(ts, '%a %b %d %H:%M:%S %z %Y')
             ts_epoch = ts.timestamp()
-            ts = datetime.strftime(ts, '%Y-%m-%d %H:%M:%S')
+            ts = datetime.strftime(ts, self.DATEFORMAT)
+            ts = datetime.strptime(ts,self.DATEFORMAT)
             return ts, ts_epoch
 
         def write_to_file(self):
@@ -254,7 +247,6 @@ def twitter_loader_tab(panel_title):
                     self.messages_dict['user_name'].append(user.name)
                     self.messages_dict['user_screen_name'].append(user.screen_name)
                     messages_count += 1
-                    logger.warning('tweet_ts:stop_loading=%s:%s', ts_epoch, self.timestamp['stop_loading'])
 
                     # the 100000  represents unlimited messages in case we want to load more than 30 seconds worth
                     if messages_count >= len(results):
@@ -314,6 +306,34 @@ def twitter_loader_tab(panel_title):
             except:
                 logger.error('output data', exc_info=True)
 
+
+        def tsa(self,launch=1):
+            try:
+                df = self.df.set_index('human_readable_creation_date')
+                df = df.resample('1Min').agg({'message_ID':'count'})
+                df = df.reset_index()
+
+                rename = {'human_readable_creation_date': 'ds', 'message_ID': 'y'}
+                df = df.rename(columns=rename)
+                df = df[['ds', 'y']]
+                m = Prophet()
+                m.fit(df)
+
+                future = m.make_future_dataframe(periods=10,freq='m')
+                forecast = m.predict(future)
+                for idx, col in enumerate(['yhat', 'yhat_lower', 'yhat_upper']):
+                    if idx == 0:
+                        p = forecast.hvplot.line(x='ds', y=col, width=1200, height=500,
+                                                 value_label='#', legend=False).relabel(col)
+                    else:
+                        p *= forecast.hvplot.scatter(x='ds'
+                                                     , y=col, width=1200, height=500,
+                                                     value_label='#', legend=False).relabel(col)
+
+                return p
+            except:
+                logger.error('time series analysis', exc_info=True)
+
     def update():
         thistab.notification_updater("Calculations in progress! Please wait.")
         thistab.reset_data()
@@ -339,6 +359,7 @@ def twitter_loader_tab(panel_title):
 
         hv_jitter = hv.DynamicMap(thistab.jitter, streams=[stream_launch])
         jitter = renderer.get_plot(hv_jitter)
+
 
         # CREATE WIDGETS
         inputs = {
