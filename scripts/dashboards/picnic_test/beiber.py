@@ -45,7 +45,7 @@ def twitter_loader_tab(panel_title):
             self.topic = search_term
             self.options = {
                 'messages': [str(x) for x in range(100, 10, -10)]+['5000'],
-                'time': [str(x) for x in range(30, 24000, 240)],
+                'time': ['40000'] + [str(x) for x in range(30, 100000, 3000)],
             }
             self.limits = {
                 'messages' : int(self.options['messages'][0]),
@@ -70,6 +70,16 @@ def twitter_loader_tab(panel_title):
             }
 
 
+
+
+            self.selects = {
+                'window' : Select(title='Select rolling mean window',
+                                 value='1',
+                                 options=[str(x) for x in range(1,20,2)]),
+            }
+            self.selects_values = {
+                'window': int(self.selects['window'].value),
+            }
             # DIV VISUAL SETUP
             self.trigger = -1
             self.html_header = 'h2'
@@ -133,8 +143,6 @@ def twitter_loader_tab(panel_title):
 
         # /////////////////////////// TESTS END //////////////////////////////
 
-        def test_number_of_messages_returned(self):
-            assert len(self.df)
 
         # /////////////////////////// UTILS BEGIN ///////////////////////////
 
@@ -307,34 +315,21 @@ def twitter_loader_tab(panel_title):
                 logger.error('output data', exc_info=True)
 
 
-        def tsa(self,launch=1):
+        def rolling_mean(self,launch=1):
             try:
                 df = self.df.set_index('human_readable_creation_date')
-                df = df.resample('1Min').agg({'message_ID':'count'})
+                df = df.resample('1T').agg({'message_ID':'count'})
+                df = df['message_ID'].rolling(self.selects_values['window']).mean()
                 df = df.reset_index()
-
-                rename = {'human_readable_creation_date': 'ds', 'message_ID': 'y'}
-                df = df.rename(columns=rename)
-                df = df[['ds', 'y']]
-                m = Prophet()
-                m.fit(df)
-
-                future = m.make_future_dataframe(periods=10,freq='m')
-                forecast = m.predict(future)
-                for idx, col in enumerate(['yhat', 'yhat_lower', 'yhat_upper']):
-                    if idx == 0:
-                        p = forecast.hvplot.line(x='ds', y=col, width=1200, height=500,
-                                                 value_label='#', legend=False).relabel(col)
-                    else:
-                        p *= forecast.hvplot.scatter(x='ds'
-                                                     , y=col, width=1200, height=500,
-                                                     value_label='#', legend=False).relabel(col)
+                df = df.rename(columns={'message_ID':'messages',
+                                        'human_readable_creation_date':'date'})
+                p = df.hvplot.scatter(x='date', y='messages', width=1200, height=500)
 
                 return p
             except:
                 logger.error('time series analysis', exc_info=True)
 
-    def update():
+    def update_tweet_search():
         thistab.notification_updater("Calculations in progress! Please wait.")
         thistab.reset_data()
         thistab.limits['messages'] = int(inputs['messages_limit'].value)
@@ -345,6 +340,13 @@ def twitter_loader_tab(panel_title):
         stream_launch.event(launch=thistab.trigger)
         thistab.notification_updater("Ready!")
 
+    def update_rolling_mean(attr,old,new):
+        thistab.notification_updater("Calculations in progress! Please wait.")
+        thistab.selects_values['window'] = int(thistab.selects['window'].value)
+        thistab.trigger += 1
+        stream_launch_rolling_mean.event(launch=thistab.trigger)
+        thistab.notification_updater("Ready!")
+
     try:
         # SETUP
         thistab = TwitterLoader()
@@ -352,6 +354,8 @@ def twitter_loader_tab(panel_title):
 
         # MANAGE STREAM
         stream_launch = streams.Stream.define('Launch', launch=-1)()
+        stream_launch_rolling_mean = streams.Stream.define('Launch', launch=-1)()
+
 
         # DYNAMIC GRAPHS/OUTPUT
         hv_visual = hv.DynamicMap(thistab.visual,streams=[stream_launch])
@@ -359,6 +363,9 @@ def twitter_loader_tab(panel_title):
 
         hv_jitter = hv.DynamicMap(thistab.jitter, streams=[stream_launch])
         jitter = renderer.get_plot(hv_jitter)
+
+        hv_rolling_mean = hv.DynamicMap(thistab.rolling_mean, streams=[stream_launch_rolling_mean])
+        rolling_mean = renderer.get_plot(hv_rolling_mean)
 
 
         # CREATE WIDGETS
@@ -373,30 +380,39 @@ def twitter_loader_tab(panel_title):
                                     value=str(thistab.limits['time']),
                                     options=thistab.options['time']),
         }
-        launch_button = Button(label='Enter filters/inputs, then press me', button_type="success")
+        launch_tweet_search_button = Button(label='Enter filters/inputs, then press me', button_type="success")
 
         # WIDGET CALLBACK
-        launch_button.on_click(update)
+        launch_tweet_search_button.on_click(update_tweet_search)
+        thistab.selects['window'].on_change('value',update_rolling_mean)
+        
 
         # COMPOSE LAYOUT
         # group controls (filters/input elements)
-        controls = WidgetBox(
+        controls_tweet_search = WidgetBox(
             inputs['search_term'],
             inputs['messages_limit'],
             inputs['time_limit'],
-            launch_button
+            launch_tweet_search_button
 
+        )
+
+        controls_rolling_mean = WidgetBox(
+            thistab.selects['window'],
         )
 
         grid = gridplot([
             [thistab.notification_div['top']],
             [Spacer(width=20, height=70)],
-            [thistab.title_div('Jitter between tweets:', 1000)],
+            [thistab.title_div('Smooth graphs:', 1000)],
+            [Spacer(width=20, height=30)],
+            [rolling_mean.state, controls_rolling_mean],
+            [thistab.title_div('Time between tweets:', 1000)],
             [Spacer(width=20, height=30)],
             [jitter.state],
             [thistab.title_div('Twitter search results (use filters on right, then click button):', 1000)],
             [Spacer(width=20, height=30)],
-            [visual.state, controls],
+            [visual.state, controls_tweet_search],
 
             [thistab.notification_div['bottom']],
         ])

@@ -4478,3 +4478,356 @@ TypeError: DynamicMap does not accept NoneType type, data elements have to be a 
 2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
 3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
 4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 20:37:13,193 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 20:37:22,703 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 20:37:22,704 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 20:37:23,343 - [logs/beiber.log:223]=> # of results retreived:82
+2019-09-11 20:37:23,344 - [logs/beiber.log:235]=> start:end= 1568248643.343649:  1568248613.343649
+2019-09-11 20:37:23,358 - [logs/beiber.log:260]=> df:, length=82,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171937673793146887          2019-09-12 00:04:49   1.568247e+09  cant wait for christmas season so i can listen...  1106319425202999296        1.552602e+09           janey     janeschrand1
+1  1171936924086493184          2019-09-12 00:01:50   1.568247e+09  Justin Beiber and Zac efron are basically the ...   863498429355446273        1.494709e+09          Alexis   Alexis91949922
+2  1171934679915782144          2019-09-11 23:52:55   1.568246e+09  you’re a shawn stan and your best friend is a ...            121279996        1.268096e+09          Maha ♡   becauseihadyou
+3  1171932059553517568          2019-09-11 23:42:31   1.568245e+09        Beiber vs Paparazzi https://t.co/J3VS3mh0sG           2437324598        1.397152e+09  Funny Vines EX     rui045msub27
+4  1171930971026968578          2019-09-11 23:38:11   1.568245e+09  every time justin beiber comes on amber asks i...            378047105        1.316704e+09        victorya    youur_creaTOR
+2019-09-11 22:26:52,129 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 22:26:57,269 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 22:26:57,269 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 22:26:58,003 - [logs/beiber.log:223]=> # of results retreived:63
+2019-09-11 22:26:58,004 - [logs/beiber.log:235]=> start:end= 1568255218.00368:  1568255188.00368
+2019-09-11 22:26:58,018 - [logs/beiber.log:260]=> df:, length=63,            message_ID human_readable_creation_date  creation_date  ... user_creation_date          user_name  user_screen_name
+0  1171973048825778176          2019-09-12 02:25:23   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+1  1171971431372140545          2019-09-12 02:18:58   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+2  1171970550329204743          2019-09-12 02:15:28   1.568255e+09  ...       1.523920e+09            SEANDEL    wavesonseandel
+3  1171970225899806720          2019-09-12 02:14:10   1.568254e+09  ...       1.560362e+09  ava / #1 ELI STAN      avahatesyou_
+4  1171970204273917952          2019-09-12 02:14:05   1.568254e+09  ...       1.404759e+09    Catherine Coyle        cath_coyle
+
+[5 rows x 8 columns]
+2019-09-11 22:27:31,520 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 22:27:31,919 - [logs/beiber.log:223]=> # of results retreived:63
+2019-09-11 22:27:31,919 - [logs/beiber.log:235]=> start:end= 1568255251.919325:  1568252341.919325
+2019-09-11 22:27:31,930 - [logs/beiber.log:260]=> df:, length=63,            message_ID human_readable_creation_date  creation_date  ... user_creation_date          user_name  user_screen_name
+0  1171973048825778176          2019-09-12 02:25:23   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+1  1171971431372140545          2019-09-12 02:18:58   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+2  1171970550329204743          2019-09-12 02:15:28   1.568255e+09  ...       1.523920e+09            SEANDEL    wavesonseandel
+3  1171970225899806720          2019-09-12 02:14:10   1.568254e+09  ...       1.560362e+09  ava / #1 ELI STAN      avahatesyou_
+4  1171970204273917952          2019-09-12 02:14:05   1.568254e+09  ...       1.404759e+09    Catherine Coyle        cath_coyle
+
+[5 rows x 8 columns]
+2019-09-11 22:28:46,579 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 22:28:49,844 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 22:28:49,845 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 22:28:50,547 - [logs/beiber.log:223]=> # of results retreived:63
+2019-09-11 22:28:50,548 - [logs/beiber.log:235]=> start:end= 1568255330.547846:  1568235330.547846
+2019-09-11 22:28:50,560 - [logs/beiber.log:260]=> df:, length=63,            message_ID human_readable_creation_date  creation_date  ... user_creation_date          user_name  user_screen_name
+0  1171973048825778176          2019-09-12 02:25:23   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+1  1171971431372140545          2019-09-12 02:18:58   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+2  1171970550329204743          2019-09-12 02:15:28   1.568255e+09  ...       1.523920e+09            SEANDEL    wavesonseandel
+3  1171970225899806720          2019-09-12 02:14:10   1.568254e+09  ...       1.560362e+09  ava / #1 ELI STAN      avahatesyou_
+4  1171970204273917952          2019-09-12 02:14:05   1.568254e+09  ...       1.404759e+09    Catherine Coyle        cath_coyle
+
+[5 rows x 8 columns]
+2019-09-11 22:29:50,435 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 22:30:10,589 - [logs/beiber.log:185]=> CREDENTIALS LOADED
+2019-09-11 22:30:10,590 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 22:30:12,569 - [logs/beiber.log:223]=> # of results retreived:63
+2019-09-11 22:30:12,569 - [logs/beiber.log:235]=> start:end= 1568255412.569439:  1568215412.569439
+2019-09-11 22:30:12,585 - [logs/beiber.log:260]=> df:, length=63,            message_ID human_readable_creation_date  creation_date  ... user_creation_date          user_name  user_screen_name
+0  1171974054053629952          2019-09-12 02:29:23   1.568255e+09  ...       1.517360e+09   Um, Anubis Patel            AN8BIS
+1  1171973048825778176          2019-09-12 02:25:23   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+2  1171971431372140545          2019-09-12 02:18:58   1.568255e+09  ...       1.270747e+09                 CJ   beiber_hole_69_
+3  1171970550329204743          2019-09-12 02:15:28   1.568255e+09  ...       1.523920e+09            SEANDEL    wavesonseandel
+4  1171970225899806720          2019-09-12 02:14:10   1.568254e+09  ...       1.560362e+09  ava / #1 ELI STAN      avahatesyou_
+
+[5 rows x 8 columns]
+2019-09-11 22:31:01,302 - [logs/beiber.log:206]=> QUERY CONSTRUCTED:q=brady&count=100&result_type=recent
+2019-09-11 22:31:02,213 - [logs/beiber.log:223]=> # of results retreived:100
+2019-09-11 22:31:02,213 - [logs/beiber.log:235]=> start:end= 1568255462.213354:  1568215462.213354
+2019-09-11 22:31:02,222 - [logs/beiber.log:260]=> df:, length=100,            message_ID human_readable_creation_date  creation_date                                               text              user_ID  user_creation_date       user_name user_screen_name
+0  1171974398393430017          2019-09-12 02:30:45   1.568255e+09  RT @tracybeanz: As an example, tell Flynn he s...           1619726174        1.374738e+09       JLR⭐️⭐️⭐️          jlrjrtx
+1  1171974391850098690          2019-09-12 02:30:43   1.568255e+09  RT @sh6wt: When Meredith Grey said, “I make no...           2993659693        1.422033e+09      sabby dabs   sabreena_brady
+2  1171974387647602688          2019-09-12 02:30:42   1.568255e+09  RT @SaraCarterDC: #BREAKING FLYNN Development ...   791452278846812164        1.477532e+09         Del!a 💎   TheDeliaAspect
+3  1171974385122590720          2019-09-12 02:30:42   1.568255e+09  RT @OldManBrees: Y’all wanna see a black man g...            382417708        1.317346e+09  Nikko A Raftes         Nraftes3
+4  1171974378197790721          2019-09-12 02:30:40   1.568255e+09  RT @TsMadisonatl1: Look at this Bitch... edges...  1047617286629203968        1.538606e+09     🍫💖MarCoCo🍫💖        Whorpio98
+2019-09-11 22:55:38,303 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 22:55:40,628 - [logs/beiber.log:173]=> Update selects
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 171, in update_selects
+    self.selects['amount'].options = [str(x) for x in range(1, 10, 1)]
+KeyError: 'amount'
+2019-09-11 22:55:40,634 - [logs/beiber.log:203]=> CREDENTIALS LOADED
+2019-09-11 22:55:40,634 - [logs/beiber.log:224]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 22:55:40,644 - [logs/beiber.log:244]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f0ee62e93d0>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/search/tweets.json?q=beiber&count=100&result_type=recent&tweet_mode=compat (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f0ee62e93d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 238, in load_data_about_topic
+    results = self.api.GetSearch(raw_query=qry)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/twitter/api.py", line 526, in GetSearch
+    resp = self._RequestUrl(url, 'GET')
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/twitter/api.py", line 4992, in _RequestUrl
+    resp = self._session.get(url, auth=self.__auth, timeout=self._timeout, proxies=self.proxies)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/search/tweets.json?q=beiber&count=100&result_type=recent&tweet_mode=compat (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f0ee62e93d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+2019-09-11 22:55:40,648 - [logs/beiber.log:253]=> start:end= 1568256940.627003:  1568216940.627024
+2019-09-11 22:55:40,648 - [logs/beiber.log:281]=> error in parsing results
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 255, in parse_results
+    res = results[messages_count]
+TypeError: 'NoneType' object is not subscriptable
+2019-09-11 22:55:40,698 - [logs/beiber.log:455]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 432, in twitter_loader_tab
+    thistab.selects['amount'],
+KeyError: 'amount'
+2019-09-11 23:14:46,060 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:14:49,110 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:14:49,110 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:14:49,955 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:14:49,955 - [logs/beiber.log:243]=> start:end= 1568258089.955093:  1568218089.955093
+2019-09-11 23:14:49,967 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:15:26,145 - [logs/beiber.log:344]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 332, in rolling_mean
+    logger.error('time series analysis', exc_info=True)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1176, in predict
+    intervals = self.predict_uncertainty(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1378, in predict_uncertainty
+    sim_values = self.sample_posterior_predictive(df)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1342, in sample_posterior_predictive
+    s_m=component_cols['multiplicative_terms'],
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1407, in sample_model
+    trend = self.sample_predictive_trend(df, iteration)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1464, in sample_predictive_trend
+    trend = self.piecewise_linear(t, deltas, k, m, changepoint_ts)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/fbprophet/forecaster.py", line 1216, in piecewise_linear
+    m_t[indx] += gammas[s]
+KeyboardInterrupt
+2019-09-11 23:15:26,148 - [logs/beiber.log:439]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 382, in twitter_loader_tab
+    value=str(thistab.limits['time']),
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 23:16:55,848 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:16:58,607 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:16:58,608 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:16:59,273 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:16:59,273 - [logs/beiber.log:243]=> start:end= 1568258219.273116:  1568218219.273116
+2019-09-11 23:16:59,286 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:16:59,362 - [logs/beiber.log:330]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 326, in rolling_mean
+    value_label='#', legend=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/__init__.py", line 275, in scatter
+    return self(x, y, kind='scatter', **kwds)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 873, in scatter
+    scatter = self.chart(Scatter, x, y, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 843, in chart
+    return self.single_chart(element, x, y, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 821, in single_chart
+    chart = element(data, x, ys).relabel(**self._relabel)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['ds', 'messages;']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-11 23:16:59,363 - [logs/beiber.log:425]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 368, in twitter_loader_tab
+    rolling_mean = renderer.get_plot(hv_rolling_mean)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 23:18:06,225 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:18:08,892 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:18:08,892 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:18:09,463 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:18:09,464 - [logs/beiber.log:243]=> start:end= 1568258289.463484:  1568218289.463484
+2019-09-11 23:18:09,476 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:18:09,594 - [logs/beiber.log:330]=> time series analysis
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 326, in rolling_mean
+    p = df.hvplot.scatter(x='date', y='messages;', width=1200, height=500)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/__init__.py", line 275, in scatter
+    return self(x, y, kind='scatter', **kwds)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 873, in scatter
+    scatter = self.chart(Scatter, x, y, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 843, in chart
+    return self.single_chart(element, x, y, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/hvplot/converter.py", line 821, in single_chart
+    chart = element(data, x, ys).relabel(**self._relabel)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['messages;']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-11 23:18:09,596 - [logs/beiber.log:425]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 368, in twitter_loader_tab
+    rolling_mean = renderer.get_plot(hv_rolling_mean)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-11 23:18:27,809 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:18:40,111 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:18:40,111 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:18:40,760 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:18:40,760 - [logs/beiber.log:243]=> start:end= 1568258320.76015:  1568218320.76015
+2019-09-11 23:18:40,771 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:18:40,868 - [logs/beiber.log:425]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/aion/data_science/my-analytics-suite/analytics/scripts/dashboards/picnic_test/beiber.py", line 387, in twitter_loader_tab
+    thistab.selects['window'].on_change('value',update_rolling_mean)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/bokeh/model.py", line 578, in on_change
+    super(Model, self).on_change(attr, *callbacks)
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/bokeh/util/callback_manager.py", line 131, in on_change
+    _check_callback(callback, ('attr', 'old', 'new'))
+  File "/home/andre/anaconda3/envs/elections/lib/python3.7/site-packages/bokeh/util/callback_manager.py", line 188, in _check_callback
+    raise ValueError(error_msg % (", ".join(fargs), formatted_args))
+ValueError: Callback functions must have signature func(attr, old, new), got func()
+2019-09-11 23:19:15,342 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:19:18,485 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:19:18,485 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:19:19,023 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:19:19,024 - [logs/beiber.log:243]=> start:end= 1568258359.023749:  1568218359.023749
+2019-09-11 23:19:19,037 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:20:24,525 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-11 23:20:27,864 - [logs/beiber.log:193]=> CREDENTIALS LOADED
+2019-09-11 23:20:27,864 - [logs/beiber.log:214]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-11 23:20:28,409 - [logs/beiber.log:231]=> # of results retreived:68
+2019-09-11 23:20:28,410 - [logs/beiber.log:243]=> start:end= 1568258428.409816:  1568218428.409816
+2019-09-11 23:20:28,424 - [logs/beiber.log:268]=> df:, length=68,            message_ID human_readable_creation_date  creation_date                                               text             user_ID  user_creation_date user_name user_screen_name
+0  1171982585104232448          2019-09-12 03:03:17   1.568257e+09  RT @BTS_twt: 내 폰에 꾸준히 자리잡고 있는 울 남주니 생일 추카한다 \n...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+1  1171982568486342656          2019-09-12 03:03:13   1.568257e+09     RT @BTS_twt: 🎂 감사합니다 🎂 https://t.co/8CvWtaO6jl  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2  1171982554628378624          2019-09-12 03:03:10   1.568257e+09  RT @BTS_twt: 울 리다 생일 축하쓰!! #남준아윤기형이야 #남준생일ㅊㅋ #...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
+2019-09-11 23:21:25,399 - [logs/beiber.log:16]=> logs/beiber.log
