@@ -12,6 +12,8 @@ from bokeh.models.widgets import Div, Select, TextInput, Button
 from dateutil.relativedelta import relativedelta
 from fbprophet import Prophet
 from holoviews import streams
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
 
 from scripts.utils.mylogger import mylogger
 
@@ -26,14 +28,12 @@ from tornado.gen import coroutine
 import unittest
 
 from config.dashboard import config as dashboard_config
-from scripts.utils.myutils import tab_error_flag
+from scripts.utils.myutils import tab_error_flag, sentiment_analyzer_scores
 
 hv.extension('bokeh', logo=False)
 renderer = hv.renderer('bokeh')
 
 logger = mylogger(__file__)
-
-
 
 
 @coroutine
@@ -69,9 +69,6 @@ def twitter_loader_tab(panel_title):
                 'user_screen_name': []
             }
 
-
-
-
             self.selects = {
                 'window' : Select(title='Select rolling mean window',
                                  value='1',
@@ -80,6 +77,12 @@ def twitter_loader_tab(panel_title):
             self.selects_values = {
                 'window': int(self.selects['window'].value),
             }
+            self.resample_period = {
+                'menu' : []
+            }
+            for val in range(300,3000,200):
+                self.resample_period['menu'].append(str(val)+'S')
+            self.resample_period['value'] = self.resample_period['menu'][0]
             # DIV VISUAL SETUP
             self.trigger = -1
             self.html_header = 'h2'
@@ -137,12 +140,6 @@ def twitter_loader_tab(panel_title):
             return Div(text=text, width=width, height=15)
 
         # //////////////////////////  DIVS SETUP END   /////////////////////////////////
-
-        # /////////////////////////// TESTS BEGIN ///////////////////////////
-
-
-        # /////////////////////////// TESTS END //////////////////////////////
-
 
         # /////////////////////////// UTILS BEGIN ///////////////////////////
 
@@ -285,10 +282,37 @@ def twitter_loader_tab(panel_title):
                 results = self.load_data_about_topic()
                 self.parse_results(results)
                 self.munge_data()
-                self.write_to_file()
-            except:
+                #self.write_to_file()
+
+            except Exception:
                 logger.error('run', exc_info=True)
 
+        # #################################### PLOTS ######################################
+        def sentiment_analysis(self,launch = 1):
+            try:
+                df = self.df[['text','human_readable_creation_date']]
+                cols = ['pos', 'neg', 'neu']
+                for col in cols:
+                    if col not in df.columns:  # create only once
+                        df[col] = 0
+
+                df['pos'], df['neg'], df['neu'] = zip(*df['text'].map(sentiment_analyzer_scores))
+                df = df.fillna(0)
+                logger.warning('resample period:%s',self.resample_period['value'])
+                df = df.set_index('human_readable_creation_date').resample(self.resample_period['value'])\
+                    .agg({'pos': 'mean',
+                          'neg': 'mean',
+                          'neu': 'mean'})
+                df = df.reset_index()
+                df = df.fillna(0)
+                logger.warning('LINE 307, df:%s',df.head(30))
+
+                p = df.hvplot.line(x='human_readable_creation_date', y=cols, width=1200, height=600)
+                return p
+            except Exception:
+                logger.error('run', exc_info=True)
+                
+                
         def visual(self,launch=1):
             try:
 
@@ -297,7 +321,7 @@ def twitter_loader_tab(panel_title):
                                                   'user_ID','user_creation_date','user_name','user_screen_name'],
                                          width=1200,height=2000)
                 return p
-            except:
+            except Exception:
                 logger.error('output data', exc_info=True)
 
         def jitter(self, launch=1):
@@ -311,14 +335,14 @@ def twitter_loader_tab(panel_title):
                 df = df.reset_index()
                 p = df.hvplot.line(x='creation_date',y='jitter',width=1200,height=600)
                 return p
-            except:
+            except Exception:
                 logger.error('output data', exc_info=True)
 
 
         def rolling_mean(self,launch=1):
             try:
                 df = self.df.set_index('human_readable_creation_date')
-                df = df.resample('1T').agg({'message_ID':'count'})
+                df = df.resample(self.resample_period['value']).agg({'message_ID':'count'})
                 df = df['message_ID'].rolling(self.selects_values['window']).mean()
                 df = df.reset_index()
                 df = df.rename(columns={'message_ID':'messages',
@@ -326,7 +350,7 @@ def twitter_loader_tab(panel_title):
                 p = df.hvplot.scatter(x='date', y='messages', width=1200, height=500)
 
                 return p
-            except:
+            except Exception:
                 logger.error('time series analysis', exc_info=True)
 
     def update_tweet_search():
@@ -338,6 +362,7 @@ def twitter_loader_tab(panel_title):
         thistab.run()
         thistab.trigger += 1
         stream_launch.event(launch=thistab.trigger)
+        stream_launch_sentiment.event(launch_this=thistab.trigger)
         thistab.notification_updater("Ready!")
 
     def update_rolling_mean(attr,old,new):
@@ -345,6 +370,14 @@ def twitter_loader_tab(panel_title):
         thistab.selects_values['window'] = int(thistab.selects['window'].value)
         thistab.trigger += 1
         stream_launch_rolling_mean.event(launch=thistab.trigger)
+        thistab.notification_updater("Ready!")
+
+    def update_resample_period(attr, old, new):
+        thistab.notification_updater("Calculations in progress! Please wait.")
+        thistab.resample_period['value'] = new
+        thistab.trigger += 1
+        #stream_launch_rolling_mean.event(launch=thistab.trigger)
+        stream_launch_sentiment.event(launch=thistab.trigger)
         thistab.notification_updater("Ready!")
 
     try:
@@ -355,6 +388,7 @@ def twitter_loader_tab(panel_title):
         # MANAGE STREAM
         stream_launch = streams.Stream.define('Launch', launch=-1)()
         stream_launch_rolling_mean = streams.Stream.define('Launch', launch=-1)()
+        stream_launch_sentiment = streams.Stream.define('Launch', launch=-1)()
 
 
         # DYNAMIC GRAPHS/OUTPUT
@@ -367,7 +401,9 @@ def twitter_loader_tab(panel_title):
         hv_rolling_mean = hv.DynamicMap(thistab.rolling_mean, streams=[stream_launch_rolling_mean])
         rolling_mean = renderer.get_plot(hv_rolling_mean)
 
-
+        hv_sentiment_analysis = hv.DynamicMap(thistab.sentiment_analysis, streams=[stream_launch_sentiment])
+        sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+        
         # CREATE WIDGETS
         inputs = {
             'search_term' : TextInput(title='Enter search term. For list, use commas',value=thistab.topic),
@@ -379,12 +415,18 @@ def twitter_loader_tab(panel_title):
             'time_limit' : Select(title='Select time limit (seconds)',
                                     value=str(thistab.limits['time']),
                                     options=thistab.options['time']),
+            'resample' :  Select(title='Select resample period',
+                                  value=thistab.resample_period['value'],
+                                  options=thistab.resample_period['menu'])
+
+
         }
-        launch_tweet_search_button = Button(label='Enter filters/inputs, then press me', button_type="success")
+        tweet_search_button = Button(label='Enter filters/inputs, then press me', button_type="success")
 
         # WIDGET CALLBACK
-        launch_tweet_search_button.on_click(update_tweet_search)
+        tweet_search_button.on_click(update_tweet_search)
         thistab.selects['window'].on_change('value',update_rolling_mean)
+        inputs['resample'].on_change('value',update_resample_period)
         
 
         # COMPOSE LAYOUT
@@ -393,17 +435,23 @@ def twitter_loader_tab(panel_title):
             inputs['search_term'],
             inputs['messages_limit'],
             inputs['time_limit'],
-            launch_tweet_search_button
-
+            tweet_search_button,
         )
 
         controls_rolling_mean = WidgetBox(
             thistab.selects['window'],
         )
 
+        controls_resample_period = WidgetBox(
+            inputs['resample']
+        )
+
         grid = gridplot([
             [thistab.notification_div['top']],
             [Spacer(width=20, height=70)],
+            [thistab.title_div('Sentiment analysis of tweets:', 1000)],
+            [Spacer(width=20, height=30)],
+            [sentiment_analysis.state, controls_resample_period],
             [thistab.title_div('Smooth graphs:', 1000)],
             [Spacer(width=20, height=30)],
             [rolling_mean.state, controls_rolling_mean],

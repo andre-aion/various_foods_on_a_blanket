@@ -1,0 +1,847 @@
+2019-09-25 16:25:13,274 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:25:15,119 - [logs/search_tweepy.log:353]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 277, in twitter_loader_tab
+    thistab = TwitterLoader()
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 47, in __init__
+    'messages': int(self.options['messages'][0]),
+AttributeError: 'TwitterLoader' object has no attribute 'options'
+2019-09-25 16:26:55,671 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:26:59,747 - [logs/search_tweepy.log:355]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 279, in twitter_loader_tab
+    thistab = TwitterLoader()
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 50, in __init__
+    'messages': int(self.options['messages'][0]),
+IndexError: list index out of range
+2019-09-25 16:27:19,764 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:27:21,908 - [logs/search_tweepy.log:355]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 279, in twitter_loader_tab
+    thistab = TwitterLoader()
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 55, in __init__
+    'stop_loading': datetime.now(timezone.utc).timestamp() - self.limits['time']
+KeyError: 'time'
+2019-09-25 16:27:40,834 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:30:33,066 - [logs/search_tweepy.log:171]=> CREDENTIALS LOADED
+2019-09-25 16:30:33,772 - [logs/search_tweepy.log:191]=> # of results retreived:0
+2019-09-25 16:30:33,782 - [logs/search_tweepy.log:236]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 233, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:30:33,784 - [logs/search_tweepy.log:351]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 285, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:33:57,899 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:34:01,285 - [logs/search_tweepy.log:172]=> CREDENTIALS LOADED
+2019-09-25 16:34:01,993 - [logs/search_tweepy.log:192]=> # of results retreived:0
+2019-09-25 16:34:02,001 - [logs/search_tweepy.log:237]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 234, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:34:02,003 - [logs/search_tweepy.log:352]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 286, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:34:21,608 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:34:38,621 - [logs/search_tweepy.log:352]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 276, in twitter_loader_tab
+    thistab = TwitterLoader()
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 55, in __init__
+    min_date = datetime.today(tz=None) - timedelta(days=100)
+TypeError: today() takes no keyword arguments
+2019-09-25 16:34:56,005 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:34:58,306 - [logs/search_tweepy.log:172]=> CREDENTIALS LOADED
+2019-09-25 16:34:59,013 - [logs/search_tweepy.log:192]=> # of results retreived:0
+2019-09-25 16:34:59,026 - [logs/search_tweepy.log:237]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 234, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:34:59,028 - [logs/search_tweepy.log:352]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 286, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:35:44,518 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:35:46,993 - [logs/search_tweepy.log:172]=> CREDENTIALS LOADED
+2019-09-25 16:35:47,428 - [logs/search_tweepy.log:186]=> LINE 186:beiber
+2019-09-25 16:35:47,744 - [logs/search_tweepy.log:193]=> # of results retreived:0
+2019-09-25 16:35:47,756 - [logs/search_tweepy.log:238]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 235, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:35:47,759 - [logs/search_tweepy.log:353]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 287, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:36:31,119 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:36:33,093 - [logs/search_tweepy.log:172]=> CREDENTIALS LOADED
+2019-09-25 16:36:33,418 - [logs/search_tweepy.log:186]=> LINE 186:beiber,messages=30
+2019-09-25 16:36:33,778 - [logs/search_tweepy.log:193]=> # of results retreived:0
+2019-09-25 16:36:33,791 - [logs/search_tweepy.log:238]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 235, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:36:33,793 - [logs/search_tweepy.log:353]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 287, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:37:14,881 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:37:17,601 - [logs/search_tweepy.log:172]=> CREDENTIALS LOADED
+2019-09-25 16:37:17,961 - [logs/search_tweepy.log:186]=> LINE 186:beiber,messages=30
+2019-09-25 16:37:19,007 - [logs/search_tweepy.log:239]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 236, in visual
+    width=1200, height=2000)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 495, in table
+    return self(kind='table', **dict(kwds, columns=columns))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 1115, in table
+    return Table(data, self.kwds.get('columns'), []).redim(**self._redim).opts(plot=opts)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['text']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 16:37:19,011 - [logs/search_tweepy.log:354]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 288, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:43:20,294 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:43:23,166 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:43:23,500 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:43:23,925 - [logs/search_tweepy.log:184]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 180, in load_data_about_topic
+    results = [[tweet.creation_date, tweet.text] for tweet in tweets]
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 180, in <listcomp>
+    results = [[tweet.creation_date, tweet.text] for tweet in tweets]
+AttributeError: 'Status' object has no attribute 'creation_date'
+2019-09-25 16:43:23,937 - [logs/search_tweepy.log:226]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 222, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:43:23,938 - [logs/search_tweepy.log:338]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 274, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:54:35,817 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:54:48,926 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:54:54,629 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:54:55,049 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:54:56,618 - [logs/search_tweepy.log:214]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in load_data_about_topic
+    results = [[tweet.created_at, tweet.text.encode("utf-8")] for tweet in alltweets]
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in <listcomp>
+    results = [[tweet.created_at, tweet.text.encode("utf-8")] for tweet in alltweets]
+AttributeError: 'Status' object has no attribute 'text'
+2019-09-25 16:54:56,636 - [logs/search_tweepy.log:256]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 252, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:54:56,637 - [logs/search_tweepy.log:368]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 304, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:55:59,979 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:56:05,597 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:56:05,967 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:56:11,510 - [logs/search_tweepy.log:216]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 210, in load_data_about_topic
+    print(tweet)
+KeyboardInterrupt
+2019-09-25 16:56:11,514 - [logs/search_tweepy.log:258]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 254, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:56:11,515 - [logs/search_tweepy.log:370]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 306, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:57:22,992 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:57:26,378 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:57:26,703 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:57:28,161 - [logs/search_tweepy.log:214]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in load_data_about_topic
+    results = [[tweet.created_at, tweet.full_text.encode("utf-8")] for tweet in alltweets]
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in <listcomp>
+    results = [[tweet.created_at, tweet.full_text.encode("utf-8")] for tweet in alltweets]
+AttributeError: 'Status' object has no attribute 'full_text'
+2019-09-25 16:57:28,167 - [logs/search_tweepy.log:256]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 252, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:57:28,167 - [logs/search_tweepy.log:368]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 304, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:58:17,735 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:58:20,294 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:58:20,607 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:58:22,007 - [logs/search_tweepy.log:216]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 212, in load_data_about_topic
+    self.df = pd.DataFrame(data=results,columns=['timestamp','text'])
+NameError: name 'results' is not defined
+2019-09-25 16:58:22,013 - [logs/search_tweepy.log:258]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 254, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:58:22,014 - [logs/search_tweepy.log:370]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 306, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:58:57,258 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:58:59,314 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:58:59,736 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:59:01,394 - [logs/search_tweepy.log:216]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 212, in load_data_about_topic
+    self.df = pd.DataFrame(data=results,columns=['timestamp','text'])
+NameError: name 'results' is not defined
+2019-09-25 16:59:01,414 - [logs/search_tweepy.log:258]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 254, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:59:01,415 - [logs/search_tweepy.log:370]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 306, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 16:59:33,268 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 16:59:34,933 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 16:59:35,344 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 16:59:36,693 - [logs/search_tweepy.log:214]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in load_data_about_topic
+    results = [[tweet.created_at, tweet.text] for tweet in alltweets]
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 208, in <listcomp>
+    results = [[tweet.created_at, tweet.text] for tweet in alltweets]
+AttributeError: 'Status' object has no attribute 'text'
+2019-09-25 16:59:36,701 - [logs/search_tweepy.log:256]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 252, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 16:59:36,701 - [logs/search_tweepy.log:368]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 304, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 17:00:33,779 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 17:00:41,848 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 17:00:42,222 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 17:00:43,540 - [logs/search_tweepy.log:217]=> error in loading data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 213, in load_data_about_topic
+    self.df = pd.DataFrame(data=results,columns=['timestamp','text'])
+UnboundLocalError: local variable 'results' referenced before assignment
+2019-09-25 17:00:43,545 - [logs/search_tweepy.log:259]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 255, in visual
+    p = self.df.hvplot.table(columns=['timestamp', 'text'],
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-09-25 17:00:43,545 - [logs/search_tweepy.log:371]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 307, in twitter_loader_tab
+    visual = renderer.get_plot(hv_visual)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 17:02:22,244 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 17:02:25,657 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 17:02:26,113 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 17:02:27,703 - [logs/search_tweepy.log:216]=> LINE 211 self.df:            timestamp                                               text
+0 2019-09-25 21:00:06  First concert: Justin Beiber\nLast concert: Ar...
+1 2019-09-25 20:48:35  For the dedicated strength trainer, clothes ma...
+2 2019-09-25 20:46:21  Beiber seems bored and is just blowing money lmao
+3 2019-09-25 20:39:21  i hate justin beiber but maaaaan if he n jungk...
+4 2019-09-25 20:39:04  A 16 year old Justin beiber looking mother fucker
+5 2019-09-25 20:37:56         Ffs, wish Beiber would have turned up now.
+6 2019-09-25 20:34:56  Kookie x beiber? Kookie x Ariana? https://t.co...
+7 2019-09-25 20:26:19              Justin Beiber And Bowser's First Kiss
+8 2019-09-25 20:22:47  @TrippieMiggy Your hair not gonna help either ...
+9 2019-09-25 20:12:55  which is something that we experience every da...
+2019-09-25 17:02:27,733 - [logs/search_tweepy.log:275]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 266, in jitter
+    df = df[['timestamp']]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1177, in _validate_read_indexer
+    key=key, axis=self.obj._get_axis_name(axis)
+KeyError: "None of [Index(['timestamp'], dtype='object')] are in the [columns]"
+2019-09-25 17:02:27,735 - [logs/search_tweepy.log:373]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 312, in twitter_loader_tab
+    jitter = renderer.get_plot(hv_jitter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 17:03:14,305 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 17:03:20,692 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 17:03:21,029 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 17:03:22,396 - [logs/search_tweepy.log:216]=> LINE 211 self.df:           created_at                                               text
+0 2019-09-25 21:00:06  First concert: Justin Beiber\nLast concert: Ar...
+1 2019-09-25 20:48:35  For the dedicated strength trainer, clothes ma...
+2 2019-09-25 20:46:21  Beiber seems bored and is just blowing money lmao
+3 2019-09-25 20:39:21  i hate justin beiber but maaaaan if he n jungk...
+4 2019-09-25 20:39:04  A 16 year old Justin beiber looking mother fucker
+5 2019-09-25 20:37:56         Ffs, wish Beiber would have turned up now.
+6 2019-09-25 20:34:56  Kookie x beiber? Kookie x Ariana? https://t.co...
+7 2019-09-25 20:26:19              Justin Beiber And Bowser's First Kiss
+8 2019-09-25 20:22:47  @TrippieMiggy Your hair not gonna help either ...
+9 2019-09-25 20:12:55  which is something that we experience every da...
+2019-09-25 17:03:22,420 - [logs/search_tweepy.log:275]=> output data
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 266, in jitter
+    df = df[['created_at']]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1177, in _validate_read_indexer
+    key=key, axis=self.obj._get_axis_name(axis)
+KeyError: "None of [Index(['created_at'], dtype='object')] are in the [columns]"
+2019-09-25 17:03:22,423 - [logs/search_tweepy.log:373]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 312, in twitter_loader_tab
+    jitter = renderer.get_plot(hv_jitter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 17:04:28,113 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 17:04:31,144 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 17:04:31,501 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 17:04:32,829 - [logs/search_tweepy.log:216]=> LINE 211 self.df:           created_at                                               text
+0 2019-09-25 21:00:06  First concert: Justin Beiber\nLast concert: Ar...
+1 2019-09-25 20:48:35  For the dedicated strength trainer, clothes ma...
+2 2019-09-25 20:46:21  Beiber seems bored and is just blowing money lmao
+3 2019-09-25 20:39:21  i hate justin beiber but maaaaan if he n jungk...
+4 2019-09-25 20:39:04  A 16 year old Justin beiber looking mother fucker
+5 2019-09-25 20:37:56         Ffs, wish Beiber would have turned up now.
+6 2019-09-25 20:34:56  Kookie x beiber? Kookie x Ariana? https://t.co...
+7 2019-09-25 20:26:19              Justin Beiber And Bowser's First Kiss
+8 2019-09-25 20:22:47  @TrippieMiggy Your hair not gonna help either ...
+9 2019-09-25 20:12:55  which is something that we experience every da...
+2019-09-25 17:04:32,856 - [logs/search_tweepy.log:274]=> output data
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'created_at'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 266, in jitter
+    df['jitter'] = df['created_at'].diff(periods=-1)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'created_at'
+2019-09-25 17:04:32,858 - [logs/search_tweepy.log:372]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/twitter/search_tweepy.py", line 311, in twitter_loader_tab
+    jitter = renderer.get_plot(hv_jitter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 17:06:00,897 - [logs/search_tweepy.log:16]=> logs/search_tweepy.log
+2019-09-25 17:06:03,430 - [logs/search_tweepy.log:162]=> CREDENTIALS LOADED
+2019-09-25 17:06:03,934 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=10
+2019-09-25 17:06:05,234 - [logs/search_tweepy.log:216]=> LINE 211 self.df:           created_at                                               text
+0 2019-09-25 21:00:06  First concert: Justin Beiber\nLast concert: Ar...
+1 2019-09-25 20:48:35  For the dedicated strength trainer, clothes ma...
+2 2019-09-25 20:46:21  Beiber seems bored and is just blowing money lmao
+3 2019-09-25 20:39:21  i hate justin beiber but maaaaan if he n jungk...
+4 2019-09-25 20:39:04  A 16 year old Justin beiber looking mother fucker
+5 2019-09-25 20:37:56         Ffs, wish Beiber would have turned up now.
+6 2019-09-25 20:34:56  Kookie x beiber? Kookie x Ariana? https://t.co...
+7 2019-09-25 20:26:19              Justin Beiber And Bowser's First Kiss
+8 2019-09-25 20:22:47  @TrippieMiggy Your hair not gonna help either ...
+9 2019-09-25 20:12:55  which is something that we experience every da...
+2019-09-25 17:06:05,320 - [logs/search_tweepy.log:240]=> resample period:300S
+2019-09-25 17:06:05,334 - [logs/search_tweepy.log:247]=> LINE 307, df:            created_at       pos   neg       neu
+0  2019-09-25 20:10:00  0.000000  0.00  1.000000
+1  2019-09-25 20:15:00  0.000000  0.00  0.000000
+2  2019-09-25 20:20:00  0.000000  0.24  0.760000
+3  2019-09-25 20:25:00  0.360000  0.00  0.640000
+4  2019-09-25 20:30:00  0.000000  0.00  1.000000
+5  2019-09-25 20:35:00  0.073333  0.31  0.616667
+6  2019-09-25 20:40:00  0.000000  0.00  0.000000
+7  2019-09-25 20:45:00  0.365000  0.08  0.555000
+8  2019-09-25 20:50:00  0.000000  0.00  0.000000
+9  2019-09-25 20:55:00  0.000000  0.00  0.000000
+10 2019-09-25 21:00:00  0.000000  0.13  0.870000
+2019-09-25 17:06:16,231 - [logs/search_tweepy.log:240]=> resample period:2300S
+2019-09-25 17:06:16,264 - [logs/search_tweepy.log:247]=> LINE 307, df:           created_at       pos       neg   neu
+0 2019-09-25 19:48:20  0.120000  0.080000  0.80
+1 2019-09-25 20:26:40  0.135714  0.174286  0.69
+2019-09-25 17:06:38,210 - [logs/search_tweepy.log:176]=> LINE 186:beiber,messages=310
+2019-09-25 17:06:42,104 - [logs/search_tweepy.log:216]=> LINE 211 self.df:            created_at                                               text
+0  2019-09-25 21:06:21       RT @DaviHernvndez: Justin beiber goes hard 😤
+1  2019-09-25 21:00:06  First concert: Justin Beiber\nLast concert: Ar...
+2  2019-09-25 20:48:35  For the dedicated strength trainer, clothes ma...
+3  2019-09-25 20:46:21  Beiber seems bored and is just blowing money lmao
+4  2019-09-25 20:39:21  i hate justin beiber but maaaaan if he n jungk...
+5  2019-09-25 20:39:04  A 16 year old Justin beiber looking mother fucker
+6  2019-09-25 20:37:56         Ffs, wish Beiber would have turned up now.
+7  2019-09-25 20:34:56  Kookie x beiber? Kookie x Ariana? https://t.co...
+8  2019-09-25 20:26:19              Justin Beiber And Bowser's First Kiss
+9  2019-09-25 20:22:47  @TrippieMiggy Your hair not gonna help either ...
+10 2019-09-25 20:12:55  which is something that we experience every da...
+11 2019-09-25 19:54:10  Still can’t get over the Jamal Beiber tweet th...
+12 2019-09-25 19:51:06  She looks like a French, female, Justin Beiber...
+13 2019-09-25 19:46:53  RT @ItsMutai: @janetmachuka_ @ChesoliProtus @A...
+14 2019-09-25 19:44:45  So....jungkook decalcomanie (ft Justin beiber)...
+15 2019-09-25 19:36:56  @MathewsJerry @calgary_spunky @Quiggsie No, no...
+16 2019-09-25 19:36:03  @janetmachuka_ @ChesoliProtus @AfricaTweetChat...
+17 2019-09-25 19:33:56     no thats not justin beiber thats justin BEAVER
+18 2019-09-25 19:18:26  I remember when Justin Beiber and One directio...
+19 2019-09-25 19:08:51  @halo_wednesday @BTS_TaeJiin same I hate Justi...
+2019-09-25 17:08:01,877 - [logs/search_tweepy.log:240]=> resample period:700S
+2019-09-25 17:08:01,883 - [logs/search_tweepy.log:247]=> LINE 307, df:            created_at       pos       neg       neu
+0  2019-09-25 13:01:40  0.080000  0.130000  0.790000
+1  2019-09-25 13:13:20  0.051111  0.018889  0.931111
+2  2019-09-25 13:25:00  0.126000  0.000000  0.874000
+3  2019-09-25 13:36:40  0.083333  0.000000  0.916667
+4  2019-09-25 13:48:20  0.131250  0.020000  0.848750
+5  2019-09-25 14:00:00  0.000000  0.215000  0.785000
+6  2019-09-25 14:11:40  0.000000  0.000000  0.000000
+7  2019-09-25 14:23:20  0.000000  0.000000  0.000000
+8  2019-09-25 14:35:00  0.000000  0.000000  0.000000
+9  2019-09-25 14:46:40  0.085000  0.000000  0.915000
+10 2019-09-25 14:58:20  0.030000  0.026250  0.943750
+11 2019-09-25 15:10:00  0.030000  0.000000  0.970000
+12 2019-09-25 15:21:40  0.190000  0.000000  0.810000
+13 2019-09-25 15:33:20  0.120000  0.000000  0.880000
+14 2019-09-25 15:45:00  0.000000  0.135000  0.865000
+15 2019-09-25 15:56:40  0.000000  0.000000  1.000000
+16 2019-09-25 16:08:20  0.235000  0.100000  0.667500
+17 2019-09-25 16:20:00  0.132500  0.065000  0.802500
+18 2019-09-25 16:31:40  0.025000  0.040000  0.935000
+19 2019-09-25 16:43:20  0.170000  0.045000  0.783333
+20 2019-09-25 16:55:00  0.170000  0.085000  0.745000
+21 2019-09-25 17:06:40  0.090000  0.280000  0.630000
+22 2019-09-25 17:18:20  0.000000  0.180000  0.820000
+23 2019-09-25 17:30:00  0.110000  0.000000  0.890000
+24 2019-09-25 17:41:40  0.000000  0.000000  0.000000
+25 2019-09-25 17:53:20  0.000000  0.140000  0.860000
+26 2019-09-25 18:05:00  0.000000  0.110000  0.890000
+27 2019-09-25 18:16:40  0.000000  0.150000  0.850000
+28 2019-09-25 18:28:20  0.100000  0.025000  0.875000
+29 2019-09-25 18:40:00  0.000000  0.050000  0.950000

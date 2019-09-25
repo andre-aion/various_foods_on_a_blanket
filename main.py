@@ -14,7 +14,7 @@ from bokeh.layouts import gridplot
 from tornado.ioloop import IOLoop
 
 # GET THE DASHBOARD
-from scripts.dashboards.picnic_test.beiber import twitter_loader_tab
+from scripts.dashboards.twitter.search_tweepy import twitter_loader_tab
 
 # UTILS
 from scripts.utils.mylogger import mylogger
@@ -163,12 +163,12 @@ def aion_analytics(doc):
 @without_document_lock
 def launch_server():
     try:
-        apps = {"/analytics": Application(FunctionHandler(aion_analytics))}
+        apps = {"/twitter_search": Application(FunctionHandler(aion_analytics))}
         io_loop = IOLoop.current()
         server = Server(apps,port=5006, allow_websocket_origin=["*"],io_loop=io_loop,
                         session_ids='signed',relative_urls=False)
         server.start()
-        server.io_loop.add_callback(server.show, '/analytics')
+        server.io_loop.add_callback(server.show, '/twitter_search')
         server.io_loop.start()
     except Exception:
         logger.error("WEBSERVER LAUNCH:", exc_info=True)

@@ -4831,3 +4831,1924 @@ ValueError: Callback functions must have signature func(attr, old, new), got fun
 3  1171982463637147648          2019-09-12 03:02:48   1.568257e+09  RT @lukewaltham: Voice\nDo You\nAwakening\nMon...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
 4  1171982439238864897          2019-09-12 03:02:42   1.568257e+09  RT @bts_bighit: [#RM생일ㅊㅋ]\n아미와 RM이 함께한 반짝이는 시간...  982141034422349824        1.522996e+09   💜Aditi💜     aditi_beiber
 2019-09-11 23:21:25,399 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-24 13:03:48,057 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-24 13:11:20,655 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-24 13:17:02,657 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-24 13:18:47,275 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-24 13:28:36,220 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-24 13:28:36,221 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-24 13:28:36,914 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-24 13:28:36,915 - [logs/beiber.log:240]=> start:end= 1569346116.914692:  1569306116.914692
+2019-09-24 13:28:36,927 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date              user_name  user_screen_name
+0  1176547840161566720          2019-09-24 17:23:58   1.569346e+09  ...       1.507394e+09  🌏🇪🇺Record🇨🇦Breaker🇺🇸🌍        Agedearden
+1  1176545289806786560          2019-09-24 17:13:50   1.569345e+09  ...       1.427888e+09                    Olu         olutheboy
+2  1176545077096833024          2019-09-24 17:13:00   1.569345e+09  ...       1.474760e+09    Ronny D Crown🔱🔱🔱🔱🔱🔱   ronnydcrown3838
+3  1176544903578431489          2019-09-24 17:12:18   1.569345e+09  ...       1.239755e+09    Delta Charlie Bravo    DanielCBennett
+4  1176544856627453952          2019-09-24 17:12:07   1.569345e+09  ...       1.444478e+09           Heather Cook    Heather_Cook18
+
+[5 rows x 8 columns]
+2019-09-25 09:45:43,951 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 09:47:07,215 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 13:37:35,595 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:04:34,960 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:04:34,961 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:04:35,677 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:04:35,677 - [logs/beiber.log:240]=> start:end= 1569434675.677065:  1569394675.677065
+2019-09-25 14:04:35,690 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                 user_name  user_screen_name
+0  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09                    Daniel    Beiber_chippez
+1  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09               Kate Jarman      KateBurkeNHS
+2  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09                 ⚢ semi ia        faeriesope
+3  1176908013740941312          2019-09-25 17:15:11   1.569432e+09  ...       1.550350e+09  googie luvr##);!! 柔らかい!🍉       yaoiggukthj
+4  1176904522154893316          2019-09-25 17:01:18   1.569431e+09  ...       1.543849e+09                    shan ♡       KimSeok_WiN
+
+[5 rows x 8 columns]
+2019-09-25 14:04:35,726 - [logs/beiber.log:307]=> run
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 303, in sentiment_analysis
+    df['pos'], df['neg'], df['neu'] = zip(*df['text'].map(sentiment_analyzer_scores))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text'
+2019-09-25 14:04:36,079 - [logs/beiber.log:307]=> run
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 303, in sentiment_analysis
+    df['pos'], df['neg'], df['neu'] = zip(*df['text'].map(sentiment_analyzer_scores))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text'
+2019-09-25 14:04:36,080 - [logs/beiber.log:464]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 398, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 14:07:17,753 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:07:35,595 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:07:35,596 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:07:36,404 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:07:36,404 - [logs/beiber.log:240]=> start:end= 1569434856.404008:  1569394856.404008
+2019-09-25 14:07:36,418 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                 user_name  user_screen_name
+0  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09                   Freak 🔥   TmelaRodrigues1
+1  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09                    Daniel    Beiber_chippez
+2  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09               Kate Jarman      KateBurkeNHS
+3  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09                 ⚢ semi ia        faeriesope
+4  1176908013740941312          2019-09-25 17:15:11   1.569432e+09  ...       1.550350e+09  googie luvr##);!! 柔らかい!🍉       yaoiggukthj
+
+[5 rows x 8 columns]
+2019-09-25 14:07:36,517 - [logs/beiber.log:311]=> run
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 308, in sentiment_analysis
+    p = df.hvplot.line(x='human_readable_creation_date', y=cols, width=1200, height=600)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 232, in line
+    return self(x, y, kind='line', **kwds)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 866, in line
+    return self.chart(Curve, x, y, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 861, in chart
+    chart = element(data, x, [c]+self.hover_cols).redim(**{c: self.value_label})
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['neu']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 14:07:36,905 - [logs/beiber.log:311]=> run
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 308, in sentiment_analysis
+    p = df.hvplot.line(x='human_readable_creation_date', y=cols, width=1200, height=600)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 232, in line
+    return self(x, y, kind='line', **kwds)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/__init__.py", line 183, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 719, in __call__
+    obj = method(x, y)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 866, in line
+    return self.chart(Curve, x, y, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/hvplot/converter.py", line 861, in chart
+    chart = element(data, x, [c]+self.hover_cols).redim(**{c: self.value_label})
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 214, in __init__
+    self.interface.validate(self, validate_vdims)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 149, in validate
+    "not found: %s" % repr(not_found), cls)
+holoviews.core.data.interface.DataError: Supplied data does not contain specified dimensions, the following dimensions were not found: ['neu']
+
+PandasInterface expects tabular data, for more information on supported datatypes see http://holoviews.org/user_guide/Tabular_Datasets.html
+2019-09-25 14:07:36,905 - [logs/beiber.log:468]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 402, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 14:09:30,058 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:09:32,285 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:09:32,285 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:09:33,024 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:09:33,025 - [logs/beiber.log:240]=> start:end= 1569434973.024792:  1569394973.024792
+2019-09-25 14:09:33,038 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                 user_name  user_screen_name
+0  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09                   Freak 🔥   TmelaRodrigues1
+1  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09                    Daniel    Beiber_chippez
+2  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09               Kate Jarman      KateBurkeNHS
+3  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09                 ⚢ semi ia        faeriesope
+4  1176908013740941312          2019-09-25 17:15:11   1.569432e+09  ...       1.550350e+09  googie luvr##);!! 柔らかい!🍉       yaoiggukthj
+
+[5 rows x 8 columns]
+2019-09-25 14:09:33,067 - [logs/beiber.log:301]=> LINE 301, cols:['index', 'message_ID', 'human_readable_creation_date', 'creation_date', 'text', 'user_ID', 'user_creation_date', 'user_name', 'user_screen_name', 'pos', 'neg', 'neu']
+2019-09-25 14:09:33,464 - [logs/beiber.log:301]=> LINE 301, cols:['index', 'message_ID', 'human_readable_creation_date', 'creation_date', 'text', 'user_ID', 'user_creation_date', 'user_name', 'user_screen_name', 'pos', 'neg', 'neu']
+2019-09-25 14:09:33,552 - [logs/beiber.log:469]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 403, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:13:40,244 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:17:07,630 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:17:07,631 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:17:08,316 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:17:08,317 - [logs/beiber.log:240]=> start:end= 1569435428.316605:  1569395428.316605
+2019-09-25 14:17:08,329 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:17:08,710 - [logs/beiber.log:306]=> LINE 306, cols:[('human_readable_creation_date', ''), ('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:17:08,710 - [logs/beiber.log:307]=> LINE 307, df:   human_readable_creation_date           pos                                                ...                neg           neu                                              
+                                   message_ID creation_date      user_ID user_creation_date  ... user_creation_date    message_ID creation_date      user_ID user_creation_date
+0           2019-09-25 10:03:22  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...       1.354727e+09  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+1           2019-09-25 10:03:24           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+2           2019-09-25 10:03:26           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+3           2019-09-25 10:03:28           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+4           2019-09-25 10:03:30           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+5           2019-09-25 10:03:32           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+6           2019-09-25 10:03:34           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+7           2019-09-25 10:03:36           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+8           2019-09-25 10:03:38           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+9           2019-09-25 10:03:40           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+10          2019-09-25 10:03:42           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+11          2019-09-25 10:03:44           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+12          2019-09-25 10:03:46           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+13          2019-09-25 10:03:48           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+14          2019-09-25 10:03:50           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+15          2019-09-25 10:03:52           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+16          2019-09-25 10:03:54           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+17          2019-09-25 10:03:56           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+18          2019-09-25 10:03:58           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+19          2019-09-25 10:04:00           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+20          2019-09-25 10:04:02           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+21          2019-09-25 10:04:04           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+22          2019-09-25 10:04:06           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+23          2019-09-25 10:04:08           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+24          2019-09-25 10:04:10           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+25          2019-09-25 10:04:12           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+26          2019-09-25 10:04:14           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+27          2019-09-25 10:04:16           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+28          2019-09-25 10:04:18           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+29          2019-09-25 10:04:20           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+
+[30 rows x 13 columns]
+2019-09-25 14:17:08,806 - [logs/beiber.log:469]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 403, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:18:02,380 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:18:09,715 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:18:09,715 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:18:10,351 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:18:10,352 - [logs/beiber.log:240]=> start:end= 1569435490.351623:  1569395490.351623
+2019-09-25 14:18:10,364 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:18:10,748 - [logs/beiber.log:306]=> LINE 306, cols:[('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:18:10,748 - [logs/beiber.log:307]=> LINE 307, df:                                       pos                                                ...           neu                                              
+                                message_ID creation_date      user_ID user_creation_date  ...    message_ID creation_date      user_ID user_creation_date
+human_readable_creation_date                                                              ...                                                            
+2019-09-25 10:03:22           1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+2019-09-25 10:03:24                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:26                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:28                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:30                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:32                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:34                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:36                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:38                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:40                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:42                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:44                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:46                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:48                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:50                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:52                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:54                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:56                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:03:58                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:00                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:02                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:04                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:06                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:08                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:10                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:12                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:14                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:16                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:18                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+2019-09-25 10:04:20                    NaN           NaN          NaN                NaN  ...           NaN           NaN          NaN                NaN
+
+[30 rows x 12 columns]
+2019-09-25 14:18:10,866 - [logs/beiber.log:469]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 403, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:19:03,375 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:19:06,684 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:19:06,684 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:19:07,407 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:19:07,407 - [logs/beiber.log:240]=> start:end= 1569435547.407147:  1569395547.407147
+2019-09-25 14:19:07,420 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:19:07,810 - [logs/beiber.log:307]=> LINE 306, cols:[('human_readable_creation_date', ''), ('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:19:07,810 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date           pos                                                ...                neg           neu                                              
+                                   message_ID creation_date      user_ID user_creation_date  ... user_creation_date    message_ID creation_date      user_ID user_creation_date
+0           2019-09-25 10:03:22  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...       1.354727e+09  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+1           2019-09-25 10:03:24           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+2           2019-09-25 10:03:26           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+3           2019-09-25 10:03:28           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+4           2019-09-25 10:03:30           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+5           2019-09-25 10:03:32           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+6           2019-09-25 10:03:34           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+7           2019-09-25 10:03:36           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+8           2019-09-25 10:03:38           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+9           2019-09-25 10:03:40           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+10          2019-09-25 10:03:42           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+11          2019-09-25 10:03:44           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+12          2019-09-25 10:03:46           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+13          2019-09-25 10:03:48           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+14          2019-09-25 10:03:50           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+15          2019-09-25 10:03:52           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+16          2019-09-25 10:03:54           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+17          2019-09-25 10:03:56           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+18          2019-09-25 10:03:58           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+19          2019-09-25 10:04:00           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+20          2019-09-25 10:04:02           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+21          2019-09-25 10:04:04           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+22          2019-09-25 10:04:06           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+23          2019-09-25 10:04:08           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+24          2019-09-25 10:04:10           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+25          2019-09-25 10:04:12           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+26          2019-09-25 10:04:14           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+27          2019-09-25 10:04:16           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+28          2019-09-25 10:04:18           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+29          2019-09-25 10:04:20           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+
+[30 rows x 13 columns]
+2019-09-25 14:19:07,913 - [logs/beiber.log:470]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 404, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:20:06,531 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:20:09,840 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:20:09,840 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:20:10,581 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:20:10,581 - [logs/beiber.log:240]=> start:end= 1569435610.581094:  1569395610.581094
+2019-09-25 14:20:10,594 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:20:11,062 - [logs/beiber.log:307]=> LINE 306, cols:[('human_readable_creation_date', ''), ('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:20:11,062 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date           pos                                                ...                neg           neu                                              
+                                   message_ID creation_date      user_ID user_creation_date  ... user_creation_date    message_ID creation_date      user_ID user_creation_date
+0           2019-09-25 10:03:22  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...       1.354727e+09  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+1           2019-09-25 10:03:24           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+2           2019-09-25 10:03:26           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+3           2019-09-25 10:03:28           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+4           2019-09-25 10:03:30           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+5           2019-09-25 10:03:32           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+6           2019-09-25 10:03:34           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+7           2019-09-25 10:03:36           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+8           2019-09-25 10:03:38           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+9           2019-09-25 10:03:40           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+10          2019-09-25 10:03:42           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+11          2019-09-25 10:03:44           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+12          2019-09-25 10:03:46           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+13          2019-09-25 10:03:48           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+14          2019-09-25 10:03:50           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+15          2019-09-25 10:03:52           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+16          2019-09-25 10:03:54           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+17          2019-09-25 10:03:56           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+18          2019-09-25 10:03:58           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+19          2019-09-25 10:04:00           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+20          2019-09-25 10:04:02           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+21          2019-09-25 10:04:04           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+22          2019-09-25 10:04:06           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+23          2019-09-25 10:04:08           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+24          2019-09-25 10:04:10           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+25          2019-09-25 10:04:12           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+26          2019-09-25 10:04:14           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+27          2019-09-25 10:04:16           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+28          2019-09-25 10:04:18           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+29          2019-09-25 10:04:20           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+
+[30 rows x 13 columns]
+2019-09-25 14:20:11,163 - [logs/beiber.log:470]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 404, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:21:00,092 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:21:04,301 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:21:04,302 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:21:05,013 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:21:05,014 - [logs/beiber.log:240]=> start:end= 1569435665.013867:  1569395665.013867
+2019-09-25 14:21:05,026 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:21:05,426 - [logs/beiber.log:301]=> LINE 301, df:    index           message_ID human_readable_creation_date  creation_date  ... user_screen_name    pos    neg    neu
+0      99  1176799343518638080          2019-09-25 10:03:22   1.569406e+09  ...       blackdekpe  0.000  0.077  0.923
+1      98  1176799864497139713          2019-09-25 10:05:26   1.569406e+09  ...     aditi_beiber  0.288  0.000  0.712
+2      97  1176802973193666560          2019-09-25 10:17:47   1.569407e+09  ...      ihatekannon  0.000  0.000  1.000
+3      96  1176807440450543616          2019-09-25 10:35:32   1.569408e+09  ...          kanko_a  0.331  0.000  0.669
+4      95  1176808917831057408          2019-09-25 10:41:24   1.569408e+09  ...      deekuonfire  0.000  0.000  1.000
+5      94  1176822366736797696          2019-09-25 11:34:51   1.569411e+09  ...        rclark333  0.000  0.000  1.000
+6      93  1176824934024318976          2019-09-25 11:45:03   1.569412e+09  ...      chewbacca88  0.000  0.000  1.000
+7      92  1176825554357518336          2019-09-25 11:47:31   1.569412e+09  ...    harusoraharu_  0.242  0.000  0.758
+8      91  1176828158919634944          2019-09-25 11:57:52   1.569413e+09  ...      itsjhei0623  0.000  0.000  1.000
+9      90  1176828486637375488          2019-09-25 11:59:10   1.569413e+09  ...        jjsnowcat  0.241  0.060  0.698
+10     89  1176832664105410561          2019-09-25 12:15:46   1.569414e+09  ...     MarwaGhazy16  0.000  0.000  1.000
+11     88  1176834740713750528          2019-09-25 12:24:01   1.569414e+09  ...     aditi_beiber  0.304  0.000  0.696
+12     87  1176834781822124033          2019-09-25 12:24:11   1.569414e+09  ...     aditi_beiber  0.000  0.000  1.000
+13     86  1176834789678047232          2019-09-25 12:24:13   1.569414e+09  ...     aditi_beiber  0.000  0.000  1.000
+14     85  1176834835974770688          2019-09-25 12:24:24   1.569414e+09  ...     aditi_beiber  0.000  0.000  1.000
+15     84  1176836370255491074          2019-09-25 12:30:29   1.569415e+09  ...     long_leg_boi  0.000  0.000  1.000
+16     83  1176838400307019776          2019-09-25 12:38:33   1.569415e+09  ...  danielradeljic8  0.000  0.000  1.000
+17     82  1176839468902338560          2019-09-25 12:42:48   1.569415e+09  ...     aditi_beiber  0.000  0.000  1.000
+18     81  1176840771279867904          2019-09-25 12:47:59   1.569416e+09  ...     aditi_beiber  0.000  0.000  1.000
+19     80  1176841141880123393          2019-09-25 12:49:27   1.569416e+09  ...     aditi_beiber  0.061  0.000  0.939
+20     79  1176841166806863872          2019-09-25 12:49:33   1.569416e+09  ...     aditi_beiber  0.297  0.000  0.703
+21     78  1176841184737517568          2019-09-25 12:49:37   1.569416e+09  ...     aditi_beiber  0.000  0.136  0.864
+22     77  1176841203850997762          2019-09-25 12:49:42   1.569416e+09  ...     aditi_beiber  0.000  0.000  1.000
+23     76  1176841368150380547          2019-09-25 12:50:21   1.569416e+09  ...       offenderer  0.000  0.000  1.000
+24     75  1176842932948652032          2019-09-25 12:56:34   1.569416e+09  ...     aditi_beiber  0.000  0.000  1.000
+25     74  1176842959066554370          2019-09-25 12:56:40   1.569416e+09  ...     aditi_beiber  0.094  0.000  0.906
+26     73  1176845955619885056          2019-09-25 13:08:35   1.569417e+09  ...     mooniegirl07  0.000  0.000  1.000
+27     72  1176846594127216640          2019-09-25 13:11:07   1.569417e+09  ...        fakesherr  0.162  0.257  0.581
+28     71  1176847601867476997          2019-09-25 13:15:07   1.569417e+09  ...     aditi_beiber  0.000  0.000  1.000
+29     70  1176847659878907905          2019-09-25 13:15:21   1.569417e+09  ...     aditi_beiber  0.000  0.079  0.921
+
+[30 rows x 12 columns]
+2019-09-25 14:21:05,482 - [logs/beiber.log:308]=> LINE 306, cols:[('human_readable_creation_date', ''), ('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:21:05,483 - [logs/beiber.log:309]=> LINE 307, df:   human_readable_creation_date           pos                                                ...                neg           neu                                              
+                                   message_ID creation_date      user_ID user_creation_date  ... user_creation_date    message_ID creation_date      user_ID user_creation_date
+0           2019-09-25 10:03:22  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...       1.354727e+09  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+1           2019-09-25 10:03:24           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+2           2019-09-25 10:03:26           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+3           2019-09-25 10:03:28           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+4           2019-09-25 10:03:30           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+5           2019-09-25 10:03:32           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+6           2019-09-25 10:03:34           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+7           2019-09-25 10:03:36           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+8           2019-09-25 10:03:38           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+9           2019-09-25 10:03:40           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+10          2019-09-25 10:03:42           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+11          2019-09-25 10:03:44           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+12          2019-09-25 10:03:46           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+13          2019-09-25 10:03:48           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+14          2019-09-25 10:03:50           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+15          2019-09-25 10:03:52           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+16          2019-09-25 10:03:54           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+17          2019-09-25 10:03:56           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+18          2019-09-25 10:03:58           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+19          2019-09-25 10:04:00           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+20          2019-09-25 10:04:02           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+21          2019-09-25 10:04:04           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+22          2019-09-25 10:04:06           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+23          2019-09-25 10:04:08           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+24          2019-09-25 10:04:10           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+25          2019-09-25 10:04:12           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+26          2019-09-25 10:04:14           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+27          2019-09-25 10:04:16           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+28          2019-09-25 10:04:18           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+29          2019-09-25 10:04:20           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+
+[30 rows x 13 columns]
+2019-09-25 14:21:05,579 - [logs/beiber.log:471]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 405, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:22:54,852 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:22:56,991 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:22:56,991 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:22:57,631 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:22:57,631 - [logs/beiber.log:240]=> start:end= 1569435777.631449:  1569395777.631449
+2019-09-25 14:22:57,645 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+1  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+2  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+3  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+4  1176910955894202368          2019-09-25 17:26:52   1.569432e+09  ...       1.472072e+09       ⚢ semi ia        faeriesope
+
+[5 rows x 8 columns]
+2019-09-25 14:22:58,095 - [logs/beiber.log:302]=> LINE 301, df:                                       message_ID  creation_date  ...               user_name  user_screen_name
+human_readable_creation_date                                      ...                                          
+2019-09-25 10:03:22           1176799343518638080   1.569406e+09  ...        Ouabi Abdel Aziz        blackdekpe
+2019-09-25 10:05:26           1176799864497139713   1.569406e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 10:17:47           1176802973193666560   1.569407e+09  ...          Nick Skywalker       ihatekannon
+2019-09-25 10:35:32           1176807440450543616   1.569408e+09  ...         Davina A. Kanko           kanko_a
+2019-09-25 10:41:24           1176808917831057408   1.569408e+09  ...                 Darshan       deekuonfire
+2019-09-25 11:34:51           1176822366736797696   1.569411e+09  ...               rclark333         rclark333
+2019-09-25 11:45:03           1176824934024318976   1.569412e+09  ...  Protector of The Realm       chewbacca88
+2019-09-25 11:47:31           1176825554357518336   1.569412e+09  ...    harusoraharusoraharu     harusoraharu_
+2019-09-25 11:57:52           1176828158919634944   1.569413e+09  ...     Jerome Delos Santos       itsjhei0623
+2019-09-25 11:59:10           1176828486637375488   1.569413e+09  ...            John Bryndal         jjsnowcat
+2019-09-25 12:15:46           1176832664105410561   1.569414e+09  ...                   مروه💙      MarwaGhazy16
+2019-09-25 12:24:01           1176834740713750528   1.569414e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:24:11           1176834781822124033   1.569414e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:24:13           1176834789678047232   1.569414e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:24:24           1176834835974770688   1.569414e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:30:29           1176836370255491074   1.569415e+09  ...  stan twice or perish 💕      long_leg_boi
+2019-09-25 12:38:33           1176838400307019776   1.569415e+09  ...               DanielRad   danielradeljic8
+2019-09-25 12:42:48           1176839468902338560   1.569415e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:47:59           1176840771279867904   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:49:27           1176841141880123393   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:49:33           1176841166806863872   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:49:37           1176841184737517568   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:49:42           1176841203850997762   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:50:21           1176841368150380547   1.569416e+09  ...              Uzzwan Ugg        offenderer
+2019-09-25 12:56:34           1176842932948652032   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 12:56:40           1176842959066554370   1.569416e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 13:08:35           1176845955619885056   1.569417e+09  ...           Kookie_Bunny🐰      mooniegirl07
+2019-09-25 13:11:07           1176846594127216640   1.569417e+09  ...                     ●︿●         fakesherr
+2019-09-25 13:15:07           1176847601867476997   1.569417e+09  ...                 💜Aditi💜      aditi_beiber
+2019-09-25 13:15:21           1176847659878907905   1.569417e+09  ...                 💜Aditi💜      aditi_beiber
+
+[30 rows x 7 columns]
+2019-09-25 14:22:58,139 - [logs/beiber.log:308]=> LINE 306, cols:[('human_readable_creation_date', ''), ('pos', 'message_ID'), ('pos', 'creation_date'), ('pos', 'user_ID'), ('pos', 'user_creation_date'), ('neg', 'message_ID'), ('neg', 'creation_date'), ('neg', 'user_ID'), ('neg', 'user_creation_date'), ('neu', 'message_ID'), ('neu', 'creation_date'), ('neu', 'user_ID'), ('neu', 'user_creation_date')]
+2019-09-25 14:22:58,139 - [logs/beiber.log:309]=> LINE 307, df:   human_readable_creation_date           pos                                                ...                neg           neu                                              
+                                   message_ID creation_date      user_ID user_creation_date  ... user_creation_date    message_ID creation_date      user_ID user_creation_date
+0           2019-09-25 10:03:22  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09  ...       1.354727e+09  1.176799e+18  1.569406e+09  991353414.0       1.354727e+09
+1           2019-09-25 10:03:24           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+2           2019-09-25 10:03:26           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+3           2019-09-25 10:03:28           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+4           2019-09-25 10:03:30           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+5           2019-09-25 10:03:32           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+6           2019-09-25 10:03:34           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+7           2019-09-25 10:03:36           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+8           2019-09-25 10:03:38           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+9           2019-09-25 10:03:40           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+10          2019-09-25 10:03:42           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+11          2019-09-25 10:03:44           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+12          2019-09-25 10:03:46           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+13          2019-09-25 10:03:48           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+14          2019-09-25 10:03:50           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+15          2019-09-25 10:03:52           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+16          2019-09-25 10:03:54           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+17          2019-09-25 10:03:56           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+18          2019-09-25 10:03:58           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+19          2019-09-25 10:04:00           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+20          2019-09-25 10:04:02           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+21          2019-09-25 10:04:04           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+22          2019-09-25 10:04:06           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+23          2019-09-25 10:04:08           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+24          2019-09-25 10:04:10           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+25          2019-09-25 10:04:12           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+26          2019-09-25 10:04:14           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+27          2019-09-25 10:04:16           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+28          2019-09-25 10:04:18           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+29          2019-09-25 10:04:20           NaN           NaN          NaN                NaN  ...                NaN           NaN           NaN          NaN                NaN
+
+[30 rows x 13 columns]
+2019-09-25 14:22:58,237 - [logs/beiber.log:471]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 405, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 207, in get_plot
+    plot.update(init_key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 595, in update
+    return self.initialize_plot()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/element.py", line 2035, in initialize_plot
+    ranges = self.compute_ranges(self.hmap, key, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 391, in compute_ranges
+    self._compute_group_range(group, elements, ranges)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/plot.py", line 488, in _compute_group_range
+    data_range = el.range(el_dim, dimension_range=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/__init__.py", line 289, in range
+    lower, upper = self.interface.range(self, dim)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/data/pandas.py", line 155, in range
+    if column.dtype.kind == 'O':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'dtype'
+2019-09-25 14:27:32,255 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:27:34,757 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:27:34,757 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:27:35,395 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:27:35,395 - [logs/beiber.log:240]=> start:end= 1569436055.395487:  1569396055.395487
+2019-09-25 14:27:35,411 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+1  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+2  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+3  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+4  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+
+[5 rows x 8 columns]
+2019-09-25 14:27:35,808 - [logs/beiber.log:302]=> LINE 301, df:                               pos   neg   neu
+human_readable_creation_date                  
+2019-09-25 10:05:26           0.29  0.00  0.71
+2019-09-25 10:17:47           0.00  0.00  1.00
+2019-09-25 10:35:32           0.33  0.00  0.67
+2019-09-25 10:41:24           0.00  0.00  1.00
+2019-09-25 11:34:51           0.00  0.00  1.00
+2019-09-25 11:45:03           0.00  0.00  1.00
+2019-09-25 11:47:31           0.24  0.00  0.76
+2019-09-25 11:57:52           0.00  0.00  1.00
+2019-09-25 11:59:10           0.24  0.06  0.70
+2019-09-25 12:15:46           0.00  0.00  1.00
+2019-09-25 12:24:01           0.30  0.00  0.70
+2019-09-25 12:24:11           0.00  0.00  1.00
+2019-09-25 12:24:13           0.00  0.00  1.00
+2019-09-25 12:24:24           0.00  0.00  1.00
+2019-09-25 12:30:29           0.00  0.00  1.00
+2019-09-25 12:38:33           0.00  0.00  1.00
+2019-09-25 12:42:48           0.00  0.00  1.00
+2019-09-25 12:47:59           0.00  0.00  1.00
+2019-09-25 12:49:27           0.06  0.00  0.94
+2019-09-25 12:49:33           0.30  0.00  0.70
+2019-09-25 12:49:37           0.00  0.14  0.86
+2019-09-25 12:49:42           0.00  0.00  1.00
+2019-09-25 12:50:21           0.00  0.00  1.00
+2019-09-25 12:56:34           0.00  0.00  1.00
+2019-09-25 12:56:40           0.09  0.00  0.91
+2019-09-25 13:08:35           0.00  0.00  1.00
+2019-09-25 13:11:07           0.16  0.26  0.58
+2019-09-25 13:15:07           0.00  0.00  1.00
+2019-09-25 13:15:21           0.00  0.08  0.92
+2019-09-25 13:15:27           0.00  0.00  1.00
+2019-09-25 14:27:35,831 - [logs/beiber.log:308]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:27:35,832 - [logs/beiber.log:309]=> LINE 307, df:   human_readable_creation_date   pos  neg   neu
+0           2019-09-25 10:05:26  0.29  0.0  0.71
+1           2019-09-25 10:05:28   NaN  NaN   NaN
+2           2019-09-25 10:05:30   NaN  NaN   NaN
+3           2019-09-25 10:05:32   NaN  NaN   NaN
+4           2019-09-25 10:05:34   NaN  NaN   NaN
+5           2019-09-25 10:05:36   NaN  NaN   NaN
+6           2019-09-25 10:05:38   NaN  NaN   NaN
+7           2019-09-25 10:05:40   NaN  NaN   NaN
+8           2019-09-25 10:05:42   NaN  NaN   NaN
+9           2019-09-25 10:05:44   NaN  NaN   NaN
+10          2019-09-25 10:05:46   NaN  NaN   NaN
+11          2019-09-25 10:05:48   NaN  NaN   NaN
+12          2019-09-25 10:05:50   NaN  NaN   NaN
+13          2019-09-25 10:05:52   NaN  NaN   NaN
+14          2019-09-25 10:05:54   NaN  NaN   NaN
+15          2019-09-25 10:05:56   NaN  NaN   NaN
+16          2019-09-25 10:05:58   NaN  NaN   NaN
+17          2019-09-25 10:06:00   NaN  NaN   NaN
+18          2019-09-25 10:06:02   NaN  NaN   NaN
+19          2019-09-25 10:06:04   NaN  NaN   NaN
+20          2019-09-25 10:06:06   NaN  NaN   NaN
+21          2019-09-25 10:06:08   NaN  NaN   NaN
+22          2019-09-25 10:06:10   NaN  NaN   NaN
+23          2019-09-25 10:06:12   NaN  NaN   NaN
+24          2019-09-25 10:06:14   NaN  NaN   NaN
+25          2019-09-25 10:06:16   NaN  NaN   NaN
+26          2019-09-25 10:06:18   NaN  NaN   NaN
+27          2019-09-25 10:06:20   NaN  NaN   NaN
+28          2019-09-25 10:06:22   NaN  NaN   NaN
+29          2019-09-25 10:06:24   NaN  NaN   NaN
+2019-09-25 14:29:56,211 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:30:00,584 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:30:00,585 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:30:01,441 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:30:01,441 - [logs/beiber.log:240]=> start:end= 1569436201.440975:  1569396201.440975
+2019-09-25 14:30:01,454 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+1  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+2  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+3  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+4  1176911873658314753          2019-09-25 17:30:31   1.569433e+09  ...       1.394390e+09     Kate Jarman      KateBurkeNHS
+
+[5 rows x 8 columns]
+2019-09-25 14:30:01,641 - [logs/beiber.log:301]=> LINE 301, df:     pos   neg   neu
+99  0.29  0.00  0.71
+98  0.00  0.00  1.00
+97  0.33  0.00  0.67
+96  0.00  0.00  1.00
+95  0.00  0.00  1.00
+94  0.00  0.00  1.00
+93  0.24  0.00  0.76
+92  0.00  0.00  1.00
+91  0.24  0.06  0.70
+90  0.00  0.00  1.00
+89  0.30  0.00  0.70
+88  0.00  0.00  1.00
+87  0.00  0.00  1.00
+86  0.00  0.00  1.00
+85  0.00  0.00  1.00
+84  0.00  0.00  1.00
+83  0.00  0.00  1.00
+82  0.00  0.00  1.00
+81  0.06  0.00  0.94
+80  0.30  0.00  0.70
+79  0.00  0.14  0.86
+78  0.00  0.00  1.00
+77  0.00  0.00  1.00
+76  0.00  0.00  1.00
+75  0.09  0.00  0.91
+74  0.00  0.00  1.00
+73  0.16  0.26  0.58
+72  0.00  0.00  1.00
+71  0.00  0.08  0.92
+70  0.00  0.00  1.00
+2019-09-25 14:30:01,662 - [logs/beiber.log:313]=> run
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 302, in sentiment_analysis
+    df = df.set_index('human_readable_creation_date').resample(self.resample_period['value'])\
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 4396, in set_index
+    raise KeyError("None of {} are in the columns".format(missing))
+KeyError: "None of ['human_readable_creation_date'] are in the columns"
+2019-09-25 14:30:01,664 - [logs/beiber.log:470]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 404, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 14:31:11,732 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:31:13,944 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:31:13,945 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:31:14,636 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:31:14,636 - [logs/beiber.log:240]=> start:end= 1569436274.636047:  1569396274.636047
+2019-09-25 14:31:14,649 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+1  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+2  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+3  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+4  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+
+[5 rows x 8 columns]
+2019-09-25 14:31:14,818 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99    @MJ_Keilani It kinda matches your justin beiber          2019-09-25 10:17:47  0.00  0.00  1.00
+98  Thanks to the support they receive from each o...          2019-09-25 10:35:32  0.33  0.00  0.67
+97     @JhaSanjay and rahul gandhi is justin beiber 😉          2019-09-25 10:41:24  0.00  0.00  1.00
+96                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+95            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+94  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+93  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+92  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+91  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+90  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+89  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+88  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+87  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+86                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+85                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+84                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+83  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+82  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+81  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+80  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+79  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+78  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+77  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+76  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+75  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+74  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+73  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+72  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+71  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+70  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+2019-09-25 14:31:14,852 - [logs/beiber.log:306]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:31:14,852 - [logs/beiber.log:307]=> LINE 307, df:   human_readable_creation_date  pos  neg  neu
+0           2019-09-25 10:17:30  0.0  0.0  1.0
+1           2019-09-25 10:18:00  NaN  NaN  NaN
+2           2019-09-25 10:18:30  NaN  NaN  NaN
+3           2019-09-25 10:19:00  NaN  NaN  NaN
+4           2019-09-25 10:19:30  NaN  NaN  NaN
+5           2019-09-25 10:20:00  NaN  NaN  NaN
+6           2019-09-25 10:20:30  NaN  NaN  NaN
+7           2019-09-25 10:21:00  NaN  NaN  NaN
+8           2019-09-25 10:21:30  NaN  NaN  NaN
+9           2019-09-25 10:22:00  NaN  NaN  NaN
+10          2019-09-25 10:22:30  NaN  NaN  NaN
+11          2019-09-25 10:23:00  NaN  NaN  NaN
+12          2019-09-25 10:23:30  NaN  NaN  NaN
+13          2019-09-25 10:24:00  NaN  NaN  NaN
+14          2019-09-25 10:24:30  NaN  NaN  NaN
+15          2019-09-25 10:25:00  NaN  NaN  NaN
+16          2019-09-25 10:25:30  NaN  NaN  NaN
+17          2019-09-25 10:26:00  NaN  NaN  NaN
+18          2019-09-25 10:26:30  NaN  NaN  NaN
+19          2019-09-25 10:27:00  NaN  NaN  NaN
+20          2019-09-25 10:27:30  NaN  NaN  NaN
+21          2019-09-25 10:28:00  NaN  NaN  NaN
+22          2019-09-25 10:28:30  NaN  NaN  NaN
+23          2019-09-25 10:29:00  NaN  NaN  NaN
+24          2019-09-25 10:29:30  NaN  NaN  NaN
+25          2019-09-25 10:30:00  NaN  NaN  NaN
+26          2019-09-25 10:30:30  NaN  NaN  NaN
+27          2019-09-25 10:31:00  NaN  NaN  NaN
+28          2019-09-25 10:31:30  NaN  NaN  NaN
+29          2019-09-25 10:32:00  NaN  NaN  NaN
+2019-09-25 14:34:09,689 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:34:14,094 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:34:14,095 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:34:14,797 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:34:14,798 - [logs/beiber.log:240]=> start:end= 1569436454.797711:  1569396454.797711
+2019-09-25 14:34:14,826 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+1  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+2  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+3  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+4  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+
+[5 rows x 8 columns]
+2019-09-25 14:34:14,956 - [logs/beiber.log:313]=> run
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/utils/myutils.py", line 33, in sentiment_analyzer_scores
+    if math.isnan(score['item']):
+KeyError: 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 299, in sentiment_analysis
+    df['pos'], df['neg'], df['neu'] = zip(*df['text'].map(sentiment_analyzer_scores))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/series.py", line 3825, in map
+    new_values = super()._map_values(arg, na_action=na_action)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/base.py", line 1300, in _map_values
+    new_values = map_f(values, mapper)
+  File "pandas/_libs/lib.pyx", line 2228, in pandas._libs.lib.map_infer
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/utils/myutils.py", line 43, in sentiment_analyzer_scores
+    logger.error('sentiment analyzer failed',exec_info=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/logging/__init__.py", line 1407, in error
+    self._log(ERROR, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'exec_info'
+2019-09-25 14:34:14,959 - [logs/beiber.log:470]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 404, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 14:34:41,764 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:34:44,324 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:34:44,324 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:34:44,942 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:34:44,942 - [logs/beiber.log:240]=> start:end= 1569436484.942251:  1569396484.942251
+2019-09-25 14:34:44,958 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+1  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+2  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+3  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+4  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+
+[5 rows x 8 columns]
+2019-09-25 14:34:45,116 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99    @MJ_Keilani It kinda matches your justin beiber          2019-09-25 10:17:47  0.00  0.00  1.00
+98  Thanks to the support they receive from each o...          2019-09-25 10:35:32  0.33  0.00  0.67
+97     @JhaSanjay and rahul gandhi is justin beiber 😉          2019-09-25 10:41:24  0.00  0.00  1.00
+96                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+95            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+94  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+93  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+92  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+91  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+90  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+89  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+88  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+87  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+86                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+85                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+84                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+83  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+82  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+81  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+80  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+79  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+78  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+77  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+76  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+75  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+74  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+73  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+72  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+71  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+70  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+2019-09-25 14:34:45,147 - [logs/beiber.log:307]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:34:45,148 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date  pos  neg  neu
+0           2019-09-25 10:17:30  0.0  0.0  1.0
+1           2019-09-25 10:18:00  NaN  NaN  NaN
+2           2019-09-25 10:18:30  NaN  NaN  NaN
+3           2019-09-25 10:19:00  NaN  NaN  NaN
+4           2019-09-25 10:19:30  NaN  NaN  NaN
+5           2019-09-25 10:20:00  NaN  NaN  NaN
+6           2019-09-25 10:20:30  NaN  NaN  NaN
+7           2019-09-25 10:21:00  NaN  NaN  NaN
+8           2019-09-25 10:21:30  NaN  NaN  NaN
+9           2019-09-25 10:22:00  NaN  NaN  NaN
+10          2019-09-25 10:22:30  NaN  NaN  NaN
+11          2019-09-25 10:23:00  NaN  NaN  NaN
+12          2019-09-25 10:23:30  NaN  NaN  NaN
+13          2019-09-25 10:24:00  NaN  NaN  NaN
+14          2019-09-25 10:24:30  NaN  NaN  NaN
+15          2019-09-25 10:25:00  NaN  NaN  NaN
+16          2019-09-25 10:25:30  NaN  NaN  NaN
+17          2019-09-25 10:26:00  NaN  NaN  NaN
+18          2019-09-25 10:26:30  NaN  NaN  NaN
+19          2019-09-25 10:27:00  NaN  NaN  NaN
+20          2019-09-25 10:27:30  NaN  NaN  NaN
+21          2019-09-25 10:28:00  NaN  NaN  NaN
+22          2019-09-25 10:28:30  NaN  NaN  NaN
+23          2019-09-25 10:29:00  NaN  NaN  NaN
+24          2019-09-25 10:29:30  NaN  NaN  NaN
+25          2019-09-25 10:30:00  NaN  NaN  NaN
+26          2019-09-25 10:30:30  NaN  NaN  NaN
+27          2019-09-25 10:31:00  NaN  NaN  NaN
+28          2019-09-25 10:31:30  NaN  NaN  NaN
+29          2019-09-25 10:32:00  NaN  NaN  NaN
+2019-09-25 14:37:06,429 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:37:09,105 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:37:09,105 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:37:09,722 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:37:09,723 - [logs/beiber.log:240]=> start:end= 1569436629.722646:  1569396629.722646
+2019-09-25 14:37:09,737 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+1  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+2  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+3  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+4  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+
+[5 rows x 8 columns]
+2019-09-25 14:37:09,903 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99    @MJ_Keilani It kinda matches your justin beiber          2019-09-25 10:17:47  0.00  0.00  1.00
+98  Thanks to the support they receive from each o...          2019-09-25 10:35:32  0.33  0.00  0.67
+97     @JhaSanjay and rahul gandhi is justin beiber 😉          2019-09-25 10:41:24  0.00  0.00  1.00
+96                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+95            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+94  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+93  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+92  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+91  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+90  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+89  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+88  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+87  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+86                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+85                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+84                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+83  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+82  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+81  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+80  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+79  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+78  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+77  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+76  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+75  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+74  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+73  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+72  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+71  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+70  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+2019-09-25 14:37:09,926 - [logs/beiber.log:314]=> run
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 302, in sentiment_analysis
+    logger.warnning('resample period:%s')
+AttributeError: 'Logger' object has no attribute 'warnning'
+2019-09-25 14:37:09,926 - [logs/beiber.log:471]=> Twitter loader:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/twitter_search/scripts/dashboards/picnic_test/beiber.py", line 405, in twitter_loader_tab
+    sentiment_analysis = renderer.get_plot(hv_sentiment_analysis)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-09-25 14:37:53,752 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:37:56,345 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:37:56,346 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:37:57,040 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:37:57,040 - [logs/beiber.log:240]=> start:end= 1569436677.040203:  1569396677.040203
+2019-09-25 14:37:57,051 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+1  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+2  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+3  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+4  1176918709694169088          2019-09-25 17:57:41   1.569434e+09  ...       1.273887e+09          Daniel    Beiber_chippez
+
+[5 rows x 8 columns]
+2019-09-25 14:37:57,216 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99    @MJ_Keilani It kinda matches your justin beiber          2019-09-25 10:17:47  0.00  0.00  1.00
+98  Thanks to the support they receive from each o...          2019-09-25 10:35:32  0.33  0.00  0.67
+97     @JhaSanjay and rahul gandhi is justin beiber 😉          2019-09-25 10:41:24  0.00  0.00  1.00
+96                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+95            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+94  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+93  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+92  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+91  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+90  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+89  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+88  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+87  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+86                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+85                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+84                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+83  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+82  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+81  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+80  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+79  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+78  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+77  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+76  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+75  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+74  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+73  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+72  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+71  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+70  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+2019-09-25 14:37:57,237 - [logs/beiber.log:302]=> resample period:30S
+2019-09-25 14:37:57,246 - [logs/beiber.log:308]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:37:57,246 - [logs/beiber.log:309]=> LINE 307, df:   human_readable_creation_date  pos  neg  neu
+0           2019-09-25 10:17:30  0.0  0.0  1.0
+1           2019-09-25 10:18:00  NaN  NaN  NaN
+2           2019-09-25 10:18:30  NaN  NaN  NaN
+3           2019-09-25 10:19:00  NaN  NaN  NaN
+4           2019-09-25 10:19:30  NaN  NaN  NaN
+5           2019-09-25 10:20:00  NaN  NaN  NaN
+6           2019-09-25 10:20:30  NaN  NaN  NaN
+7           2019-09-25 10:21:00  NaN  NaN  NaN
+8           2019-09-25 10:21:30  NaN  NaN  NaN
+9           2019-09-25 10:22:00  NaN  NaN  NaN
+10          2019-09-25 10:22:30  NaN  NaN  NaN
+11          2019-09-25 10:23:00  NaN  NaN  NaN
+12          2019-09-25 10:23:30  NaN  NaN  NaN
+13          2019-09-25 10:24:00  NaN  NaN  NaN
+14          2019-09-25 10:24:30  NaN  NaN  NaN
+15          2019-09-25 10:25:00  NaN  NaN  NaN
+16          2019-09-25 10:25:30  NaN  NaN  NaN
+17          2019-09-25 10:26:00  NaN  NaN  NaN
+18          2019-09-25 10:26:30  NaN  NaN  NaN
+19          2019-09-25 10:27:00  NaN  NaN  NaN
+20          2019-09-25 10:27:30  NaN  NaN  NaN
+21          2019-09-25 10:28:00  NaN  NaN  NaN
+22          2019-09-25 10:28:30  NaN  NaN  NaN
+23          2019-09-25 10:29:00  NaN  NaN  NaN
+24          2019-09-25 10:29:30  NaN  NaN  NaN
+25          2019-09-25 10:30:00  NaN  NaN  NaN
+26          2019-09-25 10:30:30  NaN  NaN  NaN
+27          2019-09-25 10:31:00  NaN  NaN  NaN
+28          2019-09-25 10:31:30  NaN  NaN  NaN
+29          2019-09-25 10:32:00  NaN  NaN  NaN
+2019-09-25 14:39:46,705 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:39:48,861 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:39:48,863 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:39:49,558 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:39:49,558 - [logs/beiber.log:240]=> start:end= 1569436789.558461:  1569396789.558461
+2019-09-25 14:39:49,570 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date       user_name  user_screen_name
+0  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09    don't follow      red_dyvelvet
+1  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09         Ronaldo   Ronaldo76096481
+2  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09          𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+3  1176921881213046784          2019-09-25 18:10:17   1.569435e+09  ...       1.563017e+09  Ashley Jackson    ashley56860225
+4  1176920997615865859          2019-09-25 18:06:46   1.569435e+09  ...       1.539189e+09         Freak 🔥   TmelaRodrigues1
+
+[5 rows x 8 columns]
+2019-09-25 14:39:49,737 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99  Thanks to the support they receive from each o...          2019-09-25 10:35:32  0.33  0.00  0.67
+98     @JhaSanjay and rahul gandhi is justin beiber 😉          2019-09-25 10:41:24  0.00  0.00  1.00
+97                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+96            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+95  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+94  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+93  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+92  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+91  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+90  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+89  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+88  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+87                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+86                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+85                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+84  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+83  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+82  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+81  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+80  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+79  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+78  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+77  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+76  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+75  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+74  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+73  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+72  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+71  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+70  You could say you are Justin Beiber or somethi...          2019-09-25 13:15:46  0.06  0.00  0.94
+2019-09-25 14:39:49,759 - [logs/beiber.log:302]=> resample period:30S
+2019-09-25 14:39:49,767 - [logs/beiber.log:308]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:39:49,767 - [logs/beiber.log:309]=> LINE 307, df:   human_readable_creation_date   pos  neg   neu
+0           2019-09-25 10:35:30  0.33  0.0  0.67
+1           2019-09-25 10:36:00   NaN  NaN   NaN
+2           2019-09-25 10:36:30   NaN  NaN   NaN
+3           2019-09-25 10:37:00   NaN  NaN   NaN
+4           2019-09-25 10:37:30   NaN  NaN   NaN
+5           2019-09-25 10:38:00   NaN  NaN   NaN
+6           2019-09-25 10:38:30   NaN  NaN   NaN
+7           2019-09-25 10:39:00   NaN  NaN   NaN
+8           2019-09-25 10:39:30   NaN  NaN   NaN
+9           2019-09-25 10:40:00   NaN  NaN   NaN
+10          2019-09-25 10:40:30   NaN  NaN   NaN
+11          2019-09-25 10:41:00  0.00  0.0  1.00
+12          2019-09-25 10:41:30   NaN  NaN   NaN
+13          2019-09-25 10:42:00   NaN  NaN   NaN
+14          2019-09-25 10:42:30   NaN  NaN   NaN
+15          2019-09-25 10:43:00   NaN  NaN   NaN
+16          2019-09-25 10:43:30   NaN  NaN   NaN
+17          2019-09-25 10:44:00   NaN  NaN   NaN
+18          2019-09-25 10:44:30   NaN  NaN   NaN
+19          2019-09-25 10:45:00   NaN  NaN   NaN
+20          2019-09-25 10:45:30   NaN  NaN   NaN
+21          2019-09-25 10:46:00   NaN  NaN   NaN
+22          2019-09-25 10:46:30   NaN  NaN   NaN
+23          2019-09-25 10:47:00   NaN  NaN   NaN
+24          2019-09-25 10:47:30   NaN  NaN   NaN
+25          2019-09-25 10:48:00   NaN  NaN   NaN
+26          2019-09-25 10:48:30   NaN  NaN   NaN
+27          2019-09-25 10:49:00   NaN  NaN   NaN
+28          2019-09-25 10:49:30   NaN  NaN   NaN
+29          2019-09-25 10:50:00   NaN  NaN   NaN
+2019-09-25 14:41:26,211 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:41:30,453 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:41:30,453 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:41:31,180 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:41:31,181 - [logs/beiber.log:240]=> start:end= 1569436891.180708:  1569396891.180708
+2019-09-25 14:41:31,195 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date      user_name  user_screen_name
+0  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09  ThatGuyDarrin      DarrinMercer
+1  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09         Daniel    Beiber_chippez
+2  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09   don't follow      red_dyvelvet
+3  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09        Ronaldo   Ronaldo76096481
+4  1176926200008192000          2019-09-25 18:27:26   1.569436e+09  ...       1.540675e+09         𝘿𝙖𝙫𝙞 🌎     DaviHernvndez
+
+[5 rows x 8 columns]
+2019-09-25 14:41:31,360 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99                     @TonyGrossi Beiber and santana          2019-09-25 11:34:51  0.00  0.00  1.00
+98            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+97  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+96  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+95  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+94  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+93  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+92  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+91  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+90  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+89                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+88                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+87                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+86  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+85  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+84  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+83  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+82  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+81  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+80  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+79  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+78  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+77  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+76  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+75  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+74  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+73  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+72  You could say you are Justin Beiber or somethi...          2019-09-25 13:15:46  0.06  0.00  0.94
+71  RT @barbarindian: You could say you are Justin...          2019-09-25 13:16:29  0.05  0.00  0.95
+70                   what do you  mean; justin beiber          2019-09-25 13:19:26  0.00  0.00  1.00
+2019-09-25 14:41:31,392 - [logs/beiber.log:302]=> resample period:30S
+2019-09-25 14:41:31,404 - [logs/beiber.log:309]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:41:31,404 - [logs/beiber.log:310]=> LINE 307, df:   human_readable_creation_date   pos  neg   neu
+0           2019-09-25 11:34:30  0.00  0.0  1.00
+1           2019-09-25 11:35:00  0.00  0.0  0.00
+2           2019-09-25 11:35:30  0.00  0.0  0.00
+3           2019-09-25 11:36:00  0.00  0.0  0.00
+4           2019-09-25 11:36:30  0.00  0.0  0.00
+5           2019-09-25 11:37:00  0.00  0.0  0.00
+6           2019-09-25 11:37:30  0.00  0.0  0.00
+7           2019-09-25 11:38:00  0.00  0.0  0.00
+8           2019-09-25 11:38:30  0.00  0.0  0.00
+9           2019-09-25 11:39:00  0.00  0.0  0.00
+10          2019-09-25 11:39:30  0.00  0.0  0.00
+11          2019-09-25 11:40:00  0.00  0.0  0.00
+12          2019-09-25 11:40:30  0.00  0.0  0.00
+13          2019-09-25 11:41:00  0.00  0.0  0.00
+14          2019-09-25 11:41:30  0.00  0.0  0.00
+15          2019-09-25 11:42:00  0.00  0.0  0.00
+16          2019-09-25 11:42:30  0.00  0.0  0.00
+17          2019-09-25 11:43:00  0.00  0.0  0.00
+18          2019-09-25 11:43:30  0.00  0.0  0.00
+19          2019-09-25 11:44:00  0.00  0.0  0.00
+20          2019-09-25 11:44:30  0.00  0.0  0.00
+21          2019-09-25 11:45:00  0.00  0.0  1.00
+22          2019-09-25 11:45:30  0.00  0.0  0.00
+23          2019-09-25 11:46:00  0.00  0.0  0.00
+24          2019-09-25 11:46:30  0.00  0.0  0.00
+25          2019-09-25 11:47:00  0.00  0.0  0.00
+26          2019-09-25 11:47:30  0.24  0.0  0.76
+27          2019-09-25 11:48:00  0.00  0.0  0.00
+28          2019-09-25 11:48:30  0.00  0.0  0.00
+29          2019-09-25 11:49:00  0.00  0.0  0.00
+2019-09-25 14:45:20,253 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:45:23,676 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:45:23,676 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:45:24,413 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:45:24,414 - [logs/beiber.log:240]=> start:end= 1569437124.413653:  1569397124.413653
+2019-09-25 14:45:24,427 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 14:45:24,568 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+98  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+97  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+96  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+95  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+94  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+93  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+92  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+91  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+90                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+89                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+88                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+87  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+86  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+85  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+84  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+83  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+82  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+81  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+80  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+79  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+78  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+77  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+76  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+75  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+74  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+73  You could say you are Justin Beiber or somethi...          2019-09-25 13:15:46  0.06  0.00  0.94
+72  RT @barbarindian: You could say you are Justin...          2019-09-25 13:16:29  0.05  0.00  0.95
+71                   what do you  mean; justin beiber          2019-09-25 13:19:26  0.00  0.00  1.00
+70  RT @barbarindian: You could say you are Justin...          2019-09-25 13:21:36  0.05  0.00  0.95
+2019-09-25 14:45:24,590 - [logs/beiber.log:302]=> resample period:300S
+2019-09-25 14:45:24,597 - [logs/beiber.log:309]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:45:24,597 - [logs/beiber.log:310]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 14:53:58,550 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:54:01,198 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:54:01,198 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:54:01,920 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:54:01,920 - [logs/beiber.log:240]=> start:end= 1569437641.920176:  1569397641.920176
+2019-09-25 14:54:01,932 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 14:54:02,081 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+98  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+97  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+96  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+95  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+94  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+93  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+92  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+91  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+90                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+89                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+88                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+87  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+86  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+85  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+84  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+83  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+82  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+81  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+80  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+79  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+78  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+77  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+76  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+75  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+74  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+73  You could say you are Justin Beiber or somethi...          2019-09-25 13:15:46  0.06  0.00  0.94
+72  RT @barbarindian: You could say you are Justin...          2019-09-25 13:16:29  0.05  0.00  0.95
+71                   what do you  mean; justin beiber          2019-09-25 13:19:26  0.00  0.00  1.00
+70  RT @barbarindian: You could say you are Justin...          2019-09-25 13:21:36  0.05  0.00  0.95
+2019-09-25 14:54:02,102 - [logs/beiber.log:302]=> resample period:300S
+2019-09-25 14:54:02,109 - [logs/beiber.log:309]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:54:02,109 - [logs/beiber.log:310]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 14:55:39,914 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 14:55:43,811 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 14:55:43,812 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 14:55:44,564 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 14:55:44,564 - [logs/beiber.log:240]=> start:end= 1569437744.564146:  1569397744.564146
+2019-09-25 14:55:44,579 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 14:55:44,722 - [logs/beiber.log:300]=> LINE 301, df:                                                 text human_readable_creation_date   pos   neg   neu
+99            Justin beiber?? https://t.co/lJ8zhz1dci          2019-09-25 11:45:03  0.00  0.00  1.00
+98  justin beiber never fucked his sister and look...          2019-09-25 11:47:31  0.24  0.00  0.76
+97  Beiber or Oppa?? ahahahaha https://t.co/OaWKhx...          2019-09-25 11:57:52  0.00  0.00  1.00
+96  @castrovince Meanwhile @Indians fans win Twitt...          2019-09-25 11:59:10  0.24  0.06  0.70
+95  لا كفر الشيخ عندنا كانت بتفاضل مبين justin Bei...          2019-09-25 12:15:46  0.00  0.00  1.00
+94  RT @bangstanmutuals: rts &amp; likes if you lo...          2019-09-25 12:24:01  0.30  0.00  0.70
+93  RT @TXT_members: 쨘 춘추복 입어써요❣\n모아 저녁 먹어써요???\n#...          2019-09-25 12:24:11  0.00  0.00  1.00
+92  RT @KIMVpics: #방탄소년단 #뷔 #태형 #BTS #V #TAEHYUNG ...          2019-09-25 12:24:13  0.00  0.00  1.00
+91  RT @bts_bighit: #BTS TikTok Channel Open!\nhtt...          2019-09-25 12:24:24  0.00  0.00  1.00
+90                            @WECHENLE justin beiber          2019-09-25 12:30:29  0.00  0.00  1.00
+89                   and justin beiber. dudes a goat.          2019-09-25 12:38:33  0.00  0.00  1.00
+88                     @bts_bighit I can't find it 😭😭          2019-09-25 12:42:48  0.00  0.00  1.00
+87  @lukewaltham I can't find their channel 😭😭,,,p...          2019-09-25 12:47:59  0.00  0.00  1.00
+86  RT @lukewaltham: Me: why would I want to downl...          2019-09-25 12:49:27  0.06  0.00  0.94
+85  RT @bangstanmutuals: Follow everyone who likes...          2019-09-25 12:49:33  0.30  0.00  0.70
+84  RT @billboardcharts: .@BTS_twt has now spent 1...          2019-09-25 12:49:37  0.00  0.14  0.86
+83  RT @BangtanINDIA: BTS's Tik Tok video ~\n\n#Th...          2019-09-25 12:49:42  0.00  0.00  1.00
+82  @willyru42 #backtothefuture is a classic examp...          2019-09-25 12:50:21  0.00  0.00  1.00
+81  RT @HuffPostKorea: '헤이 주드' 열창하는 BTS를 보고 폴 매카트니...          2019-09-25 12:56:34  0.00  0.00  1.00
+80  RT @GoAwayWithJae: .@BTS_twt says they're awar...          2019-09-25 12:56:40  0.09  0.00  0.91
+79  @aditi_beiber @lukewaltham #BTS TikTok Channel...          2019-09-25 13:08:35  0.00  0.00  1.00
+78  @lowquaImgc there was a whole thing with justi...          2019-09-25 13:11:07  0.16  0.26  0.58
+77  @mooniegirl07 @lukewaltham aaa I find it 😍,,,t...          2019-09-25 13:15:07  0.00  0.00  1.00
+76  RT @CanadaMoments: BTS’ Blood Sweat &amp; Tear...          2019-09-25 13:15:21  0.00  0.08  0.92
+75  RT @soompi: #BTS Launches TikTok Channel\nhttp...          2019-09-25 13:15:27  0.00  0.00  1.00
+74  RT @Koreaboo: BTS’s Bodyguard Escorted V’s “Sp...          2019-09-25 13:15:34  0.00  0.00  1.00
+73  You could say you are Justin Beiber or somethi...          2019-09-25 13:15:46  0.06  0.00  0.94
+72  RT @barbarindian: You could say you are Justin...          2019-09-25 13:16:29  0.05  0.00  0.95
+71                   what do you  mean; justin beiber          2019-09-25 13:19:26  0.00  0.00  1.00
+70  RT @barbarindian: You could say you are Justin...          2019-09-25 13:21:36  0.05  0.00  0.95
+2019-09-25 14:55:44,743 - [logs/beiber.log:302]=> resample period:300S
+2019-09-25 14:55:44,750 - [logs/beiber.log:309]=> LINE 306, cols:['human_readable_creation_date', 'pos', 'neg', 'neu']
+2019-09-25 14:55:44,750 - [logs/beiber.log:310]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:03:45,338 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:03:48,480 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:03:48,480 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:03:49,148 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:03:49,149 - [logs/beiber.log:240]=> start:end= 1569438229.148826:  1569398229.148826
+2019-09-25 15:03:49,161 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 15:03:49,301 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:03:49,307 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:04:05,943 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=60&result_type=recent
+2019-09-25 15:04:06,240 - [logs/beiber.log:228]=> # of results retreived:60
+2019-09-25 15:04:06,241 - [logs/beiber.log:240]=> start:end= 1569438246.24078:  1569398246.24078
+2019-09-25 15:04:06,265 - [logs/beiber.log:265]=> df:, length=60,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 15:05:55,797 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:05:58,662 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:05:58,662 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:05:59,354 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:05:59,355 - [logs/beiber.log:240]=> start:end= 1569438359.354665:  1569398359.354665
+2019-09-25 15:05:59,367 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 15:05:59,503 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:05:59,509 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:06:46,946 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:06:50,214 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:06:50,215 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:06:51,155 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:06:51,156 - [logs/beiber.log:240]=> start:end= 1569438411.155417:  1569398411.155417
+2019-09-25 15:06:51,176 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 15:06:51,324 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:06:51,331 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:07:02,454 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=trump&count=100&result_type=recent
+2019-09-25 15:07:02,960 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:07:02,960 - [logs/beiber.log:240]=> start:end= 1569438422.96026:  1569398422.96026
+2019-09-25 15:07:02,971 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176936149010567168          2019-09-25 19:06:58   1.569438e+09  ...       1.342443e+09     Mario Parker      MarioDParker
+1  1176936148989599749          2019-09-25 19:06:58   1.569438e+09  ...       1.199671e+09    Richard Young          ryoung77
+2  1176936148934938624          2019-09-25 19:06:58   1.569438e+09  ...       1.451947e+09  Christian Lamar   christianllamar
+3  1176936148905746432          2019-09-25 19:06:58   1.569438e+09  ...       1.569253e+09        @SrAgatha         SrAgatha2
+4  1176936148712615937          2019-09-25 19:06:58   1.569438e+09  ...       1.484984e+09          Aaron B     AaronDBailey3
+
+[5 rows x 8 columns]
+2019-09-25 15:07:28,586 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:07:38,400 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:07:41,337 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:07:41,338 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:07:42,011 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:07:42,012 - [logs/beiber.log:240]=> start:end= 1569438462.011856:  1569398462.011856
+2019-09-25 15:07:42,026 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+1  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+2  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+3  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+4  1176927006237306884          2019-09-25 18:30:39   1.569436e+09  ...       1.563248e+09          Ronaldo   Ronaldo76096481
+
+[5 rows x 8 columns]
+2019-09-25 15:07:42,165 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:07:42,172 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.120000  0.000000  0.880000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:08:02,172 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=trump&count=100&result_type=recent
+2019-09-25 15:08:02,625 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:08:02,625 - [logs/beiber.log:240]=> start:end= 1569438482.625337:  1569398482.625337
+2019-09-25 15:08:02,636 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date                  user_name  user_screen_name
+0  1176936396461756417          2019-09-25 19:07:57   1.569438e+09  ...       1.258065e+09                  antoni000      antonioh9017
+1  1176936396423974912          2019-09-25 19:07:57   1.569438e+09  ...       1.550420e+09                   lulubird   lulubir67298641
+2  1176936396411625472          2019-09-25 19:07:57   1.569438e+09  ...       1.532808e+09              Carlene Bolla      BollaCarlene
+3  1176936396352819201          2019-09-25 19:07:57   1.569438e+09  ...       1.236795e+09              𝑅𝒪𝐵𝐸𝑅𝒯🎸𝒲𝒜𝒯𝒮𝒪𝒩    RobertL_Watson
+4  1176936396281565184          2019-09-25 19:07:57   1.569438e+09  ...       1.304293e+09  Betty Mitchell #GlovesOff         mitch61nm
+
+[5 rows x 8 columns]
+2019-09-25 15:11:30,210 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:11:34,344 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:11:34,345 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:11:35,651 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:11:35,651 - [logs/beiber.log:240]=> start:end= 1569438695.651441:  1569398695.651441
+2019-09-25 15:11:35,664 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176936620504813570          2019-09-25 19:08:51   1.569439e+09  ...       1.553650e+09               ‏ً      flatlinetear
+1  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+2  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+3  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+4  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+
+[5 rows x 8 columns]
+2019-09-25 15:11:35,801 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:11:35,808 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.240000  0.000000  0.760000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
+2019-09-25 15:11:45,793 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=70&result_type=recent
+2019-09-25 15:11:46,204 - [logs/beiber.log:228]=> # of results retreived:70
+2019-09-25 15:11:46,204 - [logs/beiber.log:240]=> start:end= 1569438706.204556:  1569398706.204556
+2019-09-25 15:11:46,214 - [logs/beiber.log:265]=> df:, length=70,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176936620504813570          2019-09-25 19:08:51   1.569439e+09  ...       1.553650e+09               ‏ً      flatlinetear
+1  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+2  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+3  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+4  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+
+[5 rows x 8 columns]
+2019-09-25 15:13:03,729 - [logs/beiber.log:16]=> logs/beiber.log
+2019-09-25 15:13:07,298 - [logs/beiber.log:190]=> CREDENTIALS LOADED
+2019-09-25 15:13:07,298 - [logs/beiber.log:211]=> QUERY CONSTRUCTED:q=beiber&count=100&result_type=recent
+2019-09-25 15:13:07,928 - [logs/beiber.log:228]=> # of results retreived:100
+2019-09-25 15:13:07,929 - [logs/beiber.log:240]=> start:end= 1569438787.928913:  1569398787.928913
+2019-09-25 15:13:07,941 - [logs/beiber.log:265]=> df:, length=100,            message_ID human_readable_creation_date  creation_date  ... user_creation_date        user_name  user_screen_name
+0  1176936620504813570          2019-09-25 19:08:51   1.569439e+09  ...       1.553650e+09               ‏ً      flatlinetear
+1  1176929918606827520          2019-09-25 18:42:13   1.569437e+09  ...       1.250523e+09  DempseyBlade ⚔️      dempseyblade
+2  1176929697051140099          2019-09-25 18:41:20   1.569437e+09  ...       1.327502e+09    ThatGuyDarrin      DarrinMercer
+3  1176929657276395520          2019-09-25 18:41:11   1.569437e+09  ...       1.273887e+09           Daniel    Beiber_chippez
+4  1176928966277353473          2019-09-25 18:38:26   1.569437e+09  ...       1.326525e+09     don't follow      red_dyvelvet
+
+[5 rows x 8 columns]
+2019-09-25 15:13:08,112 - [logs/beiber.log:301]=> resample period:300S
+2019-09-25 15:13:08,119 - [logs/beiber.log:308]=> LINE 307, df:   human_readable_creation_date       pos       neg       neu
+0           2019-09-25 11:45:00  0.240000  0.000000  0.760000
+1           2019-09-25 11:50:00  0.000000  0.000000  0.000000
+2           2019-09-25 11:55:00  0.120000  0.030000  0.850000
+3           2019-09-25 12:00:00  0.000000  0.000000  0.000000
+4           2019-09-25 12:05:00  0.000000  0.000000  0.000000
+5           2019-09-25 12:10:00  0.000000  0.000000  0.000000
+6           2019-09-25 12:15:00  0.000000  0.000000  1.000000
+7           2019-09-25 12:20:00  0.075000  0.000000  0.925000
+8           2019-09-25 12:25:00  0.000000  0.000000  0.000000
+9           2019-09-25 12:30:00  0.000000  0.000000  1.000000
+10          2019-09-25 12:35:00  0.000000  0.000000  1.000000
+11          2019-09-25 12:40:00  0.000000  0.000000  1.000000
+12          2019-09-25 12:45:00  0.072000  0.028000  0.900000
+13          2019-09-25 12:50:00  0.000000  0.000000  1.000000
+14          2019-09-25 12:55:00  0.045000  0.000000  0.955000
+15          2019-09-25 13:00:00  0.000000  0.000000  0.000000
+16          2019-09-25 13:05:00  0.000000  0.000000  1.000000
+17          2019-09-25 13:10:00  0.160000  0.260000  0.580000
+18          2019-09-25 13:15:00  0.015714  0.011429  0.972857
+19          2019-09-25 13:20:00  0.175000  0.045000  0.785000
+20          2019-09-25 13:25:00  0.125000  0.000000  0.875000
+21          2019-09-25 13:30:00  0.000000  0.000000  1.000000
+22          2019-09-25 13:35:00  0.126667  0.000000  0.873333
+23          2019-09-25 13:40:00  0.125000  0.000000  0.875000
+24          2019-09-25 13:45:00  0.000000  0.000000  0.000000
+25          2019-09-25 13:50:00  0.118571  0.022857  0.858571
+26          2019-09-25 13:55:00  0.220000  0.000000  0.780000
+27          2019-09-25 14:00:00  0.000000  0.150000  0.850000
+28          2019-09-25 14:05:00  0.000000  0.280000  0.720000
+29          2019-09-25 14:10:00  0.000000  0.000000  0.000000
