@@ -10,7 +10,8 @@ from bokeh.server.server import Server
 from bokeh.application import Application
 from bokeh.application.handlers.function import FunctionHandler
 from bokeh.layouts import gridplot
-
+from scripts.dashboards.kpis.inventory import kpi_inventory_tab
+from config.credentials import credentials
 from tornado.ioloop import IOLoop
 
 # GET THE DASHBOARD
@@ -20,11 +21,14 @@ from scripts.dashboards.twitter.search_tweepy import twitter_loader_tab
 from scripts.utils.mylogger import mylogger
 logger = mylogger(__file__)
 executor = ThreadPoolExecutor(max_workers=10)
+origin = 'localhost'
+credentials = credentials[origin]
 
 labels = [
     'twitter search',
+    'KPI: inventory'
 ]
-DEFAULT_CHECKBOX_SELECTION = 0
+DEFAULT_CHECKBOX_SELECTION = 1
 
 
 @gen.coroutine
@@ -66,6 +70,14 @@ def aion_analytics(doc):
                     selection_tab.selected_tracker.append(panel_title)
                     if tw not in tablist:
                         tablist.append(tw)
+
+            panel_title = 'KPI: inventory'
+            if panel_title in lst:
+                if panel_title not in selection_tab.selected_tracker:
+                    inv = yield kpi_inventory_tab(panel_title=panel_title,credentials=credentials)
+                    selection_tab.selected_tracker.append(panel_title)
+                    if inv not in tablist:
+                        tablist.append(inv)
 
             # make list unique
             tablist = list(set(tablist))
@@ -163,12 +175,14 @@ def aion_analytics(doc):
 @without_document_lock
 def launch_server():
     try:
-        apps = {"/twitter_search": Application(FunctionHandler(aion_analytics))}
+        apps = {"/analytics": Application(FunctionHandler(aion_analytics))}
         io_loop = IOLoop.current()
-        server = Server(apps,port=5006, allow_websocket_origin=["*"],io_loop=io_loop,
+        websocket_origin = f"{credentials['websocket']}:5006"
+        print(websocket_origin)
+        server = Server(apps,port=5006, allow_websocket_origin=[websocket_origin],io_loop=io_loop,
                         session_ids='signed',relative_urls=False)
         server.start()
-        server.io_loop.add_callback(server.show, '/twitter_search')
+        server.io_loop.add_callback(server.show, '/analytics')
         server.io_loop.start()
     except Exception:
         logger.error("WEBSERVER LAUNCH:", exc_info=True)

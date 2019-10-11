@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="aion_analytics@staging" uuid="320597cf-ea23-4904-a5c7-77834a8b6f07">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://40.113.226.240:3306/aion_analytics</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="clickhouse@localhost" uuid="4bc6f2bd-2c05-4aac-b90d-35b2bd538f06">
+    <data-source source="LOCAL" name="amdattds_clickhouse@localhost" uuid="4bc6f2bd-2c05-4aac-b90d-35b2bd538f06">
       <driver-ref>clickhouse</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
-      <jdbc-url>jdbc:clickhouse://localhost:8123/aion</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="aion_analytics.mysql@localhost" uuid="42e934a5-6c0a-4c97-8bb3-a4a6ebdd5a36">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/aion_analytics</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
+      <jdbc-url>jdbc:clickhouse://localhost:8123/amdattds</jdbc-url>
     </data-source>
   </component>
 </project>

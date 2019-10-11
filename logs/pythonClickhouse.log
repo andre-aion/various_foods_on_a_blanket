@@ -1,0 +1,1273 @@
+2019-10-11 10:32:41,486 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:33:16,946 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:33:59,319 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:47:42,680 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:53:08,006 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:54:31,914 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:58:17,772 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:58:35,446 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 10:58:56,608 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:01:11,406 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:08:02,226 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:14:59,941 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:15:34,803 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:16:48,793 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:17:12,396 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:17:44,005 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:18:18,453 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:21:39,080 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:21:42,897 - [logs/pythonClickhouse.log:119]=>  load data :%s
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/databases/pythonClickhouse.py", line 109, in load_data
+    with_column_types=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 214, in execute
+    columnar=columnar
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 334, in process_ordinary_query
+    columnar=columnar)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 83, in receive_result
+    return result.get_result()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/result.py", line 48, in get_result
+    for packet in self.packet_generator:
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 95, in packet_generator
+    packet = self.receive_packet()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 112, in receive_packet
+    raise packet.exception
+clickhouse_driver.errors.ServerException: Code: 47.
+DB::Exception: Missing columns: 'amount' while processing query: 'SELECT delivery_amount, timestamp_delivered, amount FROM amdattds.inventory_warehouse WHERE (toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00')) AND (toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')) ORDER BY timestamp_delivered ASC', required columns: 'timestamp_delivered' 'amount' 'delivery_amount', source columns: 'city_longitude' 'birthday' 'city' 'delivery_person' 'timestamp_delivered' 'delivery_amount' 'item' 'item_category' 'unit_price_change_timestamp' 'item_price' 'payment_method' 'amount_paid' 'industry_name' 'purchase_order_id' 'payment_id' 'gender' 'payment_timestamp' 'no_items' 'proposed_delivery_timestamp' 'city_latitude' 'purchase_order_timestamp' 'shipping_method' 'company_name'. Stack trace:
+
+0. 0x562b186eb160 StackTrace::StackTrace() /usr/bin/clickhouse
+1. 0x562b186eaf35 DB::Exception::Exception(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) /usr/bin/clickhouse
+2. 0x562b184947c0 ? /usr/bin/clickhouse
+3. 0x562b1ba8b0a8 DB::SyntaxAnalyzer::analyze(std::shared_ptr<DB::IAST>&, DB::NamesAndTypesList const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::shared_ptr<DB::IStorage>, DB::NamesAndTypesList const&) const /usr/bin/clickhouse
+4. 0x562b1b983a9e DB::InterpreterSelectQuery::InterpreterSelectQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, std::shared_ptr<DB::IBlockInputStream> const&, std::shared_ptr<DB::IStorage> const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+5. 0x562b1b984817 DB::InterpreterSelectQuery::InterpreterSelectQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+6. 0x562b1b9a70d8 DB::InterpreterSelectWithUnionQuery::InterpreterSelectWithUnionQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+7. 0x562b1b964828 DB::InterpreterFactory::get(std::shared_ptr<DB::IAST>&, DB::Context&, DB::QueryProcessingStage::Enum) /usr/bin/clickhouse
+8. 0x562b1bab4489 ? /usr/bin/clickhouse
+9. 0x562b1bab483c DB::executeQuery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, DB::Context&, bool, DB::QueryProcessingStage::Enum, bool) /usr/bin/clickhouse
+10. 0x562b18760390 DB::TCPHandler::runImpl() /usr/bin/clickhouse
+11. 0x562b18760d2b DB::TCPHandler::run() /usr/bin/clickhouse
+12. 0x562b1c5d1b80 Poco::Net::TCPServerConnection::start() /usr/bin/clickhouse
+13. 0x562b1c5d229d Poco::Net::TCPServerDispatcher::run() /usr/bin/clickhouse
+14. 0x562b1dc20b31 Poco::PooledThread::run() /usr/bin/clickhouse
+15. 0x562b1dc1e8dc Poco::ThreadImpl::runnableEntry(void*) /usr/bin/clickhouse
+16. 0x562b1e394120 ? /usr/bin/clickhouse
+17. 0x7f418e35a6db start_thread /lib/x86_64-linux-gnu/libpthread-2.27.so
+18. 0x7f418dc7788f clone /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:97
+
+2019-10-11 11:21:42,904 - [logs/pythonClickhouse.log:119]=>  load data :%s
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/databases/pythonClickhouse.py", line 109, in load_data
+    with_column_types=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 214, in execute
+    columnar=columnar
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 334, in process_ordinary_query
+    columnar=columnar)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 83, in receive_result
+    return result.get_result()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/result.py", line 48, in get_result
+    for packet in self.packet_generator:
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 95, in packet_generator
+    packet = self.receive_packet()
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/clickhouse_driver/client.py", line 112, in receive_packet
+    raise packet.exception
+clickhouse_driver.errors.ServerException: Code: 47.
+DB::Exception: Missing columns: 'amount' while processing query: 'SELECT delivery_amount, timestamp_delivered, amount FROM amdattds.inventory_warehouse WHERE (toDate(timestamp_delivered) >= toDate('2019-09-23 00:00:00')) AND (toDate(timestamp_delivered) <= toDate('2019-10-01 00:00:00')) ORDER BY timestamp_delivered ASC', required columns: 'timestamp_delivered' 'amount' 'delivery_amount', source columns: 'city_longitude' 'birthday' 'city' 'delivery_person' 'timestamp_delivered' 'delivery_amount' 'item' 'item_category' 'unit_price_change_timestamp' 'item_price' 'payment_method' 'amount_paid' 'industry_name' 'purchase_order_id' 'payment_id' 'gender' 'payment_timestamp' 'no_items' 'proposed_delivery_timestamp' 'city_latitude' 'purchase_order_timestamp' 'shipping_method' 'company_name'. Stack trace:
+
+0. 0x562b186eb160 StackTrace::StackTrace() /usr/bin/clickhouse
+1. 0x562b186eaf35 DB::Exception::Exception(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) /usr/bin/clickhouse
+2. 0x562b184947c0 ? /usr/bin/clickhouse
+3. 0x562b1ba8b0a8 DB::SyntaxAnalyzer::analyze(std::shared_ptr<DB::IAST>&, DB::NamesAndTypesList const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::shared_ptr<DB::IStorage>, DB::NamesAndTypesList const&) const /usr/bin/clickhouse
+4. 0x562b1b983a9e DB::InterpreterSelectQuery::InterpreterSelectQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, std::shared_ptr<DB::IBlockInputStream> const&, std::shared_ptr<DB::IStorage> const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+5. 0x562b1b984817 DB::InterpreterSelectQuery::InterpreterSelectQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+6. 0x562b1b9a70d8 DB::InterpreterSelectWithUnionQuery::InterpreterSelectWithUnionQuery(std::shared_ptr<DB::IAST> const&, DB::Context const&, DB::SelectQueryOptions const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) /usr/bin/clickhouse
+7. 0x562b1b964828 DB::InterpreterFactory::get(std::shared_ptr<DB::IAST>&, DB::Context&, DB::QueryProcessingStage::Enum) /usr/bin/clickhouse
+8. 0x562b1bab4489 ? /usr/bin/clickhouse
+9. 0x562b1bab483c DB::executeQuery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, DB::Context&, bool, DB::QueryProcessingStage::Enum, bool) /usr/bin/clickhouse
+10. 0x562b18760390 DB::TCPHandler::runImpl() /usr/bin/clickhouse
+11. 0x562b18760d2b DB::TCPHandler::run() /usr/bin/clickhouse
+12. 0x562b1c5d1b80 Poco::Net::TCPServerConnection::start() /usr/bin/clickhouse
+13. 0x562b1c5d229d Poco::Net::TCPServerDispatcher::run() /usr/bin/clickhouse
+14. 0x562b1dc20b31 Poco::PooledThread::run() /usr/bin/clickhouse
+15. 0x562b1dc1e8dc Poco::ThreadImpl::runnableEntry(void*) /usr/bin/clickhouse
+16. 0x562b1e394120 ? /usr/bin/clickhouse
+17. 0x7f418e35a6db start_thread /lib/x86_64-linux-gnu/libpthread-2.27.so
+18. 0x7f418dc7788f clone /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:97
+
+2019-10-11 11:24:52,268 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:24:57,019 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:24:57,019 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 11:24:57,048 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:24:57,048 - [logs/pythonClickhouse.log:115]=> DATA LOADED:Empty DataFrame
+Columns: [delivery_amount, timestamp_delivered]
+Index: []
+2019-10-11 11:26:06,251 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:26:10,639 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:26:10,639 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 11:26:10,976 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:26:10,977 - [logs/pythonClickhouse.log:115]=> DATA LOADED:Empty DataFrame
+Columns: [delivery_amount, timestamp_delivered]
+Index: []
+2019-10-11 11:56:30,556 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:56:35,019 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:56:35,019 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 11:56:35,362 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:56:35,362 - [logs/pythonClickhouse.log:115]=> DATA LOADED:Empty DataFrame
+Columns: [delivery_amount, timestamp_delivered]
+Index: []
+2019-10-11 11:59:13,777 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 11:59:18,736 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 11:59:19,152 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:59:19,153 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 11:59:19,490 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2019-09-23 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-01 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 11:59:19,497 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 11:59:19,498 - [logs/pythonClickhouse.log:115]=> DATA LOADED:Empty DataFrame
+Columns: [delivery_amount, timestamp_delivered]
+Index: []
+2019-10-11 12:01:33,374 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:01:51,299 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:02:37,711 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:02:42,571 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:02:42,992 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:02:42,993 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:02:43,325 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2019-09-23 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-01 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:02:43,332 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:02:43,332 - [logs/pythonClickhouse.log:115]=> DATA LOADED:Empty DataFrame
+Columns: [delivery_amount, timestamp_delivered]
+Index: []
+2019-10-11 12:07:04,133 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:15:29,268 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:17:21,051 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:17:21,470 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:17:21,471 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:17:21,803 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:17:21,809 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:17:21,809 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:21:15,704 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:21:20,129 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:21:20,549 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:21:20,550 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:21:20,884 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:21:20,892 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:21:20,892 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:23:37,935 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:23:41,856 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:23:42,272 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:23:42,272 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:23:42,616 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:23:42,623 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:23:42,624 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:25:06,891 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:25:10,540 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:25:10,958 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:25:10,959 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:25:11,291 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:25:11,300 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:25:11,301 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:26:31,009 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:26:35,266 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:26:35,734 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:26:35,734 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:26:36,075 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:26:36,081 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:26:36,082 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:27:26,293 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:27:30,656 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:27:31,072 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:27:31,073 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:27:31,400 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:27:31,407 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:27:31,407 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:31:13,857 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:31:17,511 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:31:17,923 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:31:17,923 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:31:18,250 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:31:18,257 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:31:18,257 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:33:09,782 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:33:13,568 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:33:13,986 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:33:13,986 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:33:14,339 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:33:14,346 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:33:14,346 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:33:14,455 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:33:14,462 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:33:14,462 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:33:14,561 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:33:14,573 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:33:14,577 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:39:55,230 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:39:59,791 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:00,206 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:00,207 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:00,559 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:00,566 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:00,567 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:00,677 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:00,682 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:00,683 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:00,782 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:00,789 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:00,789 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:23,959 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:40:28,029 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:28,437 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:28,437 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:28,766 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:28,773 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:28,773 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:28,860 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:28,866 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:28,866 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:40:28,945 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:40:28,951 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:40:28,952 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:42:59,573 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:43:04,020 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:43:04,437 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:43:04,438 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:43:04,770 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:43:04,777 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:43:04,777 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:43:04,864 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:43:04,870 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:43:04,870 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:43:04,949 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:43:04,955 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:43:04,955 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:44:10,565 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:44:16,063 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:44:16,476 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:44:16,476 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:44:16,816 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:44:16,823 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:44:16,823 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:44:16,911 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:44:16,916 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:44:16,916 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:44:16,999 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:44:17,005 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:44:17,006 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:45:20,976 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:45:25,424 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:45:25,838 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:45:25,839 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:45:26,169 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:45:26,176 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:45:26,176 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:45:26,265 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:45:26,270 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:45:26,270 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:45:26,350 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:45:26,356 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:45:26,356 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:53:20,591 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:53:25,873 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:53:26,285 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:53:26,285 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:53:26,621 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:53:26,629 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:53:26,629 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:53:26,722 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:53:26,727 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:53:26,728 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:53:26,807 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:53:26,813 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:53:26,813 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:56:26,702 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:56:30,586 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:56:31,012 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:56:31,013 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:57:04,947 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 12:57:12,896 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:57:13,306 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:57:13,306 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:57:13,640 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:57:13,647 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:57:13,647 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:57:13,755 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:57:13,760 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:57:13,760 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 12:57:13,856 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 12:57:13,861 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 12:57:13,861 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:00:29,324 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:00:46,856 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:00:50,607 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:00:51,030 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:00:51,030 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:00:51,366 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:00:51,372 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:00:51,373 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:00:51,500 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:00:51,505 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:00:51,506 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:00:51,623 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:00:51,628 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:00:51,629 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:11:45,240 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:12:39,014 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:12:45,749 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:12:46,168 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:12:46,169 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:12:46,497 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:12:46,503 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:12:46,504 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:14:13,780 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:14:19,024 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:14:19,449 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:14:19,449 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:14:19,785 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:14:19,792 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:14:19,792 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:15:39,484 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:15:49,735 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:15:50,162 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:15:50,163 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:15:50,495 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:15:50,501 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:15:50,502 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:18:33,833 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:18:39,347 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:18:39,768 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:18:39,768 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:18:40,107 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:18:40,114 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:18:40,114 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:20:06,142 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:20:10,297 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:20:10,715 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:20:10,716 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:20:11,047 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:20:11,054 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:20:11,054 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:21:15,564 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:21:19,608 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:21:20,027 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:21:20,027 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:21:20,358 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:21:20,364 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:21:20,365 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:26:36,139 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:26:46,532 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:26:46,946 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:26:46,946 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:26:47,281 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:26:47,288 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:26:47,288 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:28:24,845 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:28:29,894 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:28:30,317 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:28:30,317 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:28:30,683 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:28:30,690 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:28:30,690 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:31:17,315 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:31:21,795 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:31:22,207 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:31:22,207 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:31:22,533 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:31:22,540 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:31:22,540 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:31:22,623 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:31:22,628 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:31:22,629 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:31:22,701 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:31:22,706 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:31:22,706 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:33:44,227 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:33:48,982 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2014-01-01 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2019-10-11 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:33:49,392 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:33:49,393 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:33:49,721 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:33:49,727 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:33:49,727 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:33:49,812 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:33:49,817 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:33:49,818 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:33:49,886 - [logs/pythonClickhouse.log:90]=> LINE 90: query:SELECT delivery_amount,timestamp_delivered FROM amdattds.inventory_warehouse WHERE toDate(timestamp_delivered) >= toDate('2015-01-05 00:00:00') AND 
+                           toDate(timestamp_delivered) <= toDate('2015-01-14 00:00:00')  ORDER BY timestamp_delivered 
+2019-10-11 13:33:49,891 - [logs/pythonClickhouse.log:114]=> columns loaded:['delivery_amount', 'timestamp_delivered']
+2019-10-11 13:33:49,892 - [logs/pythonClickhouse.log:115]=> DATA LOADED:   delivery_amount timestamp_delivered
+0            999.0 2015-01-06 14:49:02
+1            999.0 2015-01-06 14:49:02
+2            999.0 2015-01-06 14:49:02
+3            276.0 2015-01-06 15:54:28
+4            418.0 2015-01-06 18:08:21
+5           1193.0 2015-01-06 22:49:25
+6           1193.0 2015-01-06 22:49:25
+7           1193.0 2015-01-06 22:49:25
+8            704.0 2015-01-07 07:15:34
+9            704.0 2015-01-07 07:15:34
+2019-10-11 13:35:22,509 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log
+2019-10-11 13:35:33,699 - [logs/pythonClickhouse.log:16]=> logs/pythonClickhouse.log

@@ -1,0 +1,1567 @@
+2019-10-11 10:33:59,647 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:47:43,030 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:53:08,318 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:54:32,219 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:58:18,082 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:58:35,751 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:58:56,921 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 10:59:04,081 - [logs/inventory.log:478]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 379, in kpi_inventory_tab
+    thistab = Thistab(table, [])
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 39, in __init__
+    KPI.__init__(self, table, name='election_attendees', cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/utils/interfaces/KPI_interface.py", line 47, in __init__
+    self.ch = PythonClickhouse('aion')
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/databases/pythonClickhouse.py", line 24, in __init__
+    self.host = credentials['host']
+TypeError: string indices must be integers
+2019-10-11 11:01:11,750 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:05:59,016 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 379, in kpi_inventory_tab
+    thistab = Thistab(table, [])
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 39, in __init__
+    KPI.__init__(self, table, name='inventory', cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/utils/interfaces/KPI_interface.py", line 47, in __init__
+    self.ch = PythonClickhouse('amdattds')
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/databases/pythonClickhouse.py", line 24, in __init__
+    self.host = credentials['host']
+TypeError: string indices must be integers
+2019-10-11 11:08:02,533 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:09:12,034 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 379, in kpi_inventory_tab
+    thistab = Thistab(table, cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 39, in __init__
+    KPI.__init__(self, table, name='inventory', cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/utils/interfaces/KPI_interface.py", line 47, in __init__
+    self.ch = PythonClickhouse('amdattds')
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/databases/pythonClickhouse.py", line 24, in __init__
+    self.host = credentials['host']
+TypeError: string indices must be integers
+2019-10-11 11:15:00,299 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:15:35,109 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:16:49,098 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:17:12,702 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:17:44,311 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:17:48,608 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 379, in kpi_inventory_tab
+    thistab = Thistab(table, credentials=credentials,cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 39, in __init__
+    KPI.__init__(self, table, name='inventory', cols=cols,credentials=credentials)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/utils/interfaces/KPI_interface.py", line 48, in __init__
+    self.redis = PythonRedis()
+TypeError: __init__() missing 1 required positional argument: 'credentials'
+2019-10-11 11:18:18,765 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:18:22,546 - [logs/inventory.log:405]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:18:22,550 - [logs/inventory.log:252]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 230, in period_over_period
+    df = df.rename(columns={self.variable:'0 periods prev',timestamp_col:'date'})
+AttributeError: 'NoneType' object has no attribute 'rename'
+2019-10-11 11:18:22,550 - [logs/inventory.log:288]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 275, in graph_period_over_period
+    plotcols = list(df.columns)
+AttributeError: 'NoneType' object has no attribute 'columns'
+2019-10-11 11:18:22,550 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 430, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 11:21:39,383 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:21:42,898 - [logs/inventory.log:405]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:21:42,905 - [logs/inventory.log:252]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 230, in period_over_period
+    df = df.rename(columns={self.variable:'0 periods prev',timestamp_col:'date'})
+AttributeError: 'NoneType' object has no attribute 'rename'
+2019-10-11 11:21:42,905 - [logs/inventory.log:288]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 275, in graph_period_over_period
+    plotcols = list(df.columns)
+AttributeError: 'NoneType' object has no attribute 'columns'
+2019-10-11 11:21:42,905 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 430, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 11:24:52,573 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:24:57,038 - [logs/inventory.log:217]=> graph periods to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 201, in graph_periods_to_date
+    if self.groupby_dict[variable] == 'sum':
+KeyError: 'delivery_amount'
+2019-10-11 11:24:57,038 - [logs/inventory.log:405]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:24:57,051 - [logs/inventory.log:252]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 231, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 11:24:57,053 - [logs/inventory.log:288]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 280, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 11:24:57,053 - [logs/inventory.log:479]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 430, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 11:26:06,560 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:26:10,965 - [logs/inventory.log:407]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:26:10,980 - [logs/inventory.log:254]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 233, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 11:26:10,982 - [logs/inventory.log:290]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 282, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 11:26:10,982 - [logs/inventory.log:481]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 432, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 11:56:30,929 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:56:35,351 - [logs/inventory.log:409]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:56:35,367 - [logs/inventory.log:256]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 234, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 11:56:35,368 - [logs/inventory.log:292]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 284, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 11:56:35,369 - [logs/inventory.log:483]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 434, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 11:59:14,154 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 11:59:19,486 - [logs/inventory.log:409]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 11:59:19,502 - [logs/inventory.log:256]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 234, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 11:59:19,504 - [logs/inventory.log:292]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 284, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 11:59:19,504 - [logs/inventory.log:483]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 434, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:01:33,687 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:01:38,250 - [logs/inventory.log:483]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 383, in kpi_inventory_tab
+    thistab = Thistab(table, credentials=credentials,cols=cols)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 39, in __init__
+    KPI.__init__(self, table, name='inventory', cols=cols,credentials=credentials)
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/utils/interfaces/KPI_interface.py", line 71, in __init__
+    self.pop_start_date = datetime(2014,0,0,0,0,0)
+ValueError: month must be in 1..12
+2019-10-11 12:01:51,606 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:02:38,020 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:02:43,320 - [logs/inventory.log:409]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:02:43,336 - [logs/inventory.log:256]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 234, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 12:02:43,338 - [logs/inventory.log:292]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 284, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:02:43,338 - [logs/inventory.log:483]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 434, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:07:04,435 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:15:29,580 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:17:21,798 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:17:21,829 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 240, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 12:17:21,830 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:17:21,830 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:21:16,015 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:21:20,878 - [logs/inventory.log:416]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:21:20,910 - [logs/inventory.log:264]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 242, in period_over_period
+    df = df[['date',self.variable]]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2986, in __getitem__
+    indexer = self.loc._convert_to_indexer(key, axis=1, raise_missing=True)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1285, in _convert_to_indexer
+    return self._get_listlike_indexer(obj, axis, **kwargs)[1]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1092, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexing.py", line 1185, in _validate_read_indexer
+    raise KeyError("{} not in index".format(not_found))
+KeyError: "['delivery_amount'] not in index"
+2019-10-11 12:21:20,911 - [logs/inventory.log:299]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 291, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:21:20,911 - [logs/inventory.log:490]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 441, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:23:38,256 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:23:42,611 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:23:42,653 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 253, in period_over_period
+    df2.loc[:, 'date'] = df2.date - relativedelta(weeks=count)
+TypeError: 'module' object is not callable
+2019-10-11 12:23:42,654 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:23:42,654 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:25:07,213 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:25:11,287 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:25:11,322 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 253, in period_over_period
+    df2.loc[:, 'date'] = df2.date - relativedelta(weeks=count)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'date'
+2019-10-11 12:25:11,323 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:25:11,324 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:26:31,318 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:26:36,071 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:26:36,103 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 253, in period_over_period
+    df2.loc[:, 'date'] = df2.date - relativedelta(weeks=count)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 5179, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'date'
+2019-10-11 12:26:36,104 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:26:36,105 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:27:26,658 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:27:31,395 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:27:31,429 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 253, in period_over_period
+    df2.loc[:, 'date'] = df2.date - relativedelta(weeks=count)
+TypeError: 'module' object is not callable
+2019-10-11 12:27:31,429 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:27:31,429 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:31:14,172 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:31:18,246 - [logs/inventory.log:414]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:31:18,279 - [logs/inventory.log:262]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 253, in period_over_period
+    df2.loc[:, 'date'] = df2.date - relativedelta(weeks=count)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/ops/__init__.py", line 992, in wrapper
+    result = dispatch_to_index_op(op, left, right, pd.DatetimeIndex)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/ops/__init__.py", line 630, in dispatch_to_index_op
+    result = op(left_idx, right)
+TypeError: unsupported operand type(s) for -: 'DatetimeIndex' and 'relativedelta'
+2019-10-11 12:31:18,281 - [logs/inventory.log:297]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 289, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:31:18,281 - [logs/inventory.log:488]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 439, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:33:10,089 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:33:14,333 - [logs/inventory.log:415]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:33:14,619 - [logs/inventory.log:263]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'timestamp_delivered'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 256, in period_over_period
+    df2['label'] = df[timestamp_col].map(label_qtr_pop)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'timestamp_delivered'
+2019-10-11 12:33:14,622 - [logs/inventory.log:298]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 290, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 12:33:14,623 - [logs/inventory.log:489]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 446, in kpi_inventory_tab
+    pop_quarter = renderer.get_plot(hv_pop_quarter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 12:39:55,559 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:40:00,554 - [logs/inventory.log:415]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:40:00,815 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,815 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,816 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,823 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,823 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,823 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,823 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,823 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,824 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,824 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,824 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,824 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,834 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,835 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,835 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,835 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:00,937 - [logs/inventory.log:489]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 461, in kpi_inventory_tab
+    thistab.select['gender']
+KeyError: 'gender'
+2019-10-11 12:40:24,263 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:40:28,762 - [logs/inventory.log:415]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:40:28,970 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,971 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,977 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,978 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,978 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,985 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,985 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,985 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:28,986 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'datetime.date'
+2019-10-11 12:40:29,066 - [logs/inventory.log:489]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 461, in kpi_inventory_tab
+    thistab.select['gender']
+KeyError: 'gender'
+2019-10-11 12:42:59,960 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:43:04,766 - [logs/inventory.log:415]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:43:04,974 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,974 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,974 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,974 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,975 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,975 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,975 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,975 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,975 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,980 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,980 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,981 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,991 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,992 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,992 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:04,992 - [logs/inventory.log:231]=> df label quarter
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 229, in label_qtr_pop
+    return abs((start - y).days)
+TypeError: unsupported operand type(s) for -: 'builtin_function_or_method' and 'datetime.date'
+2019-10-11 12:43:05,078 - [logs/inventory.log:489]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 461, in kpi_inventory_tab
+    thistab.select['gender']
+KeyError: 'gender'
+2019-10-11 12:44:10,873 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:44:16,812 - [logs/inventory.log:417]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:44:17,116 - [logs/inventory.log:491]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 463, in kpi_inventory_tab
+    thistab.select['gender']
+KeyError: 'gender'
+2019-10-11 12:45:21,349 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:45:26,165 - [logs/inventory.log:419]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:53:20,896 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:53:26,614 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:56:27,007 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:56:31,337 - [logs/inventory.log:421]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 12:56:31,339 - [logs/inventory.log:495]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 428, in kpi_inventory_tab
+    options=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'])
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/model.py", line 307, in __init__
+    super(Model, self).__init__(**kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 253, in __init__
+    setattr(self, name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 280, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 545, in __set__
+    self._internal_set(obj, value, setter=setter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 766, in _internal_set
+    value = self.property.prepare_value(obj, self.name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 327, in prepare_value
+    raise e
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 320, in prepare_value
+    self.validate(value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 452, in validate
+    raise ValueError(msg)
+ValueError: expected a value of type str, got 3 of type int
+2019-10-11 12:57:05,252 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 12:57:13,636 - [logs/inventory.log:421]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:00:29,634 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:00:47,164 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:00:51,362 - [logs/inventory.log:422]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:11:45,552 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:12:39,317 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:12:46,492 - [logs/inventory.log:421]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:12:46,527 - [logs/inventory.log:269]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'delivery_amount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 259, in period_over_period
+    df[label] = df[self.variable].shift(periods=count,freq='W')
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'delivery_amount'
+2019-10-11 13:12:46,529 - [logs/inventory.log:304]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 296, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:12:46,529 - [logs/inventory.log:495]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 446, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:14:14,085 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:14:19,781 - [logs/inventory.log:421]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:14:19,817 - [logs/inventory.log:269]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 259, in period_over_period
+    elif period == 'quarter':
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/series.py", line 4370, in shift
+    periods=periods, freq=freq, axis=axis, fill_value=fill_value
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9402, in shift
+    return self.tshift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9497, in tshift
+    new_data.axes[block_axis] = index.shift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 4648, in shift
+    raise NotImplementedError("Not supported for type %s" % type(self).__name__)
+NotImplementedError: Not supported for type Index
+2019-10-11 13:14:19,819 - [logs/inventory.log:304]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 296, in graph_period_over_period
+    stacked=False, width=1200, height=500)
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:14:19,820 - [logs/inventory.log:495]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 446, in kpi_inventory_tab
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:15:39,796 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:15:50,491 - [logs/inventory.log:419]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:15:50,529 - [logs/inventory.log:267]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 257, in period_over_period
+    df[label] = df['0_periods_prev'].shift(periods=count,freq='W')
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/series.py", line 4370, in shift
+    periods=periods, freq=freq, axis=axis, fill_value=fill_value
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9402, in shift
+    return self.tshift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9497, in tshift
+    new_data.axes[block_axis] = index.shift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 4648, in shift
+    raise NotImplementedError("Not supported for type %s" % type(self).__name__)
+NotImplementedError: Not supported for type RangeIndex
+2019-10-11 13:15:50,531 - [logs/inventory.log:302]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 294, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:15:50,532 - [logs/inventory.log:493]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 444, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:18:34,148 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:18:40,103 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:18:40,134 - [logs/inventory.log:268]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 258, in period_over_period
+    df[label] = df['0_periods_prev'].shift(periods=count,freq='W')
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/series.py", line 4370, in shift
+    periods=periods, freq=freq, axis=axis, fill_value=fill_value
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9402, in shift
+    return self.tshift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9497, in tshift
+    new_data.axes[block_axis] = index.shift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 4648, in shift
+    raise NotImplementedError("Not supported for type %s" % type(self).__name__)
+NotImplementedError: Not supported for type Index
+2019-10-11 13:18:40,137 - [logs/inventory.log:303]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 295, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:18:40,137 - [logs/inventory.log:494]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 445, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:20:06,525 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:20:11,043 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:20:11,074 - [logs/inventory.log:268]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 258, in period_over_period
+    df[label] = df.shift(periods=count,freq='W')
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 4269, in shift
+    periods=periods, freq=freq, axis=axis, fill_value=fill_value
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9402, in shift
+    return self.tshift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9497, in tshift
+    new_data.axes[block_axis] = index.shift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 4648, in shift
+    raise NotImplementedError("Not supported for type %s" % type(self).__name__)
+NotImplementedError: Not supported for type Index
+2019-10-11 13:20:11,077 - [logs/inventory.log:303]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 295, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:20:11,077 - [logs/inventory.log:494]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 445, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:21:15,915 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:21:20,354 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:21:20,388 - [logs/inventory.log:268]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 259, in period_over_period
+    df[label] = df.shift(periods=count,freq='W')
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 4269, in shift
+    periods=periods, freq=freq, axis=axis, fill_value=fill_value
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9402, in shift
+    return self.tshift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 9497, in tshift
+    new_data.axes[block_axis] = index.shift(periods, freq)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 4648, in shift
+    raise NotImplementedError("Not supported for type %s" % type(self).__name__)
+NotImplementedError: Not supported for type Index
+2019-10-11 13:21:20,391 - [logs/inventory.log:303]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 295, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:21:20,392 - [logs/inventory.log:494]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 445, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:26:36,455 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:26:47,277 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:26:47,322 - [logs/inventory.log:268]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2_period(s)_prev'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1069, in set
+    loc = self.items.get_loc(item)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2_period(s)_prev'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 259, in period_over_period
+    df[label] = df.shift(periods=7)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 3472, in __setitem__
+    self._set_item(key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 3550, in _set_item
+    NDFrame._set_item(self, key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 3381, in _set_item
+    self._data.set(key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1072, in set
+    self.insert(len(self.items), item, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1181, in insert
+    block = make_block(values=value, ndim=self.ndim, placement=slice(loc, loc + 1))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/blocks.py", line 3267, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/blocks.py", line 128, in __init__
+    "{mgr}".format(val=len(self.values), mgr=len(self.mgr_locs))
+ValueError: Wrong number of items passed 2, placement implies 1
+2019-10-11 13:26:47,325 - [logs/inventory.log:303]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 295, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:26:47,325 - [logs/inventory.log:494]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 445, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:28:25,149 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:28:30,678 - [logs/inventory.log:420]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:28:30,724 - [logs/inventory.log:268]=> graph period over period
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2_periods_prev'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1069, in set
+    loc = self.items.get_loc(item)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2_periods_prev'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 259, in period_over_period
+    df[label] = df.shift(periods=7)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 3472, in __setitem__
+    self._set_item(key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/frame.py", line 3550, in _set_item
+    NDFrame._set_item(self, key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/generic.py", line 3381, in _set_item
+    self._data.set(key, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1072, in set
+    self.insert(len(self.items), item, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/managers.py", line 1181, in insert
+    block = make_block(values=value, ndim=self.ndim, placement=slice(loc, loc + 1))
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/blocks.py", line 3267, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/pandas/core/internals/blocks.py", line 128, in __init__
+    "{mgr}".format(val=len(self.values), mgr=len(self.mgr_locs))
+ValueError: Wrong number of items passed 2, placement implies 1
+2019-10-11 13:28:30,727 - [logs/inventory.log:303]=> period over period to date
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 295, in graph_period_over_period
+    p = df_period.hvplot.bar('date', plotcols, rot=45, title=title,
+AttributeError: 'NoneType' object has no attribute 'hvplot'
+2019-10-11 13:28:30,728 - [logs/inventory.log:494]=> rendering err:
+Traceback (most recent call last):
+  File "/home/andre/Dropbox/workspace/amdattds/analytics/scripts/dashboards/kpis/inventory.py", line 445, in kpi_inventory_tab
+    pop_week = renderer.get_plot(hv_pop_week)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/bokeh/renderer.py", line 134, in get_plot
+    plot = super(BokehRenderer, self_or_cls).get_plot(obj, renderer, **kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/renderer.py", line 186, in get_plot
+    initialize_dynamic(obj)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/plotting/util.py", line 250, in initialize_dynamic
+    dmap[dmap._initial_key()]
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1327, in __getitem__
+    self._cache(tuple_key, val)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/spaces.py", line 1399, in _cache
+    self[key] = val
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 561, in __setitem__
+    self._add_item(key, value, update=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 161, in _add_item
+    self._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 965, in _item_check
+    super(UniformNdMapping, self)._item_check(dim_vals, data)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/holoviews/core/ndmapping.py", line 144, in _item_check
+    restr=data_type))
+TypeError: DynamicMap does not accept NoneType type, data elements have to be a ('ViewableElement', 'NdMapping', 'Layout').
+2019-10-11 13:31:17,634 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:31:22,527 - [logs/inventory.log:422]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:33:44,606 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:33:49,716 - [logs/inventory.log:435]=> LINE 500: POP Start: END 2019-09-23:2019-09-30
+2019-10-11 13:35:22,818 - [logs/inventory.log:16]=> logs/inventory.log
+2019-10-11 13:35:34,002 - [logs/inventory.log:16]=> logs/inventory.log

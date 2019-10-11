@@ -253,3 +253,187 @@ OSError: [Errno 98] Address already in use
 2019-09-25 17:03:14,305 - [logs/main.log:16]=> logs/main.log
 2019-09-25 17:04:28,113 - [logs/main.log:16]=> logs/main.log
 2019-09-25 17:06:00,898 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:34:01,555 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:47:44,372 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:47:44,373 - [logs/main.log:185]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 363, in __init__
+    opts = _ServerOpts(kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/util/options.py", line 76, in __init__
+    super(Options, self).__init__(**props)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 253, in __init__
+    setattr(self, name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 280, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 545, in __set__
+    self._internal_set(obj, value, setter=setter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 766, in _internal_set
+    value = self.property.prepare_value(obj, self.name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 327, in prepare_value
+    raise e
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 320, in prepare_value
+    self.validate(value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/container.py", line 93, in validate
+    raise ValueError(msg)
+ValueError: expected an element of List(String), got '127.0.0.1:5006'
+2019-10-11 10:53:09,664 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:53:09,665 - [logs/main.log:185]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 363, in __init__
+    opts = _ServerOpts(kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/util/options.py", line 76, in __init__
+    super(Options, self).__init__(**props)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 253, in __init__
+    setattr(self, name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 280, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 545, in __set__
+    self._internal_set(obj, value, setter=setter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 766, in _internal_set
+    value = self.property.prepare_value(obj, self.name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 327, in prepare_value
+    raise e
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 320, in prepare_value
+    self.validate(value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/container.py", line 93, in validate
+    raise ValueError(msg)
+ValueError: expected an element of List(String), got '127.0.0.1:5006'
+2019-10-11 10:54:33,503 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:54:33,504 - [logs/main.log:185]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 363, in __init__
+    opts = _ServerOpts(kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/util/options.py", line 76, in __init__
+    super(Options, self).__init__(**props)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 253, in __init__
+    setattr(self, name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 280, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 545, in __set__
+    self._internal_set(obj, value, setter=setter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 766, in _internal_set
+    value = self.property.prepare_value(obj, self.name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 327, in prepare_value
+    raise e
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 320, in prepare_value
+    self.validate(value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/container.py", line 93, in validate
+    raise ValueError(msg)
+ValueError: expected an element of List(String), got 'localhost:5006'
+2019-10-11 10:58:19,386 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:58:19,387 - [logs/main.log:185]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 363, in __init__
+    opts = _ServerOpts(kwargs)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/util/options.py", line 76, in __init__
+    super(Options, self).__init__(**props)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 253, in __init__
+    setattr(self, name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/has_props.py", line 280, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 545, in __set__
+    self._internal_set(obj, value, setter=setter)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/descriptors.py", line 766, in _internal_set
+    value = self.property.prepare_value(obj, self.name, value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 327, in prepare_value
+    raise e
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/bases.py", line 320, in prepare_value
+    self.validate(value)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/core/property/container.py", line 93, in validate
+    raise ValueError(msg)
+ValueError: expected an element of List(String), got 'localhost'
+2019-10-11 10:58:37,037 - [logs/main.log:16]=> logs/main.log
+2019-10-11 10:58:58,206 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:01:13,565 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:08:03,819 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:15:01,886 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:15:01,887 - [logs/main.log:187]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    websocket_origin = f"{credentials[origin]['websocket']}:5006"
+KeyError: 'localhost'
+2019-10-11 11:15:36,394 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:15:36,395 - [logs/main.log:187]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    websocket_origin = f"{credentials[origin]['websocket']}:5006"
+KeyError: 'localhost'
+2019-10-11 11:16:50,389 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:16:50,390 - [logs/main.log:188]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 180, in launch_server
+    websocket_origin = f"{credentials[origin]['websocket']}:5006"
+KeyError: 'localhost'
+2019-10-11 11:17:13,983 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:17:45,618 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:18:20,109 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:21:40,710 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:24:53,865 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:26:07,928 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:56:32,248 - [logs/main.log:16]=> logs/main.log
+2019-10-11 11:59:15,871 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:01:35,226 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:01:52,898 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:02:39,313 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:07:05,717 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:15:30,915 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:21:17,321 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:23:39,738 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:25:08,513 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:26:32,639 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:27:28,513 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:31:15,514 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:33:11,503 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:39:56,952 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:40:25,550 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:43:02,050 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:44:12,172 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:45:23,441 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:53:22,189 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:56:28,303 - [logs/main.log:16]=> logs/main.log
+2019-10-11 12:57:06,720 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:00:30,930 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:00:48,483 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:11:46,876 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:12:40,599 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:14:15,411 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:15:41,130 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:18:35,473 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:20:08,536 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:21:17,433 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:26:37,749 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:28:26,437 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:31:19,516 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:33:46,461 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:35:24,110 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:35:24,112 - [logs/main.log:188]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 183, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 386, in __init__
+    sockets, self._port = bind_sockets(self.address, self.port)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/util.py", line 66, in bind_sockets
+    ss = netutil.bind_sockets(port=port or 0, address=address)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+2019-10-11 13:35:35,280 - [logs/main.log:16]=> logs/main.log
+2019-10-11 13:35:35,282 - [logs/main.log:188]=> WEBSERVER LAUNCH:
+Traceback (most recent call last):
+  File "main.py", line 183, in launch_server
+    session_ids='signed',relative_urls=False)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/server.py", line 386, in __init__
+    sockets, self._port = bind_sockets(self.address, self.port)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/bokeh/server/util.py", line 66, in bind_sockets
+    ss = netutil.bind_sockets(port=port or 0, address=address)
+  File "/home/andre/anaconda3/envs/amdattds/lib/python3.7/site-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
